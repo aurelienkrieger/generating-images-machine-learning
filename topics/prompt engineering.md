@@ -1,7 +1,8 @@
 # 1. Prompt engineering
 
 **Key points**
-- describe in a natural language and in the most detailed way the subject
+
+- describe the subject in a natural language and in the most detailed way
 - add keywords following the structure:
   - Medium
   - Style
@@ -10,10 +11,13 @@
   - Details
   - Color
   - Lighting
-- use negative prompts
 - ponderate keywords
+- use negative prompts
+  - to remove things
+  - to modify the image
+  - to modify the style
+- use keyword switching
 - know how to play with parameters
-- remix faces
 
 **Tutorials from Stable Diffusion Art**
 
@@ -41,3 +45,8 @@ _negative prompts_
 - Sampling method
 - Seed
 - Batch size
+
+**SDXL styles**
+
+- [Tutorial from Stable Diffusion Art](https://stable-diffusion-art.com/sdxl-styles/)
+- [SDXL style selector extension](https://github.com/ahgsql/StyleSelectorXL)

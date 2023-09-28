@@ -7,6 +7,8 @@ Course about how to use generative models for AI art
 
 ## 1. Prompt engineering
 
+[related article](topics/prompt engineering.md)
+
 **Tutorials from Stable Diffusion Art**
 
 _prompts_
@@ -38,6 +40,9 @@ _negative prompts_
 - Anything v5.0: Anime style
 - SDXL Base 1.0: Stable Diffusion’s latest model
 
+**Custom models**
+- [Civitai, resource to download models](https://civitai.com/)
+
 **other models**
 
 - DALL-E
@@ -49,38 +54,35 @@ _negative prompts_
 - image-to-image (img2img)
 - depth-to-image (Depth2img)
 - inpaiting
+- outpainting
 - text-to-video
 - video-to-video
-- Face restoration
-- Regional prompting
+- face restoration
+- tiling
+- upscaler
+- regional prompting
 
-**Models for additional control**
+**Models for additional control & post-processing**
 
-- Deforum
 - controlNet
+- Deforum
+- ModelScope
+- AnimateDiff
+- CodeFormer (faces restoration)
 - Instruct Pix2Pix
-- CodeFormer
 - Real-ESRGAN
 - GFPGAN
 - [Controlnet QR Pattern](https://civitai.com/models/90940/controlnet-qr-pattern-qr-codes)
 - [Controlnet QR Monster](https://huggingface.co/monster-labs/control_v1p_sd15_qrcode_monster)
 - [Controlnet Brightness / Illumination](https://huggingface.co/ioclab/ioc-controlnet/tree/main/models)
 
-**Post processing models**
+_Tutorials from Stable Diffusion Art_
 
-- Upscalers
-
-  _tutorials from Stable Diffusion Art_
-  - [AI upscaler](https://stable-diffusion-art.com/ai-upscaler/)
-  - [ControlNet upscale](https://stable-diffusion-art.com/controlnet-upscale/)
-
-### 2.2 text2video
-
-[Tutorial from Stable Diffusion Art](https://stable-diffusion-art.com/text-to-video/)
-
-- Deforum
-- ModelScope
-- AnimateDiff
+- [inpainting](https://stable-diffusion-art.com/inpainting_basics/)
+- [outpainting](https://stable-diffusion-art.com/outpainting/)
+- [text2video](https://stable-diffusion-art.com/text-to-video/)
+- [AI upscaler](https://stable-diffusion-art.com/ai-upscaler/)
+- [ControlNet upscale](https://stable-diffusion-art.com/controlnet-upscale/)
 
 
 ## 3. GUI
@@ -118,6 +120,8 @@ _easier to install_
 - [Draw things - Mac only](https://drawthings.ai/)
 - [NMKD - Windows only](https://nmkd.itch.io/t2i-gui)
 
+[AUTOMATIC1111 complete guide from Stable Diffusion Art](https://stable-diffusion-art.com/automatic1111/)
+
 ## 4. Model training
 
 **Models & methods**
@@ -125,9 +129,11 @@ _easier to install_
 - LoRA
 - LyCORIS
 - Embedding
+- Hypernetworks
 
 **Tutorials from Stable Diffusion Art**
 - [Dreambooth](https://stable-diffusion-art.com/dreambooth/)
 - [Embedding](https://stable-diffusion-art.com/embedding/)
 - [LoRA](https://stable-diffusion-art.com/lora/)
 - [Train LoRA](https://stable-diffusion-art.com/train-lora/)
+- [Hypernetworks](https://stable-diffusion-art.com/hypernetwork/)
