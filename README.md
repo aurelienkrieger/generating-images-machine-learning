@@ -7,21 +7,6 @@ Course about how to use generative models for AI art
 
 ## 1. Prompt engineering
 
-**Key points**
-- describe in a natural language and in the most detailed way the subject
-- add keywords following the structure:
-  - Medium
-  - Style
-  - Artist / Inspiration
-  - Website	Resolution
-  - Details
-  - Color
-  - Lighting
-- use negative prompts
-- ponderate keywords
-- know how to play with parameters
-- remix faces
-
 **Tutorials from Stable Diffusion Art**
 
 _prompts_
@@ -39,15 +24,6 @@ _negative prompts_
 
 - [Promptomania](https://promptomania.com/stable-diffusion-prompt-builder/)
 - [Custom keyword organiser](https://docs.google.com/spreadsheets/d/1w953xYyb_6HoUXF_SiLdPkpA_IljhAjN31z6pnjKh1s/edit?usp=sharing)
-
-**Parameters**
-
-- Classifier Free Guidance (CFG) scale
-- Sampling steps
-- Image size
-- Sampling method
-- Seed
-- Batch size
 
 ## 2. Generative models
 
