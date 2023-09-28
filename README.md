@@ -5,84 +5,86 @@ Course about how to use generative models for AI art
 
 <img src="assets/generative models workflow.png" width="500" alt="generative model workflow">
 
+[Stable Diffusion Art - how Stable Diffusion works](https://stable-diffusion-art.com/how-stable-diffusion-work/)
+
 ## 1. Prompt engineering
 
-[related article](/topics/prompt engineering.md)
+- prompt & parameters
+- negative prompt
+- prompt generators & boilerplates
+- reverse prompting
 
-**Tutorials from Stable Diffusion Art**
+## 2. Models
 
-_prompts_
-
-- [How to come up with good-prompts](https://stable-diffusion-art.com/how-to-come-up-with-good-prompts-for-ai-image-generation/)
-- [Fine tune your images with simple prompting techniques](https://stable-diffusion-art.com/fine-tune-your-ai-images-with-these-simple-prompting-techniques/)
-- [Important parameters](https://stable-diffusion-art.com/know-these-important-parameters-for-stunning-ai-images/)
-
-_negative prompts_
-
-- [How negative prompts work](https://stable-diffusion-art.com/how-negative-prompt-work/)
-- [How to use negative prompts](https://stable-diffusion-art.com/how-to-use-negative-prompts/)
-
-**Prompt generators**
-
-- [Promptomania](https://promptomania.com/stable-diffusion-prompt-builder/)
-- [Custom keyword organiser](https://docs.google.com/spreadsheets/d/1w953xYyb_6HoUXF_SiLdPkpA_IljhAjN31z6pnjKh1s/edit?usp=sharing)
-
-## 2. Generative models
-
-### 2.1 Models family
-
-**Stable Diffusion checkpoint models**
-
-[Tutorial from Stable Diffusion Art](https://stable-diffusion-art.com/models/)
-
-- Stable Diffusion v1.5: The official base model. Versatile in all styles
-- Realistic Vision v2.0: Excel in generating photo-style realistic images
-- Anything v5.0: Anime style
-- SDXL Base 1.0: Stable Diffusion’s latest model
-
-**Custom models**
-- [Civitai, resource to download models](https://civitai.com/)
-
-**other models**
-
-- DALL-E
-- MidJourney
-
-**Stable Diffusion - functionalities**
+**Popular functionalities**
 
 - text-to-image (txt2img)
 - image-to-image (img2img)
-- depth-to-image (Depth2img)
+- depth-to-image (depth2img)
 - inpaiting
 - outpainting
 - text-to-video
 - video-to-video
 - face restoration
 - tiling
-- upscaler
+- upscaling
 - regional prompting
 
-**Models for additional control & post-processing**
 
-- controlNet
-- Deforum
-- ModelScope
-- AnimateDiff
-- CodeFormer (faces restoration)
+### 2.1 Checkpoint models
+
+**Stable Diffusion checkpoint models**
+
+[Stable Diffusion Art - models](https://stable-diffusion-art.com/models/)
+
+- Stable Diffusion v1.5: The official base model. Versatile in all styles
+- Realistic Vision v2.0: Excel in generating photo-style realistic images
+- Anything v5.0: Anime style
+- SDXL Base 1.0: Stable Diffusion’s latest model
+
+**other models**
+
+- DALL-E
+- MidJourney
+
+### 2.2 Models for advanced control
+
+**img2img**
+- ControlNet
 - Instruct Pix2Pix
-- Real-ESRGAN
-- GFPGAN
 - [Controlnet QR Pattern](https://civitai.com/models/90940/controlnet-qr-pattern-qr-codes)
 - [Controlnet QR Monster](https://huggingface.co/monster-labs/control_v1p_sd15_qrcode_monster)
 - [Controlnet Brightness / Illumination](https://huggingface.co/ioclab/ioc-controlnet/tree/main/models)
 
-_Tutorials from Stable Diffusion Art_
+**Inpainting & outpainting**
 
-- [inpainting](https://stable-diffusion-art.com/inpainting_basics/)
-- [outpainting](https://stable-diffusion-art.com/outpainting/)
-- [text2video](https://stable-diffusion-art.com/text-to-video/)
-- [AI upscaler](https://stable-diffusion-art.com/ai-upscaler/)
-- [ControlNet upscale](https://stable-diffusion-art.com/controlnet-upscale/)
+_tutorials_
+- [Stable Diffusion Art - inpainting](https://stable-diffusion-art.com/inpainting_basics/)
+- [Stable Diffusion Art - outpainting](https://stable-diffusion-art.com/outpainting/)
+
+**Face restoration**
+
+- CodeFormer (faces restoration) 
+- GFPGAN (faces restoration)
+- VAE (faces restoration)
+
+**Upscaling**
+
+- Real-ESRGAN
+- Latent upscalers
+- Lanczos (traditional upscaler)
+
+_tutorials_
+- [Stable Diffusion Art - AI upscaler](https://stable-diffusion-art.com/ai-upscaler/)
+- [Stable Diffusion Art - ControlNet upscale](https://stable-diffusion-art.com/controlnet-upscale/)
+
+**Animation**
+
+- Deforum
+- AnimateDiff
+
+_tutorials_
+[Stable Diffusion Art - text2video](https://stable-diffusion-art.com/text-to-video/)
 
 
 ## 3. GUI
@@ -95,7 +97,6 @@ _Tutorials from Stable Diffusion Art_
 - [Disco Diffusion - Google Colab](https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb)
 - [Graviti](https://library.graviti.com/)
 - [Illusion Diffusion (Monster QR)](https://huggingface.co/spaces/AP123/IllusionDiffusion)
-
 
 ### 3.1 Online (commercial platforms)
 
@@ -137,3 +138,6 @@ _easier to install_
 - [LoRA](https://stable-diffusion-art.com/lora/)
 - [Train LoRA](https://stable-diffusion-art.com/train-lora/)
 - [Hypernetworks](https://stable-diffusion-art.com/hypernetwork/)
+
+**Resources**
+- [Civitai, resource to download models](https://civitai.com/)

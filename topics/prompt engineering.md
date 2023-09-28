@@ -1,23 +1,22 @@
-# 1. Prompt engineering
+# Prompt engineering
 
 **Key points**
 
 - describe the subject in a natural language and in the most detailed way
 - add keywords following the structure:
-  - Medium
-  - Style
-  - Artist / Inspiration
-  - Website	Resolution
-  - Details
-  - Color
-  - Lighting
-- ponderate keywords
+    - Medium
+    - Style
+    - Artist / Inspiration
+    - Website	Resolution
+    - Details
+    - Color
+    - Lighting
+- weight keywords
 - use negative prompts
-  - to remove things
-  - to modify the image
-  - to modify the style
 - use keyword switching
 - know how to play with parameters
+- use prompt boilerplates for specific styles
+- use reverse prompting
 
 **Tutorials from Stable Diffusion Art**
 
@@ -46,7 +45,11 @@ _negative prompts_
 - Seed
 - Batch size
 
-**SDXL styles**
+**Reverse prompting**
+- CLIP  [Stable Diffusion Art tutorial](https://stable-diffusion-art.com/automatic1111/#Get_prompt_from_an_image)
+- PNG info [Stable Diffusion Art tutorial](https://stable-diffusion-art.com/automatic1111/#PNG_Info)
+
+**SDXL boilerplate styles**
 
 - [Tutorial from Stable Diffusion Art](https://stable-diffusion-art.com/sdxl-styles/)
 - [SDXL style selector extension](https://github.com/ahgsql/StyleSelectorXL)
