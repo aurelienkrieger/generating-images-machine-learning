@@ -7,7 +7,7 @@ Course about how to use generative models for AI art
 
 ## 1. Prompt engineering
 
-[related article](topics/prompt engineering.md)
+[related article](blob/main/topics/prompt engineering.md)
 
 **Tutorials from Stable Diffusion Art**
 
