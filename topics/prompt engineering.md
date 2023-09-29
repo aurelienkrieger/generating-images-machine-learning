@@ -1,6 +1,14 @@
 # Prompt engineering
 
-**Key points**
+## Key topics
+
+- prompt & parameters
+- negative prompt
+- prompt generators & boilerplates
+- reverse prompting
+- regional prompting
+
+## Learning points
 
 - describe the subject in a natural language and in the most detailed way
 - add keywords following the structure:
@@ -18,7 +26,18 @@
 - use prompt boilerplates for specific styles
 - use reverse prompting
 
-**Tutorials from Stable Diffusion Art**
+## Parameters
+
+- Classifier Free Guidance (CFG) scale
+- Sampling steps
+- Image size
+- Sampling method
+- Seed
+- Batch size
+
+## Tutorials
+
+**Stable Diffusion Art**
 
 _prompts_
 
@@ -36,15 +55,6 @@ _negative prompts_
 - [Promptomania](https://promptomania.com/stable-diffusion-prompt-builder/)
 - [Custom keyword organiser](https://docs.google.com/spreadsheets/d/1w953xYyb_6HoUXF_SiLdPkpA_IljhAjN31z6pnjKh1s/edit?usp=sharing)
 
-**Parameters**
-
-- Classifier Free Guidance (CFG) scale
-- Sampling steps
-- Image size
-- Sampling method
-- Seed
-- Batch size
-
 **Reverse prompting**
 - CLIP  [Stable Diffusion Art tutorial](https://stable-diffusion-art.com/automatic1111/#Get_prompt_from_an_image)
 - PNG info [Stable Diffusion Art tutorial](https://stable-diffusion-art.com/automatic1111/#PNG_Info)
@@ -53,3 +63,6 @@ _negative prompts_
 
 - [Tutorial from Stable Diffusion Art](https://stable-diffusion-art.com/sdxl-styles/)
 - [SDXL style selector extension](https://github.com/ahgsql/StyleSelectorXL)
+
+## Resources
+- [Civitai, resource to do reverse prompting](https://civitai.com/images)
