@@ -65,4 +65,5 @@ _negative prompts_
 - [SDXL style selector extension](https://github.com/ahgsql/StyleSelectorXL)
 
 ## Resources
-- [Civitai, resource to do reverse prompting](https://civitai.com/images)
+- [Civitai - resource to do reverse prompting](https://civitai.com/images)
+- [Arthub - explore AI generated images](https://arthub.ai/)

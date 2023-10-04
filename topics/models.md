@@ -7,6 +7,7 @@
   - Image to Image (img2img)
   - Text to Video
   - Video to Video
+- VAE models
 
 - Post-processing models
   - Inpaiting

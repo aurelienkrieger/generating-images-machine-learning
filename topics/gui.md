@@ -6,13 +6,13 @@
 
 - [AUTOMATIC1111](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 - [ComfyGUI - nodal interface](https://github.com/comfyanonymous/ComfyUI)
+- [Invoke AI](https://invoke.ai/)
 
 [AUTOMATIC1111 complete guide from Stable Diffusion Art](https://stable-diffusion-art.com/automatic1111/)
 
 ### Downloadable
 
 - [Easy Diffusion](https://easydiffusion.github.io/)
-- [Invoke AI](https://invoke.ai/)
 - [DiffusionBee - Mac only](https://diffusionbee.com/)
 - [Draw things - Mac only](https://drawthings.ai/)
 - [NMKD - Windows only](https://nmkd.itch.io/t2i-gui)
@@ -30,6 +30,7 @@
 - [Graviti](https://library.graviti.com/sdxl-1-0/)
 - [Hugging Face - Stable Diffusion v1.5](https://huggingface.co/spaces/runwayml/stable-diffusion-v1-5)
 - [Hugging Face - Stable Diffusion v2.1](https://huggingface.co/spaces/stabilityai/stable-diffusion)
+- [Hugging Face - Illusion Diffusion (Monster QR)](https://huggingface.co/spaces/AP123/IllusionDiffusion)
 
 ### Cloud GPU Services
 
@@ -50,7 +51,6 @@ _tutorials_
 _scripts_
 
 - [Google Colab - Disco Diffusion](https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb)
-- [Hugging Face - Illusion Diffusion (Monster QR)](https://huggingface.co/spaces/AP123/IllusionDiffusion)
 - [Stable Diffusion Paperspace](https://github.com/Engineer-of-Stuff/stable-diffusion-paperspace)
 - [Stable Diffusion Paperspace](https://github.com/camenduru/stable-diffusion-webui-paperspace)
 
