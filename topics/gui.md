@@ -28,6 +28,8 @@
 - [Stable Diffusion](https://stablediffusionweb.com/#demo)
 - [Easy Diffusion](https://stablediffusion.gigantic.work/)
 - [Graviti](https://library.graviti.com/sdxl-1-0/)
+- [Hugging Face - Stable Diffusion v1.5](https://huggingface.co/spaces/runwayml/stable-diffusion-v1-5)
+- [Hugging Face - Stable Diffusion v2.1](https://huggingface.co/spaces/stabilityai/stable-diffusion)
 
 ### Cloud GPU Services
 
@@ -47,8 +49,6 @@ _tutorials_
 
 _scripts_
 
-- [Hugging Face - Stable Diffusion v1.5](https://huggingface.co/spaces/runwayml/stable-diffusion-v1-5)
-- [Hugging Face - Stable Diffusion v2.1](https://huggingface.co/spaces/stabilityai/stable-diffusion)
 - [Google Colab - Disco Diffusion](https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb)
 - [Hugging Face - Illusion Diffusion (Monster QR)](https://huggingface.co/spaces/AP123/IllusionDiffusion)
 - [Stable Diffusion Paperspace](https://github.com/Engineer-of-Stuff/stable-diffusion-paperspace)
