@@ -19,7 +19,7 @@
 
 ### Dockers
 
--[Stable Diffusion webui Docker](https://github.com/AbdBarho/stable-diffusion-webui-docker)
+- [Stable Diffusion webui Docker](https://github.com/AbdBarho/stable-diffusion-webui-docker)
 
 ## Online services
 
