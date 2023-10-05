@@ -8,6 +8,7 @@
   - Text to Video
   - Video to Video
 - VAE models
+- Refiners
 
 - Post-processing models
   - Inpaiting
@@ -34,6 +35,11 @@
 - Animation
   - Deforum
   - AnimateDiff
+
+_file extensions_
+- .ckpt
+- .safetensors
+- diffusers models
 
 ## Checkpoint models
 

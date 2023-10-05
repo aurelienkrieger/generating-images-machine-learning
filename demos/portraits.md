@@ -1,0 +1,4 @@
+- sd_xl_base_1.0_0.9vae model
+- 2:3 aspect ratio
+- sd_xl_refiner_1.0
+- DPM++ 2S Karras

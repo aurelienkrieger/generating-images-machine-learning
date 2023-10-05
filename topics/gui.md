@@ -6,12 +6,13 @@
 
 - [AUTOMATIC1111](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 - [ComfyGUI - nodal interface](https://github.com/comfyanonymous/ComfyUI)
-- [Invoke AI](https://invoke.ai/)
+- [SD.Next](https://github.com/vladmandic/automatic)
 
 [AUTOMATIC1111 complete guide from Stable Diffusion Art](https://stable-diffusion-art.com/automatic1111/)
 
 ### Downloadable
 
+- [Invoke AI](https://invoke.ai/)
 - [Easy Diffusion](https://easydiffusion.github.io/)
 - [DiffusionBee - Mac only](https://diffusionbee.com/)
 - [Draw things - Mac only](https://drawthings.ai/)

@@ -53,7 +53,6 @@ _negative prompts_
 **Prompt generators**
 
 - [Promptomania](https://promptomania.com/stable-diffusion-prompt-builder/)
-- [Custom keyword organiser](https://docs.google.com/spreadsheets/d/1w953xYyb_6HoUXF_SiLdPkpA_IljhAjN31z6pnjKh1s/edit?usp=sharing)
 
 **Reverse prompting**
 - CLIP  [Stable Diffusion Art tutorial](https://stable-diffusion-art.com/automatic1111/#Get_prompt_from_an_image)
