@@ -16,7 +16,6 @@
   - Face restoration
     - CodeFormer
     - GFPGAN
-    - VAE
   - Upscaling
     - Real-ESRGAN
     - Latent upscalers
@@ -29,7 +28,8 @@
     - Depth
     - Canny
     - LineArt
-    - QR pattern
+    - IP-Adapter
+    - QR Pattern
   - Instruct Pix2Pix
 
 - Animation

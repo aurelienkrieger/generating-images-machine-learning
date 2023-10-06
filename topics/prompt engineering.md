@@ -2,7 +2,8 @@
 
 ## Key topics
 
-- prompt & parameters
+- prompt
+- keywords weigths
 - negative prompt
 - prompt generators & boilerplates
 - reverse prompting
