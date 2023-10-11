@@ -7,6 +7,7 @@
 - [InvokeAI tutorial](https://www.youtube.com/watch?v=kzRL88ffv1o)
 - [Stable Diffusion Art tutorial for AUTOMATIC1111](https://stable-diffusion-art.com/inpainting-remove-extra-limbs/)
 - [Monzon Media tutorial](https://www.youtube.com/watch?v=aU0jGZpDIVc)
+- [Mostafa Lamey tutorial](https://www.youtube.com/watch?v=stGkvMFMZpE)
 
 ### Parameters
 

@@ -1,28 +1,47 @@
 # Models
 
-## Key topics
+## Overview
 
-- Checkpoint models
-  - Text to Image (txt2img)
-  - Image to Image (img2img)
-  - Text to Video
-  - Video to Video
-- VAE models
+_types of models_
+- checkpoint models
+- embeddings (textural inversion)
+- LoRA models
+- hypernetworks
+
+_file extensions_
+- .ckpt
+- .pt
+- .safetensors
+- diffusers models (folders)
+
+_file variants_
+- pruned
+- full
+- EMA-only
+- fp16
+- fp32
+
+### Checkpoint models
+
+- Text to Image
+- Image to Image
+- Text to Video
+- Image to Video
+- Video to Video
+
+### Models for advanced control
+
 - Refiners
-
-- Post-processing models
-  - Inpaiting
-  - Outpainting
-  - Face restoration
-    - CodeFormer
-    - GFPGAN
-  - Upscaling
-    - Real-ESRGAN
-    - Latent upscalers
-    - Lanczos (traditional upscaler)
-  - Tiling
-
-- Image to Image models
+- Inpaiting
+- Outpainting
+- Face restoration
+  - CodeFormer
+  - GFPGAN
+- Upscaling
+  - Real-ESRGAN
+  - Latent upscalers
+  - Lanczos (traditional upscaler)
+- Image to Image
   - ControlNet
     - OpenPose
     - Depth
@@ -31,33 +50,50 @@
     - IP-Adapter
     - QR Pattern
   - Instruct Pix2Pix
+- Tiling
 
-- Animation
-  - Deforum
-  - AnimateDiff
+### Customize models
 
-_file extensions_
-- .ckpt
-- .safetensors
-- diffusers models
+- VAE
+- Embedding
+- Dreambooth
+- LoRA
+- LyCORIS
+- Hypernetworks
 
-## Checkpoint models
+## Tutorials & resources
+
+### Checkpoint models
 
 **Stable Diffusion checkpoint models**
 
-[Stable Diffusion Art - models](https://stable-diffusion-art.com/models/)
+[Invoke AI models](https://models.invoke.ai/)
 
-- Stable Diffusion v1.5: The official base model. Versatile in all styles
-- Realistic Vision v2.0: Excel in generating photo-style realistic images
-- Anything v5.0: Anime style
-- SDXL Base 1.0: Stable Diffusion’s latest model
+- Stable Diffusion v1.5 (Stable Diffusion base model)
+  - [model page](https://huggingface.co/runwayml/stable-diffusion-v1-5)
+  - [download link](https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned.safetensors)
+  - [download link - inpainting](https://huggingface.co/runwayml/stable-diffusion-inpainting/resolve/main/sd-v1-5-inpainting.ckpt)
+- SDXL v1.0 (Stable Diffusion’s latest model)
+  - [model page](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
+  - [download link](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0_0.9vae.safetensors)
+  - [download link - refiner](https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0_0.9vae.safetensors)
+- OpenJourney (include 'mdjrny-v4 style' in prompt)
+  - [model page](https://huggingface.co/prompthero/openjourney)
+  - [download link](https://huggingface.co/prompthero/openjourney/resolve/main/mdjrny-v4.safetensors)
+- Realistic Vision v5.1 (photo-style realistic images)
+  - [model page](https://civitai.com/models/4201/realistic-vision-v20)
+  - [download link](https://civitai.com/api/download/models/130072?type=Model&format=SafeTensor&size=pruned&fp=fp16)
+  - [download link - inpainting](https://civitai.com/api/download/models/130090)
+- Fantasy and Art by Zovya for InvokeAI
+  - [model page](https://huggingface.co/Hipsterusername/InvokeAI_Fantasy_and_Art_by_Zovya)
+
 
 **other models**
 
 - DALL-E
 - MidJourney
 
-## Models for advanced control
+### Models for advanced control
 
 **img2img**
 - ControlNet

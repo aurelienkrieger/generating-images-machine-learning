@@ -10,6 +10,9 @@
 
 [AUTOMATIC1111 complete guide from Stable Diffusion Art](https://stable-diffusion-art.com/automatic1111/)
 
+[Invoke AI tutorials](https://support.invoke.ai/support/solutions/151000159037)
+[Invoke AI official documentation](https://invoke-ai.github.io/InvokeAI/)
+
 ### Downloadable
 
 - [Invoke AI](https://invoke.ai/)

@@ -2,10 +2,12 @@
 
 ## Key techniques & models
 
-- Dreambooth
-- LoRA
-- LyCORIS
+- VAE
 - Embedding
+- LoRA
+- Merging models
+- Dreambooth
+- LyCORIS
 - Hypernetworks
 
 ## Tutorials
