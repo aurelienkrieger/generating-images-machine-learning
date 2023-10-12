@@ -13,28 +13,26 @@ Learn about the history of AI & Machine Learning, understand the underlying tech
 
 - Overview on Machine Learning & generative models
 - Technical explanation on how does Stable Diffusion work
-- Introduction to animation techniques
+- Introduction to prompt engineering principles
 
 **Demos**
 
 - Demo: Setup of software
 - Demo: First images with Text to Image
-- Demo: Import and experiment with various models
-- Demo: Face restoration
+- Demo: Positive prompts, negative prompt, embedding
+- Demo: Keywords weight, keywords blend
+- Demo: CLIP, prompt generators, boilerplates
 
 ## 2 – Image Generation
 Improve your prompt engineering technique for image generation. Explore various models to experiment with a wide range of generated aesthetics.
 
 **Lecture**
 
-- Introduction to prompt engineering principles
-- Introduction to negative prompting, CLIP interrogator
-- How to apply a style with good prompts
 - Introduction to inpainting, outpainting and upscaling
 
 **Demos**
 
-- Demo: Advanced prompting
+- Demo: Import and experiment with various models
 - Demo: Inpainting basics
 - Demo: Outpainting
 - Demo: Upscaling

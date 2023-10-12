@@ -80,6 +80,10 @@ _file variants_
 - OpenJourney (include 'mdjrny-v4 style' in prompt)
   - [model page](https://huggingface.co/prompthero/openjourney)
   - [download link](https://huggingface.co/prompthero/openjourney/resolve/main/mdjrny-v4.safetensors)
+- Juggernaut
+  - [model page](https://civitai.com/models/46422)
+  - [download link](https://civitai.com/api/download/models/127207?type=Model&format=SafeTensor&size=pruned&fp=fp16)
+  - [download link - inpainting](https://civitai.com/api/download/models/129549?type=Model&format=SafeTensor&size=full&fp=fp32)
 - Realistic Vision v5.1 (photo-style realistic images)
   - [model page](https://civitai.com/models/4201/realistic-vision-v20)
   - [download link](https://civitai.com/api/download/models/130072?type=Model&format=SafeTensor&size=pruned&fp=fp16)
@@ -96,6 +100,7 @@ _file variants_
 ### Models for advanced control
 
 **img2img**
+
 - ControlNet
 - Instruct Pix2Pix
 - [Controlnet QR Pattern](https://civitai.com/models/90940/controlnet-qr-pattern-qr-codes)
@@ -112,6 +117,9 @@ _tutorials_
 - CodeFormer
 - GFPGAN
 - VAE
+- Roop (Face swap)
+  - [original project page](https://github.com/s0md3v/roop)
+  - [AUTOMATIC1111 extension](https://github.com/s0md3v/sd-webui-roop)
 
 **Upscaling**
 
@@ -123,13 +131,17 @@ _tutorials_
 - [Stable Diffusion Art - AI upscaler](https://stable-diffusion-art.com/ai-upscaler/)
 - [Stable Diffusion Art - ControlNet upscale](https://stable-diffusion-art.com/controlnet-upscale/)
 
+**Embedding**
+
+- [EasyNegative](https://civitai.com/models/7808/easynegative)
+
 **Animation**
 
 - Deforum
 - AnimateDiff
 
 _tutorials_
-[Stable Diffusion Art - text2video](https://stable-diffusion-art.com/text-to-video/)
+- [Stable Diffusion Art - text2video](https://stable-diffusion-art.com/text-to-video/)
 
 
 ## Resources

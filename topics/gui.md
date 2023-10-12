@@ -8,14 +8,15 @@
 - [ComfyGUI - nodal interface](https://github.com/comfyanonymous/ComfyUI)
 - [SD.Next](https://github.com/vladmandic/automatic)
 
-[AUTOMATIC1111 complete guide from Stable Diffusion Art](https://stable-diffusion-art.com/automatic1111/)
-
-[Invoke AI tutorials](https://support.invoke.ai/support/solutions/151000159037)
-[Invoke AI official documentation](https://invoke-ai.github.io/InvokeAI/)
+_tutorials_
+- [AUTOMATIC1111 complete guide from Stable Diffusion Art](https://stable-diffusion-art.com/automatic1111/)
+- [Invoke AI tutorials](https://support.invoke.ai/support/solutions/151000159037)
+- [Invoke AI official documentation](https://invoke-ai.github.io/InvokeAI/)
 
 ### Downloadable
 
 - [Invoke AI](https://invoke.ai/)
+- [Enfugue](https://github.com/painebenjamin/app.enfugue.ai)
 - [Easy Diffusion](https://easydiffusion.github.io/)
 - [DiffusionBee - Mac only](https://diffusionbee.com/)
 - [Draw things - Mac only](https://drawthings.ai/)
@@ -57,9 +58,12 @@ _scripts_
 - [Google Colab - Disco Diffusion](https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb)
 - [Stable Diffusion Paperspace](https://github.com/Engineer-of-Stuff/stable-diffusion-paperspace)
 - [Stable Diffusion Paperspace](https://github.com/camenduru/stable-diffusion-webui-paperspace)
+- [fast-stable-diffusion Notebooks, A1111 + ComfyUI + DreamBooth](https://github.com/TheLastBen/fast-stable-diffusion)
 
 ### Integrated Platforms
 
+- [RunDiffusion](https://rundiffusion.com/)
+- [Tensor.art](https://tensor.art/)
 - [Runway](https://runwayml.com/)
 - [Replicate](https://replicate.com/)
 - [Dream Studio](https://beta.dreamstudio.ai/generate)
