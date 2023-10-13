@@ -51,7 +51,7 @@
 - Celebrity names
 - Fake names
 - Roop
-- Dreambooth
+- Embedding (?) / Dreambooth / LoRA
 
 ### How to adapt the model for more inclusive portraits
 

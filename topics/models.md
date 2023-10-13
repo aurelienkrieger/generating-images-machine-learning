@@ -4,15 +4,18 @@
 
 _types of models_
 - checkpoint models
+- VAE
+- GAN
 - embeddings (textural inversion)
-- LoRA models
+- LoRA
 - hypernetworks
 
 _file extensions_
 - .ckpt
-- .pt
 - .safetensors
 - diffusers models (folders)
+- .pt
+- .bin
 
 _file variants_
 - pruned
@@ -47,15 +50,15 @@ _file variants_
     - Depth
     - Canny
     - LineArt
-    - IP-Adapter
     - QR Pattern
+  - IP Adapter
   - Instruct Pix2Pix
+  - T2I Adapter
 - Tiling
 
 ### Customize models
 
-- VAE
-- Embedding
+- Embedding (result of [Textual Inversion](https://textual-inversion.github.io/))
 - Dreambooth
 - LoRA
 - LyCORIS
@@ -102,7 +105,10 @@ _file variants_
 **img2img**
 
 - ControlNet
-- Instruct Pix2Pix
+  - [ControlNet tutorial from Stable Diffusion art](https://stable-diffusion-art.com/controlnet/)
+  - [ControlNet with SDXL tutorial from Stable Diffusion art](https://stable-diffusion-art.com/controlnet-sdxl/)
+- [Instruct Pix2Pix](https://www.timothybrooks.com/instruct-pix2pix)
+- [T2I Adapter](https://github.com/TencentARC/T2I-Adapter)
 - [Controlnet QR Pattern](https://civitai.com/models/90940/controlnet-qr-pattern-qr-codes)
 - [Controlnet QR Monster](https://huggingface.co/monster-labs/control_v1p_sd15_qrcode_monster)
 - [Controlnet Brightness / Illumination](https://huggingface.co/ioclab/ioc-controlnet/tree/main/models)
@@ -116,7 +122,6 @@ _tutorials_
 **Face restoration**
 - CodeFormer
 - GFPGAN
-- VAE
 - Roop (Face swap)
   - [original project page](https://github.com/s0md3v/roop)
   - [AUTOMATIC1111 extension](https://github.com/s0md3v/sd-webui-roop)
