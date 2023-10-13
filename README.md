@@ -91,7 +91,7 @@ Take a deeper diver into Machine Learning. Learn how to train your own model to 
 
 - Decrypting the technical setup and workflow of artists
 
-## 5 – Animations 🎥
+## 5 – Extra tips & Animations 🎥
 Discover how the techniques learnt previously can be applied for animated content generation. Brainstorm for personal projects.
 
 **Lecture**
