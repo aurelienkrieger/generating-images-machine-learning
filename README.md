@@ -60,12 +60,13 @@ Gain more control over your workflow and final composition. Explore the potentia
 **Demos**
 
 - Demo: Basic usage of Image to Image
-- Demo: Using ControlNet for Sketch to Image
 - Demo: Exploration of ControlNet processors
+- Demo: Sketch to Image
+- Demo: Photoshoping to Image
 
 **Activity**
 
-- Going further: article & discussion
+- InvokeAI - Canvas Overdrive
 
 ## 4 - Model Training 💾
 Take a deeper diver into Machine Learning. Learn how to train your own model to gain more control over your generative process and avoid bias.

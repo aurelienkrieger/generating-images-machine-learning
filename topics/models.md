@@ -140,6 +140,9 @@ _tutorials_
 
 - [EasyNegative](https://civitai.com/models/7808/easynegative)
 
+_tutorials_
+- [Stable Diffusion Art - Embedding](https://stable-diffusion-art.com/embedding/)
+
 **Animation**
 
 - Deforum

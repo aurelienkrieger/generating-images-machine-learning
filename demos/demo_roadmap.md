@@ -324,31 +324,35 @@
   - how to use a combinaison of various ControlNet models
 
 
-## Monster QR code
+## Beautiful drawing
 
 - models
   - SD1.5 trained model for text to image
-  - ControlNet Monster QR Code
+  - ControlNet
 
 - workflow
-  - use QR code as input for image to image for ControlNet
-  - use prompt to generate "readable" QR-images
+  - make basic drawing
+  - use ControlNet to detect edges
+  - use text to image to generate professional drawing
+  - use small generation steps for better results
 
 - learnings
-  - how ControlNet can be used to control specific aspect of an image
+  - how to make profesional drawings from basic sketches
 
-## Outgrown garden (credit: [Fred Huergo](https://www.instagram.com/p/CH0jk3KHrhC/))
+
+## Beautiful photoshoping
 
 - models
   - SD1.5 trained model for text to image
-  - ControlNet Monster QR Code
+  - ControlNet
 
 - workflow
-  - use symmetric image as input for image to image for ControlNet
-  - use prompt to generate an image of a garden following the symmetry of the input image
+  - make basic photoshoping
+  - use text to image to generate professional image
+  - use small generation steps for better results
 
 - learnings
-  - how ControlNet can be used to control specific aspect of an image
+  - how to make profesional images from basic photoshoping
 
 
 # 4 - Model Training 💾
@@ -509,7 +513,33 @@
   - use LoRA to introduce a new object
 
 
-# 5 – Animations 🎥
+# 5 – Extra tips & Animations 🎥
+
+## Monster QR code
+
+- models
+  - SD1.5 trained model for text to image
+  - ControlNet Monster QR Code
+
+- workflow
+  - use QR code as input for image to image for ControlNet
+  - use prompt to generate "readable" QR-images
+
+- learnings
+  - how ControlNet can be used to control specific aspect of an image
+
+## Outgrown garden (credit: [Fred Huergo](https://www.instagram.com/p/CH0jk3KHrhC/))
+
+- models
+  - SD1.5 trained model for text to image
+  - ControlNet Monster QR Code
+
+- workflow
+  - use symmetric image as input for image to image for ControlNet
+  - use prompt to generate an image of a garden following the symmetry of the input image
+
+- learnings
+  - how ControlNet can be used to control specific aspect of an image
 
 ## ControlNet OpenPose
 
