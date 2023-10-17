@@ -8,46 +8,30 @@ This page provides with an overview of the topics discussed during the course.
 
 ## 1. Prompt engineering
 
-- prompt & parameters
+- prompt
 - negative prompt
+- keywords weight
+- keyword blend
 - prompt generators & boilerplates
 - reverse prompting
 - regional prompting
 
-## 2. Models
+## 2.1 Models
 
-- Checkpoint models
-  - Text to Image (txt2img)
-  - Image to Image (img2img)
-  - Text to Video
-  - Video to Video
+- checkpoint models
+- VAE
+- GAN
+- models for additional control
+- custom models
 
-- Post-processing models
-  - Inpaiting
-  - Outpainting
-  - Face restoration
-    - CodeFormer
-    - GFPGAN
-    - VAE
-  - Upscaling
-    - Real-ESRGAN
-    - Latent upscalers
-    - Lanczos (traditional upscaler)
-  - Tiling
+## 2.2 Additional models
 
-- Image to Image models
-  - ControlNet
-    - OpenPose
-    - Depth
-    - Canny
-    - LineArt
-    - QR pattern
-  - Instruct Pix2Pix
-
-- Animation
-  - Deforum
-  - AnimateDiff
-
+- refiners
+- inpaiting / outpainting
+- facial restoration
+- upscaling
+- Image to Image
+- tiling
 
 ## 3. GUI
 
@@ -59,11 +43,15 @@ This page provides with an overview of the topics discussed during the course.
   - demos
   - cloud GPU services
   - integrated platforms
+- related apps & tools
 
 ## 4. Model training
 
-- Dreambooth
+- trained models
+- embedding
 - LoRA
-- LyCORIS
-- Embedding
+  - LyCORIS
+  - LoHa
+  - LoCon
 - Hypernetworks
+- Dreambooth

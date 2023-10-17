@@ -62,4 +62,4 @@ _Stable Diffusion Art tutorials_
 - [Arthub - explore AI generated images](https://arthub.ai/)
 - [Promptomania - prompt generator](https://promptomania.com/stable-diffusion-prompt-builder/)
 - [SDXL boilerplate styles on Stable Diffusion Art](https://stable-diffusion-art.com/sdxl-styles/)
-- [SDXL style selector extension for AUTOMATIC1111](https://github.com/ahgsql/StyleSelectorXL)
+- [freeflo - Reusable generative AI style prompts for better images](https://freeflo.ai/)

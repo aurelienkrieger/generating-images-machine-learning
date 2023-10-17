@@ -126,9 +126,39 @@
   - models depend on their training set
   - each model have optimal resolutions
 
+## Photo editing: "please remove the person behind"
+
+- models
+  - SD1.5 inpaint model for image to image
+
+- workflow
+  - use input picture of a wedding couple with "a person behind"
+  - use inpainting to remove the person behind
+
+- learnings
+  - how to use inpainting for photo editing (remove elements)
+
+
+## Add elements to a landscape
+
+- models
+  - SD1.5 base checkpoint model for text to image
+  - SD1.5 inpaint model for image to image
+
+- workflow
+  - use advanced prompt "beautiful landscape"
+  - use brush to guide diffusion process
+  - use inpainting to add new elements to the image
+
+- learnings
+  - how to use inpainting for new content on existing images
+  - how to use bounding box and resolution parameters
+  - use smaller generation steps for better results
+
 ## Grandma with a biker's jacket
 
 - models
+  - SD1.5 base checkpoint model for text to image
   - SD1.5 inpaint model for image to image
 
 - workflow
@@ -158,6 +188,7 @@
 ## Face restoration of a portrait
 
 - models
+  - SD1.5 base checkpoint model for text to image
   - SD1.5 inpaint model for image to image
 
 - workflow
@@ -169,26 +200,10 @@
   - how to use bounding box and resolution parameters
   - use smaller generation steps for better results
 
-
-## Add elements to a landscape
-
-- models
-  - SD1.5 inpaint model for image to image
-
-- workflow
-  - use advanced prompt "beautiful landscape"
-  - use brush to guide diffusion process
-  - use inpainting to add new elements to the image
-
-- learnings
-  - how to use inpainting for new content on existing images
-  - how to use bounding box and resolution parameters
-  - use smaller generation steps for better results
-
-
 ## Apply colors / Hair
 
 - models
+  - SD1.5 base checkpoint model for text to image
   - SD1.5 inpaint model for image to image
 
 - workflow
@@ -204,6 +219,7 @@
 ## Apply colors / Outfit
 
 - models
+  - SD1.5 base checkpoint model for text to image
   - SD1.5 inpaint model for image to image
 
 - workflow
@@ -301,11 +317,11 @@
 - workflow
   - use ControlNet Depth for advanced image to image
   - start from image of Tokyo streets
-  - adapt to French village
+  - prompt "French village" that follows the same perspective
   - play with parameters for more control over composition
 
 - learnings
-  - how to use ControlNet Depth
+  - how to use ControlNet Depth for perspective
 
 
 ## Darth Vader in a landscape
@@ -441,7 +457,7 @@
 - learnings
   - how to use IP Adapter to introduce new objects
 
-## IP Adapter for abstract exploration
+## IP Adapter for image variations
 
 - models
   - SD1.5 trained model for text to image
@@ -450,9 +466,12 @@
 - workflow
   - use prompt "clouds"
   - use IP Adapter to generate variations of the cloud
+  - alternative: feed IP Adapter with images from a certain style / artist
 
 - learnings
-  - how to use IP Adapter to generate variations of a concept or object
+  - how to use IP Adapter to introduce new objects
+  - how to use IP Adapter to generate variations of an image
+  - how to use IP Adapter to generate variations of an artistic style
 
 ## IP Adapter for consitent portraits
 
@@ -466,7 +485,6 @@
 
 - learnings
   - how to use IP Adapter to generate variations of a concept or object
-
 
 ## LoRA for new styles
 
@@ -540,6 +558,21 @@
 
 - learnings
   - how ControlNet can be used to control specific aspect of an image
+
+## Image composition in the style of Giuseppe Arcimboldo
+
+- models
+  - SD1.5 trained model for text to image
+  - ControlNet
+
+- workflow
+  - use image of a face as input for image to image
+  - use prompt of "cup of fruits" to make a portrait in the style of artist Giuseppe Arcimboldo
+  - use small generation steps for better results
+  - alternative : use text to show hidden message
+
+- learnings
+  - how to use ControlNet for optical illusions
 
 ## ControlNet OpenPose
 
@@ -666,9 +699,9 @@
 # Ideas
 
 
+- colorize B&W image
 - regional prompting
-- inclusive portraits
+- inclusive portraits (sliders: weight, age, muscles, gender, skin tone)
 - consistent face
-- fixing limbs
+- limb restoration
 - Instruct Pix2Pix
-- T2I Adapter

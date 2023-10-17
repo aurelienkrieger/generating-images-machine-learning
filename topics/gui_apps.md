@@ -1,4 +1,4 @@
-# GUI
+# GUI & Apps
 
 ## Local
 
@@ -21,6 +21,7 @@ _tutorials_
 - [DiffusionBee - Mac only](https://diffusionbee.com/)
 - [Draw things - Mac only](https://drawthings.ai/)
 - [NMKD - Windows only](https://nmkd.itch.io/t2i-gui)
+- [Makeayo - Windows only](https://makeayo.com/)
 
 ### Dockers
 
@@ -39,7 +40,7 @@ _tutorials_
 
 ### Cloud GPU Services
 
-_platforms_
+**platforms**
 
 - [Hugging Face](https://huggingface.co/)
 - [Google Colab](https://colab.google/)
@@ -47,20 +48,20 @@ _platforms_
 - [Runpod](https://www.runpod.io/)
 - [Kaggle](https://www.kaggle.com/)
 
-_tutorials_
+**tutorials**
 
 - [AUTOMATIC 1111 - online services](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Online-Services)
 - [Stable Diffusion on Paperspace](https://github.com/Engineer-of-Stuff/stable-diffusion-paperspace)
 - [Tutorial Paperspace](https://github.com/Engineer-of-Stuff/stable-diffusion-paperspace/blob/master/docs/Paperspace%20Guide%20for%20Idiots.md)
 
-_scripts_
+**scripts**
 
 - [Google Colab - Disco Diffusion](https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb)
 - [Stable Diffusion Paperspace](https://github.com/Engineer-of-Stuff/stable-diffusion-paperspace)
 - [Stable Diffusion Paperspace](https://github.com/camenduru/stable-diffusion-webui-paperspace)
 - [fast-stable-diffusion Notebooks, A1111 + ComfyUI + DreamBooth](https://github.com/TheLastBen/fast-stable-diffusion)
 
-### Integrated Platforms
+### Integrated Online Platforms
 
 - [RunDiffusion](https://rundiffusion.com/)
 - [Tensor.art](https://tensor.art/)
@@ -72,3 +73,11 @@ _scripts_
 - [Mage space](https://www.mage.space/)
 - [Playground AI](https://playgroundai.com/)
 - [KREA](https://www.krea.ai/)
+- [Adobe Firefly](https://www.adobe.com/sensei/generative-ai/firefly.html)
+
+## Related apps & tools
+
+- [Sketchfab - free 3D models](https://sketchfab.com/features/free-3d-models)
+- [Magic Poser - create poses](https://webapp.magicposer.com/)
+- [D-ID - talking avatars](https://studio.d-id.com/)
+- [Scenario - AI generated game assets](https://www.scenario.com/)

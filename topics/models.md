@@ -2,22 +2,29 @@
 
 ## Overview
 
-_types of models_
-- checkpoint models
+**types of models**
+
+- Checkpoint models
 - VAE
 - GAN
-- embeddings (textural inversion)
-- LoRA
-- hypernetworks
+- models for additional control
+- custom models
+  - trained models
+  - embeddings (textural inversion)
+  - LoRA
+  - Hypernetworks
+  - Dreambooth
 
-_file extensions_
+**file extensions**
+
 - .ckpt
 - .safetensors
 - diffusers models (folders)
 - .pt
 - .bin
 
-_file variants_
+**file variants**
+
 - pruned
 - full
 - EMA-only
@@ -56,13 +63,23 @@ _file variants_
   - T2I Adapter
 - Tiling
 
-### Customize models
+### Custom models
 
+**types of models**
+
+- Trained models
 - Embedding (result of [Textual Inversion](https://textual-inversion.github.io/))
-- Dreambooth
-- LoRA
-- LyCORIS
+- LoRA (Low-Rank Adaptation)
+  - LyCORIS (Lora beYond Conventional methods, Other Rank adaptation Implementations for Stable diffusion)
+  - LoHa (LoRA with Hadamard Product representation)
+  - LoCon (Conventional LoRA)
 - Hypernetworks
+- Dreambooth
+
+**selection of custom models**
+
+- [epi_noiseoffset - LORA model for better contrast and darker images](https://civitai.com/models/13941/epinoiseoffset)
+
 
 ## Tutorials & resources
 
