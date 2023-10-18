@@ -1,4 +1,4 @@
-# generating-images-machine-learning
+# Generating Images with Machine Learning
 Course about how to use generative models for AI art
 
 ## 1 – Enter the Latent Space 🚀

@@ -1,4 +1,4 @@
-# GUI & Apps
+# GUI & Tools
 
 ## Local
 

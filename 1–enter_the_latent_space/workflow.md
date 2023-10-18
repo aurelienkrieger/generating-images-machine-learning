@@ -2,9 +2,7 @@
 
 This page provides with an overview of the topics discussed during the course.
 
-<img src="assets/generative models workflow.png" width="500" alt="generative model workflow">
-
-[Stable Diffusion Art - how Stable Diffusion works](https://stable-diffusion-art.com/how-stable-diffusion-work/)
+<img src="../assets/generative models workflow.png" width="500px">
 
 ## 1. Prompt engineering
 

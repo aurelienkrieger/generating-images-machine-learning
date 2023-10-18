@@ -1,93 +1,11 @@
-# Models
+# Resources for Models
 
-## Overview
+## Useful links
 
-**types of models**
+### Stable Diffusion checkpoint models
 
-- Checkpoint models
-- VAE
-- GAN
-- models for additional control
-- custom models
-  - trained models
-  - embeddings (textural inversion)
-  - LoRA
-  - Hypernetworks
-  - Dreambooth
-
-**file extensions**
-
-- .ckpt
-- .safetensors
-- diffusers models (folders)
-- .pt
-- .bin
-
-**file variants**
-
-- pruned
-- full
-- EMA-only
-- fp16
-- fp32
-
-### Checkpoint models
-
-- Text to Image
-- Image to Image
-- Text to Video
-- Image to Video
-- Video to Video
-
-### Models for advanced control
-
-- Refiners
-- Inpaiting
-- Outpainting
-- Face restoration
-  - CodeFormer
-  - GFPGAN
-- Upscaling
-  - Real-ESRGAN
-  - Latent upscalers
-  - Lanczos (traditional upscaler)
-- Image to Image
-  - ControlNet
-    - OpenPose
-    - Depth
-    - Canny
-    - LineArt
-    - QR Pattern
-  - IP Adapter
-  - Instruct Pix2Pix
-  - T2I Adapter
-- Tiling
-
-### Custom models
-
-**types of models**
-
-- Trained models
-- Embedding (result of [Textual Inversion](https://textual-inversion.github.io/))
-- LoRA (Low-Rank Adaptation)
-  - LyCORIS (Lora beYond Conventional methods, Other Rank adaptation Implementations for Stable diffusion)
-  - LoHa (LoRA with Hadamard Product representation)
-  - LoCon (Conventional LoRA)
-- Hypernetworks
-- Dreambooth
-
-**selection of custom models**
-
-- [epi_noiseoffset - LORA model for better contrast and darker images](https://civitai.com/models/13941/epinoiseoffset)
-
-
-## Tutorials & resources
-
-### Checkpoint models
-
-**Stable Diffusion checkpoint models**
-
-[Invoke AI models](https://models.invoke.ai/)
+- [Invoke AI models](https://models.invoke.ai/)
+- [Civitai, resource to download models](https://civitai.com/models)
 
 - Stable Diffusion v1.5 (Stable Diffusion base model)
   - [model page](https://huggingface.co/runwayml/stable-diffusion-v1-5)
@@ -112,14 +30,15 @@
   - [model page](https://huggingface.co/Hipsterusername/InvokeAI_Fantasy_and_Art_by_Zovya)
 
 
-**other models**
+### Other models
 
-- DALL-E
-- MidJourney
+- [DALL-E](https://openai.com/dall-e-2)
+- [MidJourney](https://www.midjourney.com/)
+- [Google's Imagen](https://imagen.research.google/)
 
 ### Models for advanced control
 
-**img2img**
+#### img2img
 
 - ControlNet
   - [ControlNet tutorial from Stable Diffusion art](https://stable-diffusion-art.com/controlnet/)
@@ -130,44 +49,44 @@
 - [Controlnet QR Monster](https://huggingface.co/monster-labs/control_v1p_sd15_qrcode_monster)
 - [Controlnet Brightness / Illumination](https://huggingface.co/ioclab/ioc-controlnet/tree/main/models)
 
-**Inpainting & outpainting**
+#### Face restoration
 
-_tutorials_
-- [Stable Diffusion Art - inpainting](https://stable-diffusion-art.com/inpainting_basics/)
-- [Stable Diffusion Art - outpainting](https://stable-diffusion-art.com/outpainting/)
-
-**Face restoration**
 - CodeFormer
 - GFPGAN
 - Roop (Face swap)
   - [original project page](https://github.com/s0md3v/roop)
   - [AUTOMATIC1111 extension](https://github.com/s0md3v/sd-webui-roop)
 
-**Upscaling**
+#### Upscaling
 
 - Real-ESRGAN
 - Latent upscalers
 - Lanczos (traditional upscaler)
 
-_tutorials_
-- [Stable Diffusion Art - AI upscaler](https://stable-diffusion-art.com/ai-upscaler/)
-- [Stable Diffusion Art - ControlNet upscale](https://stable-diffusion-art.com/controlnet-upscale/)
-
-**Embedding**
+#### Embedding
 
 - [EasyNegative](https://civitai.com/models/7808/easynegative)
 
-_tutorials_
-- [Stable Diffusion Art - Embedding](https://stable-diffusion-art.com/embedding/)
-
-**Animation**
+#### Animation
 
 - Deforum
 - AnimateDiff
 
-_tutorials_
+## Tutorials
+
+### Inpainting & outpainting
+
+- [Stable Diffusion Art - inpainting](https://stable-diffusion-art.com/inpainting_basics/)
+- [Stable Diffusion Art - outpainting](https://stable-diffusion-art.com/outpainting/)
+
+### Upscaling
+
+- [Stable Diffusion Art - AI upscaler](https://stable-diffusion-art.com/ai-upscaler/)
+- [Stable Diffusion Art - ControlNet upscale](https://stable-diffusion-art.com/controlnet-upscale/)
+
+### Animation
+
 - [Stable Diffusion Art - text2video](https://stable-diffusion-art.com/text-to-video/)
 
-
-## Resources
-- [Civitai, resource to download models](https://civitai.com/models)
+### Embedding
+- [Stable Diffusion Art - Embedding](https://stable-diffusion-art.com/embedding/)
