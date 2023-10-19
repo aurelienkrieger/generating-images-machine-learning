@@ -56,7 +56,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="cfg.html" />
+    <link rel="next" href="apps.html" />
     
     
     <link rel="prev" href="conditioning.html" />
@@ -127,7 +127,7 @@
                 <a href="machine_learning.html">
             
                     
-                    What is Machine Learning
+                    Machine Learning
             
                 </a>
             
@@ -135,12 +135,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2" data-path="workflow.html">
+        <li class="chapter " data-level="2.1.2" data-path="diffusion_models.html">
             
-                <a href="workflow.html">
+                <a href="diffusion_models.html">
             
                     
-                    Workflow
+                    Diffusion Models
             
                 </a>
             
@@ -153,7 +153,7 @@
                 <a href="stable_diffusion.html">
             
                     
-                    What is Stable Diffusion
+                    Stable Diffusion
             
                 </a>
             
@@ -187,12 +187,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.6" data-path="cfg.html">
+        <li class="chapter " data-level="2.1.6" data-path="apps.html">
             
-                <a href="cfg.html">
+                <a href="apps.html">
             
                     
-                    CFG scale
+                    End-User Applications
             
                 </a>
             
@@ -210,6 +210,90 @@
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="parameters.html">
+            
+                <a href="parameters.html">
+            
+                    
+                    Parameters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.8.1" data-path="resolution.html">
+            
+                <a href="resolution.html">
+            
+                    
+                    Resolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.2" data-path="seed.html">
+            
+                <a href="seed.html">
+            
+                    
+                    Seed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.3" data-path="batch.html">
+            
+                <a href="batch.html">
+            
+                    
+                    Batch size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.4" data-path="samplers.html">
+            
+                <a href="samplers.html">
+            
+                    
+                    Samplers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.5" data-path="cfg.html">
+            
+                <a href="cfg.html">
+            
+                    
+                    CFG scale
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -290,6 +374,19 @@
             
                     
                     Outpainting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../2–refine_images/upscaling.md">
+            
+                <span>
+            
+                    
+                    Upscaling
             
                 </a>
             
@@ -451,12 +548,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../resources/tools.html">
+        <li class="chapter " data-level="3.2" data-path="../resources/apps.html">
             
-                <a href="../resources/tools.html">
+                <a href="../resources/apps.html">
             
                     
-                    Tools
+                    End-User Applications
             
                 </a>
             
@@ -562,17 +659,36 @@
                                 <section class="normal markdown-section">
                                 
                                 <h2 id="text-to-image">Text to Image</h2>
-<p>Now you know all the inner mechanics of Stable Diffusion, let’s go through some examples of what happens under the hood.</p>
 <p>In text-to-image, you give Stable Diffusion a text prompt, and it returns an image.</p>
-<p>Step 1. Stable Diffusion generates a random tensor in the latent space. You control this tensor by setting the seed of the random number generator. If you set the seed to a certain value, you will always get the same random tensor. This is your image in latent space. But it is all noise for now.</p>
-<p><img src="https://stable-diffusion-art.com/wp-content/uploads/2022/12/image-92.png" width="400px"></p>
-<p>Step 2. The noise predictor U-Net takes the latent noisy image and text prompt as input and predicts the noise, also in latent space (a 4x64x64 tensor).</p>
-<p><img src="https://stable-diffusion-art.com/wp-content/uploads/2022/12/image-94.png" width="400px"></p>
-<p>Step 3. Subtract the latent noise from the latent image. This becomes your new latent image.</p>
-<p><img src="https://stable-diffusion-art.com/wp-content/uploads/2022/12/image-95.png" width="400px"></p>
-<p>Steps 2 and 3 are repeated for a certain number of sampling steps, for example, 20 times.</p>
-<p>Step 4. Finally, the decoder of VAE converts the latent image back to pixel space. This is the image you get after running Stable Diffusion.</p>
-<p><img src="https://stable-diffusion-art.com/wp-content/uploads/2022/12/image-96-1024x602.png" width="400px"></p>
+<p><strong>Step 1.</strong> Stable Diffusion generates a random tensor in the latent space. You control this tensor by setting the seed of the random number generator. If you set the seed to a certain value, you will always get the same random tensor. This is your image in latent space. But it is all noise for now.</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/andrew-wong-text-to-image-1.jpeg" width="200px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
+<p><strong>Step 2.</strong> The noise predictor takes the latent noisy image and text prompt as input and predicts the noise, also in latent space  tensor.</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/andrew-wong-text-to-image-2.png" width="400px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
+<p><strong>Step 3.</strong> Subtract the latent noise from the latent image. This becomes your new latent image.</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/andrew-wong-text-to-image-3.webp" width="400px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
+<p><strong>Steps 2 and 3</strong> are repeated for a certain number of sampling steps, for example, 20 times.</p>
+<p><strong>Step 4.</strong> Finally, the decoder of VAE converts the latent image back to pixel space. This is the image you get after running Stable Diffusion.</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/andrew-wong-text-to-image-4.png" width="400px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://stable-diffusion-art.com/how-stable-diffusion-work/" target="_blank">Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;, <em>Stable Diffusion Art</em></a></li>
@@ -609,7 +725,7 @@
                 </a>
                 
                 
-                <a href="cfg.html" class="navigation navigation-next " aria-label="Next page: CFG scale">
+                <a href="apps.html" class="navigation navigation-next " aria-label="Next page: End-User Applications">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -620,7 +736,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Text to Image","level":"2.1.5","depth":2,"next":{"title":"CFG scale","level":"2.1.6","depth":2,"path":"1–enter_the_latent_space/cfg.md","ref":"1–enter_the_latent_space/cfg.md","articles":[]},"previous":{"title":"Conditioning","level":"2.1.4","depth":2,"path":"1–enter_the_latent_space/conditioning.md","ref":"1–enter_the_latent_space/conditioning.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1–enter_the_latent_space/text_to_image.md","mtime":"2023-10-18T19:48:25.831Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-18T20:45:49.906Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Text to Image","level":"2.1.5","depth":2,"next":{"title":"End-User Applications","level":"2.1.6","depth":2,"path":"1–enter_the_latent_space/apps.md","ref":"1–enter_the_latent_space/apps.md","articles":[]},"previous":{"title":"Conditioning","level":"2.1.4","depth":2,"path":"1–enter_the_latent_space/conditioning.md","ref":"1–enter_the_latent_space/conditioning.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1–enter_the_latent_space/text_to_image.md","mtime":"2023-10-19T19:08:21.352Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-19T19:23:22.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

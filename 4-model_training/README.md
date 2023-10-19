@@ -3,10 +3,10 @@ Take a deeper diver into Machine Learning. Learn how to train your own model to 
 
 ## Lecture
 
+- Introduction to VAE
 - Introduction to Embedding
 - Introduction to IP Adapter
 - Introduction to LoRA
-- Introduction to VAE
 
 ## Demos
 

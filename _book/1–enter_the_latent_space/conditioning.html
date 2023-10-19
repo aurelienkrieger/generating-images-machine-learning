@@ -127,7 +127,7 @@
                 <a href="machine_learning.html">
             
                     
-                    What is Machine Learning
+                    Machine Learning
             
                 </a>
             
@@ -135,12 +135,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2" data-path="workflow.html">
+        <li class="chapter " data-level="2.1.2" data-path="diffusion_models.html">
             
-                <a href="workflow.html">
+                <a href="diffusion_models.html">
             
                     
-                    Workflow
+                    Diffusion Models
             
                 </a>
             
@@ -153,7 +153,7 @@
                 <a href="stable_diffusion.html">
             
                     
-                    What is Stable Diffusion
+                    Stable Diffusion
             
                 </a>
             
@@ -187,12 +187,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.6" data-path="cfg.html">
+        <li class="chapter " data-level="2.1.6" data-path="apps.html">
             
-                <a href="cfg.html">
+                <a href="apps.html">
             
                     
-                    CFG scale
+                    End-User Applications
             
                 </a>
             
@@ -210,6 +210,90 @@
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="parameters.html">
+            
+                <a href="parameters.html">
+            
+                    
+                    Parameters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.8.1" data-path="resolution.html">
+            
+                <a href="resolution.html">
+            
+                    
+                    Resolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.2" data-path="seed.html">
+            
+                <a href="seed.html">
+            
+                    
+                    Seed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.3" data-path="batch.html">
+            
+                <a href="batch.html">
+            
+                    
+                    Batch size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.4" data-path="samplers.html">
+            
+                <a href="samplers.html">
+            
+                    
+                    Samplers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.5" data-path="cfg.html">
+            
+                <a href="cfg.html">
+            
+                    
+                    CFG scale
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -290,6 +374,19 @@
             
                     
                     Outpainting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../2–refine_images/upscaling.md">
+            
+                <span>
+            
+                    
+                    Upscaling
             
                 </a>
             
@@ -451,12 +548,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../resources/tools.html">
+        <li class="chapter " data-level="3.2" data-path="../resources/apps.html">
             
-                <a href="../resources/tools.html">
+                <a href="../resources/apps.html">
             
                     
-                    Tools
+                    End-User Applications
             
                 </a>
             
@@ -562,20 +659,24 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="conditioning">Conditioning</h1>
-<p>Our understanding is incomplete: Where does the text prompt enter the picture? Without it, Stable Diffusion is not a text-to-image model. You will either get an image of a cat or a dog without any way to control it.</p>
-<p>This is where conditioning comes in. The purpose of conditioning is to steer the noise predictor so that the predicted noise will give us what we want after subtracting from the image.</p>
+<p>The purpose of conditioning is to steer the noise predictor so that the predicted noise will give us what we want after subtracting from the image.</p>
 <h2 id="text-conditioning-text-to-image">Text conditioning (text-to-image)</h2>
-<p>Below is an overview of how a text prompt is processed and fed into the noise predictor. Tokenizer first converts each word in the prompt to a number called a token. Each token is then converted to a 768-value vector called embedding. (Yes, this is the same embedding you used in AUTOMATIC1111) The embeddings are then processed by the text transformer and are ready to be consumed by the noise predictor.</p>
-<p><img src="https://stable-diffusion-art.com/wp-content/uploads/2022/12/image-86.png" width="400px"></p>
+<p>Below is an overview of how a text prompt is processed and fed into the noise predictor. Tokenizer first converts each word in the prompt to a number called a token. Each token is then converted to a vector called embedding. The embeddings are then processed by the text transformer and are ready to be consumed by the noise predictor.</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/andrew-wong-conditioning.png" width="500px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
 <h2 id="tokenizer">Tokenizer</h2>
 <p>The text prompt is first tokenized by a CLIP tokenizer. CLIP is a deep learning model developed by Open AI to produce text descriptions of any images. Stable Diffusion v1 uses CLIP’s tokenizer.</p>
 <p>Tokenization is the computer’s way of understanding words. We humans can read words, but computers can only read numbers. That’s why words in a text prompt are first converted to numbers.</p>
 <h2 id="embedding">Embedding</h2>
 <p>Embedding is a 768-value vector. Each token has its own unique embedding vector. Embedding is fixed by the CLIP model, which is learned during training.</p>
 <p>Why do we need embedding? It’s because some words are closely related to each other. We want to take advantage of this information. For example, the embeddings of man, gentleman, and guy are nearly identical because they can be used interchangeably. Monet, Manet, and Degas all painted in impressionist styles but in different ways. The names have close but not identical embeddings.</p>
-<p>Embedding can also be used to trigger a style with a keyword. We will discuss this in the section 4. Model Training</p>
+<p>Embedding can also be used to trigger a style with a keyword. We will discuss this in the section <a href="../4-model_training/">4 - Model Training 💾</a></p>
 <h2 id="other-conditionings">Other conditionings</h2>
-<p>The text prompt is not the only way a Stable Diffusion model can be conditioned. Both a text prompt and a depth image are used to condition the depth-to-image model. ControlNet conditions the noise predictor with detected outlines, human poses, etc, and achieves excellent controls over image generations.</p>
+<p>The text prompt is not the only way a Stable Diffusion model can be conditioned. Both a text prompt and a depth image are used to condition the depth-to-image model. ControlNet conditions the noise predictor with detected outlines, human poses, etc, and achieves excellent controls over image generations. We will discuss this in the section <a href="../3–image_compositing/">3 – Image Compositing 📐</a></p>
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://stable-diffusion-art.com/how-stable-diffusion-work/" target="_blank">Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;, <em>Stable Diffusion Art</em></a></li>
@@ -607,7 +708,7 @@
 
             
                 
-                <a href="stable_diffusion.html" class="navigation navigation-prev " aria-label="Previous page: What is Stable Diffusion">
+                <a href="stable_diffusion.html" class="navigation navigation-prev " aria-label="Previous page: Stable Diffusion">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -623,7 +724,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Conditioning","level":"2.1.4","depth":2,"next":{"title":"Text to Image","level":"2.1.5","depth":2,"path":"1–enter_the_latent_space/text_to_image.md","ref":"1–enter_the_latent_space/text_to_image.md","articles":[]},"previous":{"title":"What is Stable Diffusion","level":"2.1.3","depth":2,"path":"1–enter_the_latent_space/stable_diffusion.md","ref":"1–enter_the_latent_space/stable_diffusion.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1–enter_the_latent_space/conditioning.md","mtime":"2023-10-18T19:47:55.871Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-18T20:45:49.906Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Conditioning","level":"2.1.4","depth":2,"next":{"title":"Text to Image","level":"2.1.5","depth":2,"path":"1–enter_the_latent_space/text_to_image.md","ref":"1–enter_the_latent_space/text_to_image.md","articles":[]},"previous":{"title":"Stable Diffusion","level":"2.1.3","depth":2,"path":"1–enter_the_latent_space/stable_diffusion.md","ref":"1–enter_the_latent_space/stable_diffusion.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1–enter_the_latent_space/conditioning.md","mtime":"2023-10-19T15:39:51.670Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-19T19:23:22.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

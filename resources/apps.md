@@ -1,4 +1,4 @@
-# GUI & Tools
+# Resources about End-User Applications
 
 ## Local
 

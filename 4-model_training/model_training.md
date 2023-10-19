@@ -4,10 +4,14 @@
 
 - VAE
 - Embedding
+- IP Adapter
+- Trained models
+- Merged models
 - LoRA
-- Merging models
+  - LyCORIS
+  - LoHa
+  - LoCon
 - Dreambooth
-- LyCORIS
 - Hypernetworks
 
 ## Tutorials & resources

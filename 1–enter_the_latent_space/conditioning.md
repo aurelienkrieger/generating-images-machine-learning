@@ -1,14 +1,17 @@
 # Conditioning
 
-Our understanding is incomplete: Where does the text prompt enter the picture? Without it, Stable Diffusion is not a text-to-image model. You will either get an image of a cat or a dog without any way to control it.
-
-This is where conditioning comes in. The purpose of conditioning is to steer the noise predictor so that the predicted noise will give us what we want after subtracting from the image.
+The purpose of conditioning is to steer the noise predictor so that the predicted noise will give us what we want after subtracting from the image.
 
 ## Text conditioning (text-to-image)
 
-Below is an overview of how a text prompt is processed and fed into the noise predictor. Tokenizer first converts each word in the prompt to a number called a token. Each token is then converted to a 768-value vector called embedding. (Yes, this is the same embedding you used in AUTOMATIC1111) The embeddings are then processed by the text transformer and are ready to be consumed by the noise predictor.
+Below is an overview of how a text prompt is processed and fed into the noise predictor. Tokenizer first converts each word in the prompt to a number called a token. Each token is then converted to a vector called embedding. The embeddings are then processed by the text transformer and are ready to be consumed by the noise predictor.
 
-<img src="https://stable-diffusion-art.com/wp-content/uploads/2022/12/image-86.png" width="400px">
+<br>
+<figure>
+  <img src="../assets/lecture/andrew-wong-conditioning.png" width="500px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, "How does Stable Diffusion work?"</figcaption>
+</figure>
+<br>
 
 ## Tokenizer
 
@@ -22,11 +25,11 @@ Embedding is a 768-value vector. Each token has its own unique embedding vector.
 
 Why do we need embedding? It’s because some words are closely related to each other. We want to take advantage of this information. For example, the embeddings of man, gentleman, and guy are nearly identical because they can be used interchangeably. Monet, Manet, and Degas all painted in impressionist styles but in different ways. The names have close but not identical embeddings.
 
-Embedding can also be used to trigger a style with a keyword. We will discuss this in the section 4. Model Training
+Embedding can also be used to trigger a style with a keyword. We will discuss this in the section [4 - Model Training 💾](../4-model_training/README.md)
 
 ## Other conditionings
 
-The text prompt is not the only way a Stable Diffusion model can be conditioned. Both a text prompt and a depth image are used to condition the depth-to-image model. ControlNet conditions the noise predictor with detected outlines, human poses, etc, and achieves excellent controls over image generations.
+The text prompt is not the only way a Stable Diffusion model can be conditioned. Both a text prompt and a depth image are used to condition the depth-to-image model. ControlNet conditions the noise predictor with detected outlines, human poses, etc, and achieves excellent controls over image generations. We will discuss this in the section [3 – Image Compositing 📐](../3–image_compositing/README.md)
 
 ## References
 

@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>What is Stable Diffusion · HonKit</title>
+        <title>Stable Diffusion · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.1">
@@ -59,7 +59,7 @@
     <link rel="next" href="conditioning.html" />
     
     
-    <link rel="prev" href="workflow.html" />
+    <link rel="prev" href="diffusion_models.html" />
     
 
     </head>
@@ -127,7 +127,7 @@
                 <a href="machine_learning.html">
             
                     
-                    What is Machine Learning
+                    Machine Learning
             
                 </a>
             
@@ -135,12 +135,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2" data-path="workflow.html">
+        <li class="chapter " data-level="2.1.2" data-path="diffusion_models.html">
             
-                <a href="workflow.html">
+                <a href="diffusion_models.html">
             
                     
-                    Workflow
+                    Diffusion Models
             
                 </a>
             
@@ -153,7 +153,7 @@
                 <a href="stable_diffusion.html">
             
                     
-                    What is Stable Diffusion
+                    Stable Diffusion
             
                 </a>
             
@@ -187,12 +187,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.6" data-path="cfg.html">
+        <li class="chapter " data-level="2.1.6" data-path="apps.html">
             
-                <a href="cfg.html">
+                <a href="apps.html">
             
                     
-                    CFG scale
+                    End-User Applications
             
                 </a>
             
@@ -210,6 +210,90 @@
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="parameters.html">
+            
+                <a href="parameters.html">
+            
+                    
+                    Parameters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.8.1" data-path="resolution.html">
+            
+                <a href="resolution.html">
+            
+                    
+                    Resolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.2" data-path="seed.html">
+            
+                <a href="seed.html">
+            
+                    
+                    Seed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.3" data-path="batch.html">
+            
+                <a href="batch.html">
+            
+                    
+                    Batch size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.4" data-path="samplers.html">
+            
+                <a href="samplers.html">
+            
+                    
+                    Samplers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.5" data-path="cfg.html">
+            
+                <a href="cfg.html">
+            
+                    
+                    CFG scale
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -290,6 +374,19 @@
             
                     
                     Outpainting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../2–refine_images/upscaling.md">
+            
+                <span>
+            
+                    
+                    Upscaling
             
                 </a>
             
@@ -451,12 +548,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../resources/tools.html">
+        <li class="chapter " data-level="3.2" data-path="../resources/apps.html">
             
-                <a href="../resources/tools.html">
+                <a href="../resources/apps.html">
             
                     
-                    Tools
+                    End-User Applications
             
                 </a>
             
@@ -546,7 +643,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >What is Stable Diffusion</a>
+        <a href=".." >Stable Diffusion</a>
     </h1>
 </div>
 
@@ -563,39 +660,60 @@
                                 
                                 <h1 id="what-is-stable-diffusion">What is Stable Diffusion?</h1>
 <p>In the simplest form, Stable Diffusion is a text-to-image model. Give it a text prompt. It will return an AI image matching the text.</p>
-<p><img src="https://stable-diffusion-art.com/wp-content/uploads/2022/12/image-77.png" width="400px"></p>
-<p>Stable Diffusion belongs to a class of deep learning models called diffusion models. They are generative models, meaning they are designed to generate new data similar to what they have seen in training. In the case of Stable Diffusion, the data are images.</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/andrew-wong-SD.png" width="500px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
 <h2 id="forward-diffusion">Forward diffusion</h2>
 <p>A forward diffusion process adds noise to a training image, gradually turning it into an uncharacteristic noise image. The forward process will turn any cat or dog image into a noise image. Eventually, you won’t be able to tell whether they are initially a dog or a cat.</p>
-<p><img src="https://stable-diffusion-art.com/wp-content/uploads/2022/12/image-81.png" width="400px"></p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/andrew-wong-forward-diffusion.webp" width="500px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
 <h2 id="reverse-diffusion">Reverse diffusion</h2>
 <p>What if we can reverse the diffusion? Like playing a video backward. Going backward in time. Starting from a noisy, meaningless image, reverse diffusion recovers a cat.</p>
 <h2 id="stable-diffusion-model-training">Stable Diffusion model training</h2>
-<p>To reverse the diffusion, we need to know how much noise is added to an image. The answer is teaching a neural network model to predict the noise added. It is called the noise predictor in Stable Diffusion. It is a U-Net model. The training goes as follows.</p>
+<p>To reverse the diffusion, we need to know how much noise is added to an image. The answer is teaching a neural network model to predict the noise added. It is called the noise predictor in Stable Diffusion. The training goes as follows:</p>
 <ol>
 <li>Pick a training image, like a photo of a cat.</li>
 <li>Generate a random noise image.</li>
 <li>Corrupt the training image by adding this noisy image up to a certain number of steps.</li>
 <li>Teach the noise predictor to tell us how much noise was added. This is done by tuning its weights and showing it the correct answer.</li>
 </ol>
-<p><img src="https://stable-diffusion-art.com/wp-content/uploads/2022/12/image-82.png" width="400px"></p>
-<p>Noise is sequentially added at each step. The noise predictor estimates the total noise added up to each step. After training, we have a noise predictor capable of estimating the noise added to an image.</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/andrew-wong-diffusion-training.webp" width="500px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
+<p>Noise is sequentially added  and the noise predictor estimates the total noise added up to each step. After training, we have a noise predictor capable of estimating the noise added to an image.</p>
 <h2 id="reverse-diffusion">Reverse diffusion</h2>
 <p>Now we have the noise predictor. How to use it?</p>
 <p>We first generate a completely random image and ask the noise predictor to tell us the noise. We then subtract this estimated noise from the original image. Repeat this process a few times. You will get an image of a cat.</p>
-<p><img src="https://stable-diffusion-art.com/wp-content/uploads/2022/12/image-84.png" width="400px"></p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/andrew-wong-reverse-training.png" width="500px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
 <p>For now, image generation is unconditioned. We will see how to apply conditioning to have control over the image generated.</p>
 <h2 id="differences-between-diffusion-models-and-latent-diffusion-models">Differences between diffusion models and latent diffusion models</h2>
 <p>The above diffusion process is in image space. It is computationally very, very slow because the image space is enormous. For instance, a 512×512 image with three color channels (red, green, and blue) is a 786,432-dimensional space. Diffusion models like Google’s Imagen and Open AI’s DALL-E are in pixel space. They have used some tricks to make the model faster but still not enough.</p>
 <p>Stable Diffusion, on the other hand, is a latent diffusion model which is designed to solve the speed problem. Instead of operating in the high-dimensional image space, it first compresses the image into the latent space. The latent space is 48 times smaller so it reaps the benefit of crunching a lot fewer numbers. That’s why it’s a lot faster.</p>
 <h2 id="variational-autoencoder">Variational Autoencoder</h2>
-<p>It is done using a technique called the variational autoencoder. The Variational Autoencoder (VAE) neural network has two parts: (1) an encoder and (2) a decoder. The encoder compresses an image to a lower dimensional representation in the latent space. The decoder restores the image from the latent space.</p>
-<p><img src="https://stable-diffusion-art.com/wp-content/uploads/2022/12/image-85.png" width="400px"></p>
+<p>It is done using a technique called the Variational Autoencoder (VAE). The VAE neural network has two parts: an encoder and a decoder. The encoder compresses an image to a lower dimensional representation in the latent space. The decoder restores the image from the latent space.</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/andrew-wong-vae.png" width="500px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
 <p>The latent space of Stable Diffusion model is 4x64x64, 48 times smaller than the image pixel space. All the forward and reverse diffusions we talked about are actually done in the latent space.</p>
 <p>The VAE decoder is also responsible for recovering fine details that may have been lost by the encoder. By further fine-tuning the VAE decoder, the model can paint finer details.</p>
-<h2 id="image-resolution">Image resolution</h2>
-<p>The image resolution is reflected in the size of the latent image tensor. The size of the latent image is 4x64x64 for 512×512 images only. It is 4x96x64 for a 768×512 portrait image. That’s why it takes longer and more VRAM to generate a larger image.</p>
-<p>Since Stable Diffusion v1 is fine-tuned on 512×512 images, generating images larger than 512×512 could result in duplicate objects, e.g., the infamous two heads. The SDXL model has a larger default size of 1,024 x 1,024 pixels.</p>
 <h2 id="reverse-diffusion-in-latent-space">Reverse diffusion in latent space</h2>
 <p>Here’s how latent reverse diffusion in Stable Diffusion works.</p>
 <ol>
@@ -605,9 +723,11 @@
 <li>Steps 2 and 3 are repeated up to specific sampling steps.</li>
 <li>The decoder of VAE converts the latent matrix to the final image.</li>
 </ol>
+<p>Our understanding is incomplete: Where does the text prompt enter the picture? Without it, Stable Diffusion is not a text-to-image model. You will either get an image of a cat or a dog without any way to control it. This is where conditioning comes in.</p>
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://stable-diffusion-art.com/how-stable-diffusion-work/" target="_blank">Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;, <em>Stable Diffusion Art</em></a></li>
+<li><a href="https://bootcamp.uxdesign.cc/how-stable-diffusion-works-explained-for-non-technical-people-be6aa674fa1d" target="_blank">Guodong (Troy) Zhao, 2023, &quot;How Stable Diffusion works, explained for non-technical people&quot;, <em>Medium</em></a></li>
 </ul>
 
                                 
@@ -636,7 +756,7 @@
 
             
                 
-                <a href="workflow.html" class="navigation navigation-prev " aria-label="Previous page: Workflow">
+                <a href="diffusion_models.html" class="navigation navigation-prev " aria-label="Previous page: Diffusion Models">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -652,7 +772,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"What is Stable Diffusion","level":"2.1.3","depth":2,"next":{"title":"Conditioning","level":"2.1.4","depth":2,"path":"1–enter_the_latent_space/conditioning.md","ref":"1–enter_the_latent_space/conditioning.md","articles":[]},"previous":{"title":"Workflow","level":"2.1.2","depth":2,"path":"1–enter_the_latent_space/workflow.md","ref":"1–enter_the_latent_space/workflow.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1–enter_the_latent_space/stable_diffusion.md","mtime":"2023-10-18T19:48:19.840Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-18T20:45:49.906Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Stable Diffusion","level":"2.1.3","depth":2,"next":{"title":"Conditioning","level":"2.1.4","depth":2,"path":"1–enter_the_latent_space/conditioning.md","ref":"1–enter_the_latent_space/conditioning.md","articles":[]},"previous":{"title":"Diffusion Models","level":"2.1.2","depth":2,"path":"1–enter_the_latent_space/diffusion_models.md","ref":"1–enter_the_latent_space/diffusion_models.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1–enter_the_latent_space/stable_diffusion.md","mtime":"2023-10-19T17:05:01.124Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-19T19:23:22.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

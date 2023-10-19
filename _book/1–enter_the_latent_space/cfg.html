@@ -56,10 +56,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="prompt_engineering.html" />
+    <link rel="next" href="../2–refine_images/" />
     
     
-    <link rel="prev" href="text_to_image.html" />
+    <link rel="prev" href="samplers.html" />
     
 
     </head>
@@ -127,7 +127,7 @@
                 <a href="machine_learning.html">
             
                     
-                    What is Machine Learning
+                    Machine Learning
             
                 </a>
             
@@ -135,12 +135,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2" data-path="workflow.html">
+        <li class="chapter " data-level="2.1.2" data-path="diffusion_models.html">
             
-                <a href="workflow.html">
+                <a href="diffusion_models.html">
             
                     
-                    Workflow
+                    Diffusion Models
             
                 </a>
             
@@ -153,7 +153,7 @@
                 <a href="stable_diffusion.html">
             
                     
-                    What is Stable Diffusion
+                    Stable Diffusion
             
                 </a>
             
@@ -187,12 +187,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.6" data-path="cfg.html">
+        <li class="chapter " data-level="2.1.6" data-path="apps.html">
             
-                <a href="cfg.html">
+                <a href="apps.html">
             
                     
-                    CFG scale
+                    End-User Applications
             
                 </a>
             
@@ -210,6 +210,90 @@
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="parameters.html">
+            
+                <a href="parameters.html">
+            
+                    
+                    Parameters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.8.1" data-path="resolution.html">
+            
+                <a href="resolution.html">
+            
+                    
+                    Resolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.2" data-path="seed.html">
+            
+                <a href="seed.html">
+            
+                    
+                    Seed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.3" data-path="batch.html">
+            
+                <a href="batch.html">
+            
+                    
+                    Batch size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.4" data-path="samplers.html">
+            
+                <a href="samplers.html">
+            
+                    
+                    Samplers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.8.5" data-path="cfg.html">
+            
+                <a href="cfg.html">
+            
+                    
+                    CFG scale
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -290,6 +374,19 @@
             
                     
                     Outpainting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../2–refine_images/upscaling.md">
+            
+                <span>
+            
+                    
+                    Upscaling
             
                 </a>
             
@@ -451,12 +548,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../resources/tools.html">
+        <li class="chapter " data-level="3.2" data-path="../resources/apps.html">
             
-                <a href="../resources/tools.html">
+                <a href="../resources/apps.html">
             
                     
-                    Tools
+                    End-User Applications
             
                 </a>
             
@@ -565,21 +662,34 @@
 <h2 id="classifier-guidance">Classifier guidance</h2>
 <p>Classifier guidance is a way to incorporate image labels in diffusion models. You can use a label to guide the diffusion process. For example, the label “cat” steers the reverse diffusion process to generate photos of cats.</p>
 <p>The classifier guidance scale is a parameter for controlling how closely should the diffusion process follow the label.</p>
-<p>Below is an example I stole from this paper. Suppose there are 3 groups of images with labels “cat”, “dog”, and “human”. If the diffusion is unguided, the model will draw samples from each group’s total population, but sometimes it may draw images that could fit two labels, e.g. a boy petting a dog.</p>
-<p><img src="https://stable-diffusion-art.com/wp-content/uploads/2022/12/image-106.png" width="400px"></p>
-<p><br>Left: unguided. Middle: small guidance scale. Right: large guidance scale.</p>
+<p>Below is an example. Suppose there are 3 groups of images with labels “cat”, “dog”, and “human”. If the diffusion is unguided, the model will draw samples from each group’s total population, but sometimes it may draw images that could fit two labels, e.g. a boy petting a dog.</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/Jonathan_Ho_Tim_Salimans_CFG.png" width="400px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Jonathan Ho, Tim Salimans, 2022, &quot;Classifier-Free Diffusion Guidance&quot;</figcaption>
+  <figcaption>Left: unguided. Middle: small guidance scale. Right: large guidance scale.</figcaption>
+</figure>
+<br><p></p>
 <p>With high classifier guidance, the images produced by the diffusion model would be biased toward the extreme or unambiguous examples. If you ask the model for a cat, it will return an image that is unambiguously a cat and nothing else.</p>
 <p>The classifier guidance scale controls how closely the guidance is followed. In the figure above, the sampling on the right has a higher classifier guidance scale than the one in the middle. In practice, this scale value is simply the multiplier to the drift term toward the data with that label.</p>
 <h2 id="classifier-free-guidance">Classifier-free guidance</h2>
 <p>Although classifier guidance achieved record-breaking performance, it needs an extra model to provide that guidance. This has presented some difficulties in training.</p>
-<p>Classifier-free guidance, in its authors’ terms, is a way to achieve “classifier guidance without a classifier”. Instead of using class labels and a separate model for guidance, they proposed to use image captions and train a conditional diffusion model, exactly like the one we discussed in text-to-image.</p>
-<p>They put the classifier part as conditioning of the noise predictor U-Net, achieving the so-called “classifier-free” (i.e. without a separate image classifier) guidance in image generation.</p>
-<p>The text prompt provides this guidance in text-to-image.</p>
+<p>Classifier-free guidance, is a way to achieve “classifier guidance without a classifier” (i.e. without a separate image classifier). The text prompt provides this guidance in text-to-image.</p>
 <h2 id="classifier-free-guidance-scale">Classifier-free guidance scale</h2>
-<p>Now we have a classifier-free diffusion process using conditioning. How do we control how much the AI-generated images should follow the guidance?</p>
 <p>Classifier-free guidance scale (CFG scale) is a value that controls how much the text prompt steers the diffusion process. The AI image generation is unconditioned (i.e. the prompt is ignored) when the CFG scale is set to 0. A higher CFG scale steers the diffusion towards the prompt.</p>
+<h2 id="recommendations">Recommendations</h2>
+<p>Different CFG scale values:</p>
+<ul>
+<li>1 – Mostly ignore your prompt.</li>
+<li>3 – Be more creative.</li>
+<li>7 – A good balance between following the prompt and freedom.</li>
+<li>15 – Adhere more to prompt.</li>
+<li>30 – Strictly follow the prompt.</li>
+</ul>
+<p>7.5 is usually a good starting point.</p>
 <h2 id="references">References</h2>
 <ul>
+<li><a href="https://stable-diffusion-art.com/know-these-important-parameters-for-stunning-ai-images/#CFG_Scale" target="_blank">Andrew Wong, 2023, &quot;Know these Important Parameters for stunning AI images&quot;, <em>Stable Diffusion Art</em></a></li>
 <li><a href="https://stable-diffusion-art.com/how-stable-diffusion-work/" target="_blank">Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;, <em>Stable Diffusion Art</em></a></li>
 <li><a href="https://arxiv.org/abs/2207.12598" target="_blank">Jonathan Ho, Tim Salimans, 2022, &quot;Classifier-Free Diffusion Guidance&quot;</a></li>
 </ul>
@@ -610,12 +720,12 @@
 
             
                 
-                <a href="text_to_image.html" class="navigation navigation-prev " aria-label="Previous page: Text to Image">
+                <a href="samplers.html" class="navigation navigation-prev " aria-label="Previous page: Samplers">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="prompt_engineering.html" class="navigation navigation-next " aria-label="Next page: Prompt Engineering">
+                <a href="../2–refine_images/" class="navigation navigation-next " aria-label="Next page: 2 – Refine Images 🎨">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -626,7 +736,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CFG scale","level":"2.1.6","depth":2,"next":{"title":"Prompt Engineering","level":"2.1.7","depth":2,"path":"1–enter_the_latent_space/prompt_engineering.md","ref":"1–enter_the_latent_space/prompt_engineering.md","articles":[]},"previous":{"title":"Text to Image","level":"2.1.5","depth":2,"path":"1–enter_the_latent_space/text_to_image.md","ref":"1–enter_the_latent_space/text_to_image.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1–enter_the_latent_space/cfg.md","mtime":"2023-10-18T20:39:00.944Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-18T20:45:49.906Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"CFG scale","level":"2.1.8.5","depth":3,"next":{"title":"2 – Refine Images 🎨","level":"2.2","depth":1,"path":"2–refine_images/README.md","ref":"2–refine_images/README.md","articles":[{"title":"Models","level":"2.2.1","depth":2,"path":"2–refine_images/models.md","ref":"2–refine_images/models.md","articles":[]},{"title":"Checkpoint Models","level":"2.2.2","depth":2,"path":"2–refine_images/checkpoint_models.md","ref":"2–refine_images/checkpoint_models.md","articles":[]},{"title":"Custom Models","level":"2.2.3","depth":2,"path":"2–refine_images/custom_models.md","ref":"2–refine_images/custom_models.md","articles":[]},{"title":"Inpainting","level":"2.2.4","depth":2,"path":"2–refine_images/inpainting.md","ref":"2–refine_images/inpainting.md","articles":[]},{"title":"Outpainting","level":"2.2.5","depth":2,"path":"2–refine_images/outpainting.md","ref":"2–refine_images/outpainting.md","articles":[]},{"title":"Upscaling","level":"2.2.6","depth":2,"path":"2–refine_images/upscaling.md","ref":"2–refine_images/upscaling.md","articles":[]}]},"previous":{"title":"Samplers","level":"2.1.8.4","depth":3,"path":"1–enter_the_latent_space/samplers.md","ref":"1–enter_the_latent_space/samplers.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1–enter_the_latent_space/cfg.md","mtime":"2023-10-19T16:46:06.726Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-19T19:23:22.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

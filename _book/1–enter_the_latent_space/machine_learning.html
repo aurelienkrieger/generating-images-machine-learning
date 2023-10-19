@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>What is Machine Learning · HonKit</title>
+        <title>Machine Learning · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.1">
@@ -56,7 +56,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="workflow.html" />
+    <link rel="next" href="diffusion_models.html" />
     
     
     <link rel="prev" href="./" />
@@ -127,7 +127,7 @@
                 <a href="machine_learning.html">
             
                     
-                    What is Machine Learning
+                    Machine Learning
             
                 </a>
             
@@ -135,12 +135,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2" data-path="workflow.html">
+        <li class="chapter " data-level="2.1.2" data-path="diffusion_models.html">
             
-                <a href="workflow.html">
+                <a href="diffusion_models.html">
             
                     
-                    Workflow
+                    Diffusion Models
             
                 </a>
             
@@ -153,7 +153,7 @@
                 <a href="stable_diffusion.html">
             
                     
-                    What is Stable Diffusion
+                    Stable Diffusion
             
                 </a>
             
@@ -187,12 +187,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.6" data-path="cfg.html">
+        <li class="chapter " data-level="2.1.6" data-path="apps.html">
             
-                <a href="cfg.html">
+                <a href="apps.html">
             
                     
-                    CFG scale
+                    End-User Applications
             
                 </a>
             
@@ -210,6 +210,90 @@
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="parameters.html">
+            
+                <a href="parameters.html">
+            
+                    
+                    Parameters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.8.1" data-path="resolution.html">
+            
+                <a href="resolution.html">
+            
+                    
+                    Resolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.2" data-path="seed.html">
+            
+                <a href="seed.html">
+            
+                    
+                    Seed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.3" data-path="batch.html">
+            
+                <a href="batch.html">
+            
+                    
+                    Batch size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.4" data-path="samplers.html">
+            
+                <a href="samplers.html">
+            
+                    
+                    Samplers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.5" data-path="cfg.html">
+            
+                <a href="cfg.html">
+            
+                    
+                    CFG scale
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -290,6 +374,19 @@
             
                     
                     Outpainting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../2–refine_images/upscaling.md">
+            
+                <span>
+            
+                    
+                    Upscaling
             
                 </a>
             
@@ -451,12 +548,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../resources/tools.html">
+        <li class="chapter " data-level="3.2" data-path="../resources/apps.html">
             
-                <a href="../resources/tools.html">
+                <a href="../resources/apps.html">
             
                     
-                    Tools
+                    End-User Applications
             
                 </a>
             
@@ -546,7 +643,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >What is Machine Learning</a>
+        <a href=".." >Machine Learning</a>
     </h1>
 </div>
 
@@ -563,26 +660,41 @@
                                 
                                 <h1 id="what-is-machine-learning">What is Machine Learning?</h1>
 <p>Machine learning is a subfield of artificial intelligence that involves developing algorithms and statistical models to enable computers to learn and make decisions without being explicitly programmed. It is based on the idea that systems can learn from data, identify patterns, and make decisions based on those patterns without being explicitly told how to do so.</p>
-<p>data collection
-|
-data classification &amp; filtering
-|
-labelled training data
-|
-model training
-|
-model</p>
-<p>input data + model
-|
-machine learning algorithm
-|
-prediction / generated image</p>
-<h2 id="state-of-the-art">State of the Art</h2>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/1/13/State_of_AI_Art_Machine_Learning_Models.svg"></p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/javatpoint-how-does-machine-learning-work.png">
+  <figcaption style="color:grey; font-style: italic;">Credit: Javatpoint, &quot;How does Machine Learning Work?&quot;</figcaption>
+</figure>
+<br><p></p>
+<h2 id="how-machine-learning-works">How Machine Learning works</h2>
+<p>The process involves several key steps:</p>
+<ol>
+<li>Data Collection: Gather relevant data representing the problem at hand from various sources such as databases, sensors, or web scraping.</li>
+<li>Data Preprocessing: Clean the data, remove / flag offensive data, handle missing values, normalize the data to a consistent format.</li>
+<li>Feature Extraction and Selection: Identify the most informative and relevant features contributing to the learning task.</li>
+<li>Model Training: The model learns from the pre-processed data by adjusting its internal parameters based on the patterns and relationships it discovers.</li>
+<li>Model Evaluation: The model is evaluated to assess its performance and generalization ability after training it.</li>
+<li>Prediction or Decision Making: Once the model is trained and evaluated, it can predict or decide on new, unseen data. The model takes input features and applies the learned patterns to generate the desired output or prediction.</li>
+<li>Model Refinement and Iteration: If the model&apos;s performance is unsatisfactory we can make adjustments by retraining the model with additional data, changing the algorithm, or tuning the model&apos;s parameters.</li>
+</ol>
+<h2 id="limitations">Limitations</h2>
+<p>If we confront this to a general definition of &quot;model&quot; from the Cambridge Dictionary of English:</p>
+<blockquote>
+<p>A simple representation of a system or process that can be used in calculations or predictions of what might happen.</p>
+</blockquote>
+<p>We understand that a model isn&apos;t reality, but rather a simplified representation of a section of it, a conceptual and mathematical construct. Hence we can start to raise a few key points of attention on the topic:</p>
+<ul>
+<li>the data on which the model has been trained</li>
+<li>the design of the training algorithm and of the model</li>
+<li>the ability we have to investigate the calculations</li>
+<li>the trust we put in the delivered predictions</li>
+<li>the scale to which we apply the suggested solutions</li>
+<li>the carbon footprint of this technology, especially with cloud services</li>
+</ul>
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://www.javatpoint.com/how-does-machine-learning-work" target="_blank">Javatpoint, &quot;How does Machine Learning Work?&quot;</a></li>
-<li>The Original Benny C, &quot;State of AI Art Machine Learning Models&quot; CC BY-SA 4.0, via <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">Wikimedia Commons</a></li>
+<li><a href="https://dictionary.cambridge.org/dictionary/english/model" target="_blank">Cambridge Dictionary of English, definition of &quot;model&quot;</a></li>
 </ul>
 
                                 
@@ -616,7 +728,7 @@ prediction / generated image</p>
                 </a>
                 
                 
-                <a href="workflow.html" class="navigation navigation-next " aria-label="Next page: Workflow">
+                <a href="diffusion_models.html" class="navigation navigation-next " aria-label="Next page: Diffusion Models">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -627,7 +739,7 @@ prediction / generated image</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"What is Machine Learning","level":"2.1.1","depth":2,"next":{"title":"Workflow","level":"2.1.2","depth":2,"path":"1–enter_the_latent_space/workflow.md","ref":"1–enter_the_latent_space/workflow.md","articles":[]},"previous":{"title":"1 – Enter the Latent Space 🚀","level":"2.1","depth":1,"path":"1–enter_the_latent_space/README.md","ref":"1–enter_the_latent_space/README.md","articles":[{"title":"What is Machine Learning","level":"2.1.1","depth":2,"path":"1–enter_the_latent_space/machine_learning.md","ref":"1–enter_the_latent_space/machine_learning.md","articles":[]},{"title":"Workflow","level":"2.1.2","depth":2,"path":"1–enter_the_latent_space/workflow.md","ref":"1–enter_the_latent_space/workflow.md","articles":[]},{"title":"What is Stable Diffusion","level":"2.1.3","depth":2,"path":"1–enter_the_latent_space/stable_diffusion.md","ref":"1–enter_the_latent_space/stable_diffusion.md","articles":[]},{"title":"Conditioning","level":"2.1.4","depth":2,"path":"1–enter_the_latent_space/conditioning.md","ref":"1–enter_the_latent_space/conditioning.md","articles":[]},{"title":"Text to Image","level":"2.1.5","depth":2,"path":"1–enter_the_latent_space/text_to_image.md","ref":"1–enter_the_latent_space/text_to_image.md","articles":[]},{"title":"CFG scale","level":"2.1.6","depth":2,"path":"1–enter_the_latent_space/cfg.md","ref":"1–enter_the_latent_space/cfg.md","articles":[]},{"title":"Prompt Engineering","level":"2.1.7","depth":2,"path":"1–enter_the_latent_space/prompt_engineering.md","ref":"1–enter_the_latent_space/prompt_engineering.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1–enter_the_latent_space/machine_learning.md","mtime":"2023-10-18T20:37:43.096Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-18T20:45:49.906Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Machine Learning","level":"2.1.1","depth":2,"next":{"title":"Diffusion Models","level":"2.1.2","depth":2,"path":"1–enter_the_latent_space/diffusion_models.md","ref":"1–enter_the_latent_space/diffusion_models.md","articles":[]},"previous":{"title":"1 – Enter the Latent Space 🚀","level":"2.1","depth":1,"path":"1–enter_the_latent_space/README.md","ref":"1–enter_the_latent_space/README.md","articles":[{"title":"Machine Learning","level":"2.1.1","depth":2,"path":"1–enter_the_latent_space/machine_learning.md","ref":"1–enter_the_latent_space/machine_learning.md","articles":[]},{"title":"Diffusion Models","level":"2.1.2","depth":2,"path":"1–enter_the_latent_space/diffusion_models.md","ref":"1–enter_the_latent_space/diffusion_models.md","articles":[]},{"title":"Stable Diffusion","level":"2.1.3","depth":2,"path":"1–enter_the_latent_space/stable_diffusion.md","ref":"1–enter_the_latent_space/stable_diffusion.md","articles":[]},{"title":"Conditioning","level":"2.1.4","depth":2,"path":"1–enter_the_latent_space/conditioning.md","ref":"1–enter_the_latent_space/conditioning.md","articles":[]},{"title":"Text to Image","level":"2.1.5","depth":2,"path":"1–enter_the_latent_space/text_to_image.md","ref":"1–enter_the_latent_space/text_to_image.md","articles":[]},{"title":"End-User Applications","level":"2.1.6","depth":2,"path":"1–enter_the_latent_space/apps.md","ref":"1–enter_the_latent_space/apps.md","articles":[]},{"title":"Prompt Engineering","level":"2.1.7","depth":2,"path":"1–enter_the_latent_space/prompt_engineering.md","ref":"1–enter_the_latent_space/prompt_engineering.md","articles":[]},{"title":"Parameters","level":"2.1.8","depth":2,"path":"1–enter_the_latent_space/parameters.md","ref":"1–enter_the_latent_space/parameters.md","articles":[{"title":"Resolution","level":"2.1.8.1","depth":3,"path":"1–enter_the_latent_space/resolution.md","ref":"1–enter_the_latent_space/resolution.md","articles":[]},{"title":"Seed","level":"2.1.8.2","depth":3,"path":"1–enter_the_latent_space/seed.md","ref":"1–enter_the_latent_space/seed.md","articles":[]},{"title":"Batch size","level":"2.1.8.3","depth":3,"path":"1–enter_the_latent_space/batch.md","ref":"1–enter_the_latent_space/batch.md","articles":[]},{"title":"Samplers","level":"2.1.8.4","depth":3,"path":"1–enter_the_latent_space/samplers.md","ref":"1–enter_the_latent_space/samplers.md","articles":[]},{"title":"CFG scale","level":"2.1.8.5","depth":3,"path":"1–enter_the_latent_space/cfg.md","ref":"1–enter_the_latent_space/cfg.md","articles":[]}]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1–enter_the_latent_space/machine_learning.md","mtime":"2023-10-19T17:18:43.243Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-19T19:23:22.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

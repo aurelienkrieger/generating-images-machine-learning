@@ -6,13 +6,8 @@
 
 - Checkpoint models with VAE
 - GAN
-- models for additional control
-- custom models
-  - trained models
-  - embeddings (textural inversion)
-  - LoRA
-  - Hypernetworks
-  - Dreambooth
+- Models for advanced control
+- Custom models
 
 **file extensions**
 
@@ -43,7 +38,7 @@
 - Refiners
 - Inpaiting
 - Outpainting
-- Face restoration
+- Facial restoration
   - CodeFormer
   - GFPGAN
 - Upscaling
@@ -65,13 +60,14 @@
 ### Custom models
 
 - Trained models
+- Merged models
 - Embedding (result of [Textual Inversion](https://textual-inversion.github.io/))
 - LoRA (Low-Rank Adaptation)
   - LyCORIS (Lora beYond Conventional methods, Other Rank adaptation Implementations for Stable diffusion)
   - LoHa (LoRA with Hadamard Product representation)
   - LoCon (Conventional LoRA)
-- Hypernetworks
 - Dreambooth
+- Hypernetworks
 
 
 ## Tutorials & resources
