@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>Custom Models · HonKit</title>
+        <title>Fine-Tuned Models · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.1">
@@ -56,7 +56,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="inpainting.html" />
+    <link rel="next" href="advanced_control_models.html" />
     
     
     <link rel="prev" href="checkpoint_models.html" />
@@ -327,9 +327,10 @@
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="2.2.2" data-path="checkpoint_models.html">
+        <li class="chapter " data-level="2.2.1.1" data-path="checkpoint_models.html">
             
                 <a href="checkpoint_models.html">
             
@@ -342,12 +343,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2.3" data-path="custom_models.html">
+        <li class="chapter active" data-level="2.2.1.2" data-path="fine_tuned_models.html">
             
-                <a href="custom_models.html">
+                <a href="fine_tuned_models.html">
             
                     
-                    Custom Models
+                    Fine-Tuned Models
             
                 </a>
             
@@ -355,7 +356,38 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.4" data-path="inpainting.html">
+        <li class="chapter " data-level="2.2.1.3" data-path="advanced_control_models.html">
+            
+                <a href="advanced_control_models.html">
+            
+                    
+                    Models for Advanced Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="image_to_image.html">
+            
+                <a href="image_to_image.html">
+            
+                    
+                    Image to Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="inpainting.html">
             
                 <a href="inpainting.html">
             
@@ -368,7 +400,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.5" data-path="outpainting.html">
+        <li class="chapter " data-level="2.2.4" data-path="outpainting.html">
             
                 <a href="outpainting.html">
             
@@ -381,9 +413,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.6" data-path="upscaling.md">
+        <li class="chapter " data-level="2.2.5" data-path="upscaling.html">
             
-                <span>
+                <a href="upscaling.html">
             
                     
                     Upscaling
@@ -413,33 +445,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.3.1" data-path="../3–image_compositing/image_to_image.html">
-            
-                <a href="../3–image_compositing/image_to_image.html">
-            
-                    
-                    Image to Image
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3.2" data-path="../3–image_compositing/inpainting.html">
-            
-                <a href="../3–image_compositing/inpainting.html">
-            
-                    
-                    Inpainting
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3.3" data-path="../3–image_compositing/depth_to_image.html">
+        <li class="chapter " data-level="2.3.1" data-path="../3–image_compositing/depth_to_image.html">
             
                 <a href="../3–image_compositing/depth_to_image.html">
             
@@ -643,7 +649,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Custom Models</a>
+        <a href=".." >Fine-Tuned Models</a>
     </h1>
 </div>
 
@@ -658,10 +664,18 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="custom-models">Custom models</h2>
-<h2 id="selection-of-custom-models">Selection of custom models</h2>
+                                <h1 id="fine-tuned-models">Fine-tuned models</h1>
+<h2 id="what-is-fine-tuning">What is fine-tuning?</h2>
+<p>Fine-tuning is a common technique in machine learning. It takes a model that is trained on a wide dataset and trains a bit more on a narrow dataset.</p>
+<p>A fine-tuned model tends to generate images similar to those used in the training. For example, the Anything v3 model is trained with anime images. It generates anime-style images by default.</p>
+<h2 id="why-do-people-make-stable-diffusion-models">Why do people make Stable Diffusion models?</h2>
+<p>The Stable diffusion base model is great but is not good at everything. For instance it could be difficult to generate images of a specific genre of anime. Instead of tinkering with the prompt, you can use a custom model that is fine-tuned with images of that sub-genre.</p>
+<p>There are different ways to make a fine-tuned model. We will discuss these techniques in more details in the section <a href="../4-model_training/">4 - Model Training 💾</a>. What is important to know, is that they all start from a checkpoint model.</p>
+<h2 id="tutorials--resources">Tutorials &amp; resources</h2>
+<p><a href="../resources/models.html">Useful links &amp; tutorials for Models</a>. Includes a selection of fine-tuned models with download links.</p>
+<h2 id="references">References</h2>
 <ul>
-<li><a href="https://civitai.com/models/13941/epinoiseoffset" target="_blank">epi_noiseoffset - LORA model for better contrast and darker images</a></li>
+<li><a href="https://stable-diffusion-art.com/models/" target="_blank">Andrew Wong, 2023, &quot;Models&quot;, <em>Stable Diffusion Art</em></a></li>
 </ul>
 
                                 
@@ -695,7 +709,7 @@
                 </a>
                 
                 
-                <a href="inpainting.html" class="navigation navigation-next " aria-label="Next page: Inpainting">
+                <a href="advanced_control_models.html" class="navigation navigation-next " aria-label="Next page: Models for Advanced Control">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -706,7 +720,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Custom Models","level":"2.2.3","depth":2,"next":{"title":"Inpainting","level":"2.2.4","depth":2,"path":"2–refine_images/inpainting.md","ref":"2–refine_images/inpainting.md","articles":[]},"previous":{"title":"Checkpoint Models","level":"2.2.2","depth":2,"path":"2–refine_images/checkpoint_models.md","ref":"2–refine_images/checkpoint_models.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2–refine_images/custom_models.md","mtime":"2023-10-18T20:02:19.466Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-19T19:23:22.094Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Fine-Tuned Models","level":"2.2.1.2","depth":3,"next":{"title":"Models for Advanced Control","level":"2.2.1.3","depth":3,"path":"2–refine_images/advanced_control_models.md","ref":"2–refine_images/advanced_control_models.md","articles":[]},"previous":{"title":"Checkpoint Models","level":"2.2.1.1","depth":3,"path":"2–refine_images/checkpoint_models.md","ref":"2–refine_images/checkpoint_models.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2–refine_images/fine_tuned_models.md","mtime":"2023-10-20T14:27:02.333Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-20T16:18:07.960Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

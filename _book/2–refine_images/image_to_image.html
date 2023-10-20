@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>Inpainting · HonKit</title>
+        <title>Image to Image · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.1">
@@ -56,10 +56,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="depth_to_image.html" />
+    <link rel="next" href="inpainting.html" />
     
     
-    <link rel="prev" href="image_to_image.html" />
+    <link rel="prev" href="advanced_control_models.html" />
     
 
     </head>
@@ -302,9 +302,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="../2–refine_images/">
+        <li class="chapter " data-level="2.2" data-path="./">
             
-                <a href="../2–refine_images/">
+                <a href="./">
             
                     
                     2 – Refine Images 🎨
@@ -316,9 +316,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.2.1" data-path="../2–refine_images/models.html">
+        <li class="chapter " data-level="2.2.1" data-path="models.html">
             
-                <a href="../2–refine_images/models.html">
+                <a href="models.html">
             
                     
                     Models
@@ -327,11 +327,12 @@
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="2.2.2" data-path="../2–refine_images/checkpoint_models.html">
+        <li class="chapter " data-level="2.2.1.1" data-path="checkpoint_models.html">
             
-                <a href="../2–refine_images/checkpoint_models.html">
+                <a href="checkpoint_models.html">
             
                     
                     Checkpoint Models
@@ -342,12 +343,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.3" data-path="../2–refine_images/custom_models.html">
+        <li class="chapter " data-level="2.2.1.2" data-path="fine_tuned_models.html">
             
-                <a href="../2–refine_images/custom_models.html">
+                <a href="fine_tuned_models.html">
             
                     
-                    Custom Models
+                    Fine-Tuned Models
             
                 </a>
             
@@ -355,9 +356,40 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.4" data-path="../2–refine_images/inpainting.html">
+        <li class="chapter " data-level="2.2.1.3" data-path="advanced_control_models.html">
             
-                <a href="../2–refine_images/inpainting.html">
+                <a href="advanced_control_models.html">
+            
+                    
+                    Models for Advanced Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2.2" data-path="image_to_image.html">
+            
+                <a href="image_to_image.html">
+            
+                    
+                    Image to Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="inpainting.html">
+            
+                <a href="inpainting.html">
             
                     
                     Inpainting
@@ -368,9 +400,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.5" data-path="../2–refine_images/outpainting.html">
+        <li class="chapter " data-level="2.2.4" data-path="outpainting.html">
             
-                <a href="../2–refine_images/outpainting.html">
+                <a href="outpainting.html">
             
                     
                     Outpainting
@@ -381,9 +413,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.6" data-path="../2–refine_images/upscaling.md">
+        <li class="chapter " data-level="2.2.5" data-path="upscaling.html">
             
-                <span>
+                <a href="upscaling.html">
             
                     
                     Upscaling
@@ -399,9 +431,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="./">
+        <li class="chapter " data-level="2.3" data-path="../3–image_compositing/">
             
-                <a href="./">
+                <a href="../3–image_compositing/">
             
                     
                     3 – Image Compositing 📐
@@ -413,35 +445,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.3.1" data-path="image_to_image.html">
+        <li class="chapter " data-level="2.3.1" data-path="../3–image_compositing/depth_to_image.html">
             
-                <a href="image_to_image.html">
-            
-                    
-                    Image to Image
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="2.3.2" data-path="inpainting.html">
-            
-                <a href="inpainting.html">
-            
-                    
-                    Inpainting
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3.3" data-path="depth_to_image.html">
-            
-                <a href="depth_to_image.html">
+                <a href="../3–image_compositing/depth_to_image.html">
             
                     
                     Depth to Image
@@ -643,7 +649,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Inpainting</a>
+        <a href=".." >Image to Image</a>
     </h1>
 </div>
 
@@ -658,8 +664,52 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="inpainting">Inpainting</h1>
-<p>Inpainting is really just a particular case of image-to-image. Noise is added to the parts of the image you wanted to inpaint. The amount of noise is similarly controlled by denoising strength.</p>
+                                <h1 id="image-to-image">Image to Image</h1>
+<p>An input image and a text prompt are supplied as the input in image-to-image. The generated image will be conditioned by both the input image and text prompt. for example, using this amateur drawing and the prompt “photo of perfect green apple with stem, water droplets, dramatic lighting” as inputs, image-to-image can turn it into a professional drawing:</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/andrew-wong-image-to-image-1.png" width="400px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
+<h2 id="process">Process</h2>
+<p><strong>Step 1.</strong> The input image is encoded to latent space.</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/andrew-wong-image-to-image-2.png" width="400px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
+<p><strong>Step 2.</strong> Noise is added to the latent image. Denoising strength controls how much noise is added. If it is 0, no noise is added. If it is 1, the maximum amount of noise is added so that the latent image becomes a complete random tensor.</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/andrew-wong-image-to-image-3.png" width="400px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
+<p><strong>Step 3.</strong> The noise predictor U-Net takes the latent noisy image and text prompt as input and predicts the noise in latent space (a 4x64x64 tensor).</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/andrew-wong-image-to-image-4.png" width="400px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
+<p><strong>Step 4.</strong> Subtract the latent noise from the latent image. This becomes your new latent image.</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/andrew-wong-image-to-image-5.webp" width="400px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
+<p><strong>Steps 3 and 4</strong> are repeated for a certain number of sampling steps, for example, 20 times.</p>
+<p><strong>Step 5.</strong> Finally, the decoder of VAE converts the latent image back to pixel space. This is the image you get after running image-to-image.</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/andrew-wong-image-to-image-6.png" width="400px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
+<p>So now you know what image-to-image is: All it does is to set the initial latent image with a bit of noise and a bit of input image. Setting denoising strength to 1 is equivalent to text-to-image because the initial latent image is entirely random noise.</p>
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://stable-diffusion-art.com/how-stable-diffusion-work/" target="_blank">Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;, <em>Stable Diffusion Art</em></a></li>
@@ -691,12 +741,12 @@
 
             
                 
-                <a href="image_to_image.html" class="navigation navigation-prev " aria-label="Previous page: Image to Image">
+                <a href="advanced_control_models.html" class="navigation navigation-prev " aria-label="Previous page: Models for Advanced Control">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="depth_to_image.html" class="navigation navigation-next " aria-label="Next page: Depth to Image">
+                <a href="inpainting.html" class="navigation navigation-next " aria-label="Next page: Inpainting">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -707,7 +757,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Inpainting","level":"2.3.2","depth":2,"next":{"title":"Depth to Image","level":"2.3.3","depth":2,"path":"3–image_compositing/depth_to_image.md","ref":"3–image_compositing/depth_to_image.md","articles":[]},"previous":{"title":"Image to Image","level":"2.3.1","depth":2,"path":"3–image_compositing/image_to_image.md","ref":"3–image_compositing/image_to_image.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3–image_compositing/inpainting.md","mtime":"2023-10-18T19:48:41.085Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-19T19:23:22.094Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Image to Image","level":"2.2.2","depth":2,"next":{"title":"Inpainting","level":"2.2.3","depth":2,"path":"2–refine_images/inpainting.md","ref":"2–refine_images/inpainting.md","articles":[]},"previous":{"title":"Models for Advanced Control","level":"2.2.1.3","depth":3,"path":"2–refine_images/advanced_control_models.md","ref":"2–refine_images/advanced_control_models.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2–refine_images/image_to_image.md","mtime":"2023-10-20T16:15:03.117Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-20T16:18:07.960Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

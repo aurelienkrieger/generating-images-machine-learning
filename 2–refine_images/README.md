@@ -3,7 +3,7 @@ Learn how to fine-tune your images. Explore various models to experiment with a 
 
 ## Lecture
 
-- Introduction to trained models
+- Introduction to the different types of models
 - Introduction to SDXL
 - Introduction to inpainting, outpainting and upscaling
 

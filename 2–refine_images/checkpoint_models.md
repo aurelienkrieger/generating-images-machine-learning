@@ -1,60 +1,50 @@
 # Checkpoint models
 
-## Stable Diffusion v1 vs v2
+## Introduction
 
-### Model difference
+Stable Diffusion Models, sometimes called checkpoint models, are pre-trained models for generating a particular style of images. They are the real Stable Diffusion models. They contain all you need to generate an image. No additional files are required. They are large, typically 2 – 7 GB.
 
-Stable Diffusion v2 uses OpenClip for text embedding. Stable Diffusion v1 uses Open AI’s CLIP ViT-L/14 for text embedding. The reasons for this change are
+What kind of images a model generates depends on the training images. A model won’t be able to generate a cat’s image if there’s never a cat in the training data. Likewise, if you only train a model with cat images, it will only generate cats.
 
-- OpenClip is up five times larger. A larger text encoder model improves image quality.
-- Although Open AI’s CLIP models are open-source, the models were trained with proprietary data. Switching to the OpenClip model gives researchers more transparency in studying and optimizing the model. It is better for long-term development.
+## Stable Diffusion Base Models
 
-### Training data difference
+### v1 vs v2 models
 
-Stable Diffusion v1.4 is trained with
+Currently the most popular SD model is v1.5. StabilityAI later released a v2 and v2.1 models but these models are not popular. People use the fine-tuned v1 model exclusively.
 
-- 237k steps at resolution 256×256 on laion2B-en dataset.
-- 194k steps at resolution 512×512 on laion-high-resolution.
-- 225k steps at 512×512 on “laion-aesthetics v2 5+“, with 10% dropping of text conditioning.
+### SDXL model
 
-Stable Diffusion v2 is trained with
-
-- 550k steps at the resolution 256x256 on a subset of LAION-5B filtered for explicit pornographic material, using the LAION-NSFW classifier with punsafe=0.1 and an aesthetic score >= 4.5.
-- 850k steps at the resolution 512x512 on the same dataset on images with resolution >= 512x512.
-- 150k steps using a v-objective on the same dataset.
-- Resumed for another 140k steps on 768x768 images.
-
-Stable Diffusion v2.1 is fine-tuned on v2.0
-- additional 55k steps on the same dataset (with punsafe=0.1)
-- another 155k extra steps with punsafe=0.98
-
-So basically, they turned off the NSFW filter in the last training steps.
-
-### Outcome difference
-
-Users generally find it harder to use Stable Diffusion v2 to control styles and generate celebrities. Although Stability AI did not explicitly filter out artist and celebrity names, their effects are much weaker in v2. This is likely due to the difference in training data. Open AI’s proprietary data may have more artwork and celebrity photos. Their data is probably highly filtered so that everything and everyone looks fine and pretty.
-
-The v2 and v2.1 models are not popular. People use the fine-tuned v1 model exclusively. But this is going to change with the release of the SDXL model.
-
-## SDXL model
-
-The SDXL model is the official upgrade to the v1 and v2 models. The model is released as open-source software.
-
-It is a much larger model. In the AI world, we can expect it to be better. The total number of parameters of the SDXL model is 6.6 billion, compared with 0.98 billion for the v1.5 model.
+On July 2023, StabilityAI release the SDXL model, its latest iteration of text-to-image generation models. They state it is an improvement in many ways:
+- The default image size is 1024×1024. This is 4 times larger than the v1.5 model’s 512×512. (See image sizes to use with the SDXL model)
+- High quality in virtually any art style, including photorealism
+- More intelligent with simpler language (soon the end of prompt engineering)
+- Much larger model. The total number of parameters of the SDXL model is 6.6 billion, compared with 0.98 billion for the v1.5 model
+- Fine-tuning and advanced control
 
 <img src="https://stable-diffusion-art.com/wp-content/uploads/2023/07/image-26.png" width="400px">
 
-The SDXL model is, in practice, two models. You run the base model, followed by the refiner model. The base model sets the global composition. The refiner model adds finer details.
+The SDXL model is, in practice, two models. You run the base model, followed by the refiner model. The base model sets the global composition. The refiner model adds finer details. You can run the base model alone without the refiner.
 
-You can run the base model alone without the refiner.
+In facts though, people tend to be a bit disappointed by this new release, the main reasons being:
+- it is much slower and consumes more VRAM, which makes it less accessible for people with slower machines and less energy efficient
+- the quality leap is not that high, compared to fine-tuned v1.5 models which already give great results
+- some of the advanced control that was anounced is not quite there yet. SD1.5 has still better support for outpainting and other advanced control models
 
-The changes in the SDXL base model are:
+But this may change, it takes times for the community to find out how to best fine-tune a new model and develop all the "utility" models for advanced control.
 
-- The text encoder combines the largest OpenClip model (ViT-G/14) and OpenAI’s proprietary CLIP ViT-L. It is a smart choice because it makes SDXL easy to prompt while remaining the powerful and trainable OpenClip.
-- New image size conditioning that aims to use training images smaller than 256×256. This significantly increases the training data by not discarding 39% of the images.
-- The U-Net is three times larger than v1.5.
-- The default image size is 1024×1024. This is 4 times larger than the v1.5 model’s 512×512. (See image sizes to use with the SDXL model)
+## Other models
+
+### DALL-E 3 model
+
+On October 2023, OpenAI has released the latest iteration of its text-to-image generate model, Dall-E. They also announced that it understands significantly more nuance and detail than their previous systems. Something to keep an eye on.
+
+## Tutorials & resources
+
+[Useful links & tutorials for Models](../resources/models.md). Includes download links.
 
 ## References
 
 - [Andrew Wong, 2023, "How does Stable Diffusion work?", _Stable Diffusion Art_](https://stable-diffusion-art.com/how-stable-diffusion-work/)
+- [Andrew Wong, 2023, "Models", _Stable Diffusion Art_](https://stable-diffusion-art.com/models/)
+- [StabilityAI, 2023, "Announcing SDXL 1.0"](https://stability.ai/blog/stable-diffusion-sdxl-1-announcement)
+- [OpenAI, 2023, "DALL-E 3"](https://openai.com/dall-e-3)

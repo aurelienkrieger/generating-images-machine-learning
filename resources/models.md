@@ -6,19 +6,22 @@
 
 - [Invoke AI models](https://models.invoke.ai/)
 - [Civitai, resource to download models](https://civitai.com/models)
+- [Hugging Face, a community-driven database of models, datasets, applications](https://huggingface.co/)
 
-- Stable Diffusion v1.5 (Stable Diffusion base model)
+- Stable Diffusion v1.5
   - [model page](https://huggingface.co/runwayml/stable-diffusion-v1-5)
   - [download link](https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned.safetensors)
   - [download link - inpainting](https://huggingface.co/runwayml/stable-diffusion-inpainting/resolve/main/sd-v1-5-inpainting.ckpt)
-- SDXL v1.0 (Stable Diffusion’s latest model)
+- SDXL v1.0
   - [model page](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
   - [download link](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0_0.9vae.safetensors)
   - [download link - refiner](https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0_0.9vae.safetensors)
-- OpenJourney (include 'mdjrny-v4 style' in prompt)
-  - [model page](https://huggingface.co/prompthero/openjourney)
-  - [download link](https://huggingface.co/prompthero/openjourney/resolve/main/mdjrny-v4.safetensors)
-- Juggernaut
+
+### Selection of Fine-tuned models
+
+#### Trained & Merged models
+
+- Juggernaut (use with separate VAE)
   - [model page](https://civitai.com/models/46422)
   - [download link](https://civitai.com/api/download/models/127207?type=Model&format=SafeTensor&size=pruned&fp=fp16)
   - [download link - inpainting](https://civitai.com/api/download/models/129549?type=Model&format=SafeTensor&size=full&fp=fp32)
@@ -28,11 +31,29 @@
   - [download link - inpainting](https://civitai.com/api/download/models/130090)
 - Fantasy and Art by Zovya for InvokeAI
   - [model page](https://huggingface.co/Hipsterusername/InvokeAI_Fantasy_and_Art_by_Zovya)
+- DreamShaper
+  - [model page](https://civitai.com/models/4384/dreamshaper)
+  - [download link](https://civitai.com/api/download/models/128713?type=Model&format=SafeTensor&size=pruned&fp=fp16)
+  - [download link - inpainting](https://civitai.com/api/download/models/131004)
+- OpenJourney (include 'mdjrny-v4 style' in prompt)
+  - [model page](https://huggingface.co/prompthero/openjourney)
+  - [download link](https://huggingface.co/prompthero/openjourney/resolve/main/mdjrny-v4.safetensors)
 
+#### LoRA models
+
+- [epi_noiseoffset - LoRA model for better contrast and darker images](https://civitai.com/models/13941/epinoiseoffset)
+- [LoRA Age Slider](https://civitai.com/models/128417/age-slider)
+- [LoRA Skin Tone Slider](https://civitai.com/models/112594/skin-tone-slider-lora)
+- [LoRA Gender Slider](https://civitai.com/models/112988/gender-slider-lora)
+- [LoRA Muscle Slider](https://civitai.com/models/112658/muscle-slider-lora)
+
+#### Embedding
+
+- [EasyNegative](https://civitai.com/models/7808/easynegative)
 
 ### Other models
 
-- [DALL-E](https://openai.com/dall-e-2)
+- [DALL-E](https://openai.com/dall-e-3)
 - [MidJourney](https://www.midjourney.com/)
 - [Google's Imagen](https://imagen.research.google/)
 
@@ -59,13 +80,10 @@
 
 #### Upscaling
 
-- Real-ESRGAN
+- [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)
 - Latent upscalers
-- Lanczos (traditional upscaler)
-
-#### Embedding
-
-- [EasyNegative](https://civitai.com/models/7808/easynegative)
+- [Swin2SR](https://huggingface.co/docs/transformers/model_doc/swin2sr)
+- [OpenModelDB, a community-driven database of AI Upscaling models](https://openmodeldb.info/)
 
 #### Animation
 

@@ -327,9 +327,10 @@
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="2.2.2" data-path="checkpoint_models.html">
+        <li class="chapter " data-level="2.2.1.1" data-path="checkpoint_models.html">
             
                 <a href="checkpoint_models.html">
             
@@ -342,12 +343,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.3" data-path="custom_models.html">
+        <li class="chapter " data-level="2.2.1.2" data-path="fine_tuned_models.html">
             
-                <a href="custom_models.html">
+                <a href="fine_tuned_models.html">
             
                     
-                    Custom Models
+                    Fine-Tuned Models
             
                 </a>
             
@@ -355,7 +356,38 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.4" data-path="inpainting.html">
+        <li class="chapter " data-level="2.2.1.3" data-path="advanced_control_models.html">
+            
+                <a href="advanced_control_models.html">
+            
+                    
+                    Models for Advanced Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="image_to_image.html">
+            
+                <a href="image_to_image.html">
+            
+                    
+                    Image to Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="inpainting.html">
             
                 <a href="inpainting.html">
             
@@ -368,7 +400,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.5" data-path="outpainting.html">
+        <li class="chapter " data-level="2.2.4" data-path="outpainting.html">
             
                 <a href="outpainting.html">
             
@@ -381,9 +413,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.6" data-path="upscaling.md">
+        <li class="chapter " data-level="2.2.5" data-path="upscaling.html">
             
-                <span>
+                <a href="upscaling.html">
             
                     
                     Upscaling
@@ -413,33 +445,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.3.1" data-path="../3–image_compositing/image_to_image.html">
-            
-                <a href="../3–image_compositing/image_to_image.html">
-            
-                    
-                    Image to Image
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3.2" data-path="../3–image_compositing/inpainting.html">
-            
-                <a href="../3–image_compositing/inpainting.html">
-            
-                    
-                    Inpainting
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3.3" data-path="../3–image_compositing/depth_to_image.html">
+        <li class="chapter " data-level="2.3.1" data-path="../3–image_compositing/depth_to_image.html">
             
                 <a href="../3–image_compositing/depth_to_image.html">
             
@@ -659,86 +665,66 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="models">Models</h1>
-<h2 id="overview">Overview</h2>
-<p><strong>types of models</strong></p>
+<p>We can distinguish different types of models:</p>
 <ul>
-<li>Checkpoint models with VAE</li>
-<li>GAN</li>
+<li>Checkpoint models</li>
+<li>Fine-tuned models</li>
 <li>Models for advanced control</li>
-<li>Custom models</li>
 </ul>
-<p><strong>file extensions</strong></p>
+<p>We are going to discuss these types of models in more details in the next chapters.</p>
+<p><em>Note: We can also mention Generative Adversarial Networks (GAN), which uses a different approach for generative AI than diffusion models.</em></p>
+<p><br></p>
+<p>The models can come in various file extensions:</p>
 <ul>
 <li>.ckpt</li>
-<li>.safetensors</li>
-<li>diffusers models (folders)</li>
 <li>.pt</li>
+<li>.safetensors</li>
+<li>Diffusers</li>
 <li>.bin</li>
 </ul>
-<p><strong>file variants</strong></p>
+<p><br></p>
+<p>And in various formats:</p>
 <ul>
 <li>pruned</li>
 <li>full</li>
-<li>EMA-only</li>
 <li>fp16</li>
 <li>fp32</li>
 </ul>
-<h3 id="checkpoint-models">Checkpoint models</h3>
+<h2 id="file-extensions">File extensions</h2>
 <ul>
-<li>Text to Image</li>
-<li>Image to Image</li>
-<li>Text to Video</li>
-<li>Image to Video</li>
-<li>Video to Video</li>
+<li>.pt</li>
 </ul>
-<h3 id="models-for-advanced-control">Models for advanced control</h3>
+<p>The original pytorch model format. It includes both the model architecture and the trained weights. This means that you have all the necessary information to continue training the model from where it left off, but they are larger in size. The downside of this format is that it is not secure. Someone can pack malicious codes in it. The code can run on your machine when you use the model.</p>
 <ul>
-<li>Refiners</li>
-<li>Inpaiting</li>
-<li>Outpainting</li>
-<li>Facial restoration<ul>
-<li>CodeFormer</li>
-<li>GFPGAN</li>
+<li>.ckpt</li>
 </ul>
-</li>
-<li>Upscaling<ul>
-<li>Real-ESRGAN</li>
-<li>Latent upscalers</li>
-<li>Lanczos (traditional upscaler)</li>
-</ul>
-</li>
-<li>Image to Image<ul>
-<li>ControlNet<ul>
-<li>OpenPose</li>
-<li>Depth</li>
-<li>Canny</li>
-<li>LineArt</li>
-<li>QR Pattern</li>
-</ul>
-</li>
-<li>IP Adapter</li>
-<li>Instruct Pix2Pix</li>
-<li>T2I Adapter</li>
-</ul>
-</li>
-<li>Tiling</li>
-</ul>
-<h3 id="custom-models">Custom models</h3>
+<p>Checkpoint files primarily used for TensorFlow and PyTorch models. They also include both the model architecture and the trained weights, and are also insecure.</p>
 <ul>
-<li>Trained models</li>
-<li>Merged models</li>
-<li>Embedding (result of <a href="https://textual-inversion.github.io/" target="_blank">Textual Inversion</a>)</li>
-<li>LoRA (Low-Rank Adaptation)<ul>
-<li>LyCORIS (Lora beYond Conventional methods, Other Rank adaptation Implementations for Stable diffusion)</li>
-<li>LoHa (LoRA with Hadamard Product representation)</li>
-<li>LoCon (Conventional LoRA)</li>
+<li>.safetensors</li>
 </ul>
-</li>
-<li>Dreambooth</li>
-<li>Hypernetworks</li>
+<p>Safetensors is an improved version of the .pt model format. It does the same thing as storing the weights but will not execute any codes. It is also faster.</p>
+<ul>
+<li>Diffusers</li>
 </ul>
+<p>The most recent inovation. They are not a single file but a set of directories and files, each containing different aspect of the model. The advantage of this is that the models load from disk really fast. They also offer seamless integration with Hugging Face, a community-driven database of models, datasets, applications. Not all GUIs are compatbile with Diffusers yet.</p>
+<h2 id="formats">Formats</h2>
+<ul>
+<li>pruned or EMA-only vs full</li>
+</ul>
+<p>Pruned models focus on reducing the size and computational complexity of the model by removing certain weights, while EMA-Only models use a separate set of weights to improve model stability and generalization. These are separate techniques but generally speaking you can download them if you are only interested in using the model, not training it. This saves you disk space.</p>
+<p>You will only need the full model if you want to fine-tune the model with additional training.</p>
+<ul>
+<li>fp16 vs fp32</li>
+</ul>
+<p>FP stands for floating point. It is a computer’s way of storing decimal numbers. Here the decimal numbers are the model weights. FP16 takes 16 bits per number and is called half precision. FP32 takes 32 bits and is called full precision.</p>
+<p>You rarely need a full-precision model though. The extra precision just stores noise. So, download the FP16 models if available. They are about half as big. This saves you disk space.</p>
 <h2 id="tutorials--resources">Tutorials &amp; resources</h2>
-<p><a href="../resources/prompt_engineering.html">Useful links &amp; tutorials for Models</a></p>
+<p><a href="../resources/models.html">Useful links &amp; tutorials for Models</a></p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://stable-diffusion-art.com/models/" target="_blank">Andrew Wong, 2023, &quot;Models&quot;, <em>Stable Diffusion Art</em></a></li>
+<li><a href="https://github.com/invoke-ai/InvokeAI/blob/main/docs/installation/050_INSTALLING_MODELS.md" target="_blank">InvokeAI, 2023, &quot;Installing Models&quot;, <em>Github</em></a></li>
+</ul>
 
                                 
                                 </section>
@@ -782,7 +768,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Models","level":"2.2.1","depth":2,"next":{"title":"Checkpoint Models","level":"2.2.2","depth":2,"path":"2–refine_images/checkpoint_models.md","ref":"2–refine_images/checkpoint_models.md","articles":[]},"previous":{"title":"2 – Refine Images 🎨","level":"2.2","depth":1,"path":"2–refine_images/README.md","ref":"2–refine_images/README.md","articles":[{"title":"Models","level":"2.2.1","depth":2,"path":"2–refine_images/models.md","ref":"2–refine_images/models.md","articles":[]},{"title":"Checkpoint Models","level":"2.2.2","depth":2,"path":"2–refine_images/checkpoint_models.md","ref":"2–refine_images/checkpoint_models.md","articles":[]},{"title":"Custom Models","level":"2.2.3","depth":2,"path":"2–refine_images/custom_models.md","ref":"2–refine_images/custom_models.md","articles":[]},{"title":"Inpainting","level":"2.2.4","depth":2,"path":"2–refine_images/inpainting.md","ref":"2–refine_images/inpainting.md","articles":[]},{"title":"Outpainting","level":"2.2.5","depth":2,"path":"2–refine_images/outpainting.md","ref":"2–refine_images/outpainting.md","articles":[]},{"title":"Upscaling","level":"2.2.6","depth":2,"path":"2–refine_images/upscaling.md","ref":"2–refine_images/upscaling.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2–refine_images/models.md","mtime":"2023-10-19T14:40:33.211Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-19T19:23:22.094Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Models","level":"2.2.1","depth":2,"next":{"title":"Checkpoint Models","level":"2.2.1.1","depth":3,"path":"2–refine_images/checkpoint_models.md","ref":"2–refine_images/checkpoint_models.md","articles":[]},"previous":{"title":"2 – Refine Images 🎨","level":"2.2","depth":1,"path":"2–refine_images/README.md","ref":"2–refine_images/README.md","articles":[{"title":"Models","level":"2.2.1","depth":2,"path":"2–refine_images/models.md","ref":"2–refine_images/models.md","articles":[{"title":"Checkpoint Models","level":"2.2.1.1","depth":3,"path":"2–refine_images/checkpoint_models.md","ref":"2–refine_images/checkpoint_models.md","articles":[]},{"title":"Fine-Tuned Models","level":"2.2.1.2","depth":3,"path":"2–refine_images/fine_tuned_models.md","ref":"2–refine_images/fine_tuned_models.md","articles":[]},{"title":"Models for Advanced Control","level":"2.2.1.3","depth":3,"path":"2–refine_images/advanced_control_models.md","ref":"2–refine_images/advanced_control_models.md","articles":[]}]},{"title":"Image to Image","level":"2.2.2","depth":2,"path":"2–refine_images/image_to_image.md","ref":"2–refine_images/image_to_image.md","articles":[]},{"title":"Inpainting","level":"2.2.3","depth":2,"path":"2–refine_images/inpainting.md","ref":"2–refine_images/inpainting.md","articles":[]},{"title":"Outpainting","level":"2.2.4","depth":2,"path":"2–refine_images/outpainting.md","ref":"2–refine_images/outpainting.md","articles":[]},{"title":"Upscaling","level":"2.2.5","depth":2,"path":"2–refine_images/upscaling.md","ref":"2–refine_images/upscaling.md","articles":[]}]},"articles":[{"title":"Checkpoint Models","level":"2.2.1.1","depth":3,"path":"2–refine_images/checkpoint_models.md","ref":"2–refine_images/checkpoint_models.md","articles":[]},{"title":"Fine-Tuned Models","level":"2.2.1.2","depth":3,"path":"2–refine_images/fine_tuned_models.md","ref":"2–refine_images/fine_tuned_models.md","articles":[]},{"title":"Models for Advanced Control","level":"2.2.1.3","depth":3,"path":"2–refine_images/advanced_control_models.md","ref":"2–refine_images/advanced_control_models.md","articles":[]}],"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2–refine_images/models.md","mtime":"2023-10-20T15:00:59.892Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-20T16:18:07.960Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

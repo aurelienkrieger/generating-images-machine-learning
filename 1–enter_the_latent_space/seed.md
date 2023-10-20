@@ -10,6 +10,10 @@ If you use the same seed with the same prompt, model and parameters, you will ge
 
 Setting a random seed will generate a new random image for each batch, so it can be used for exploration.
 
+## Interpolation
+
+AUTOMATIC1111 offer the option to control the degree of interpolation to produce a transition between the images genearted by two seeds. See [Andrew Wong, 2023, "Stable Diffusion WebUI AUTOMATIC1111: A Beginner’s Guide"](https://stable-diffusion-art.com/automatic1111/#Extra_seed_options) for more details.
+
 # Resources
 
 - [Andrew Wong, 2023, "Know these Important Parameters for stunning AI images", _Stable Diffusion Art_](https://stable-diffusion-art.com/know-these-important-parameters-for-stunning-ai-images/#Seed)

@@ -56,7 +56,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="upscaling.md" />
+    <link rel="next" href="upscaling.html" />
     
     
     <link rel="prev" href="inpainting.html" />
@@ -327,9 +327,10 @@
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="2.2.2" data-path="checkpoint_models.html">
+        <li class="chapter " data-level="2.2.1.1" data-path="checkpoint_models.html">
             
                 <a href="checkpoint_models.html">
             
@@ -342,12 +343,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.3" data-path="custom_models.html">
+        <li class="chapter " data-level="2.2.1.2" data-path="fine_tuned_models.html">
             
-                <a href="custom_models.html">
+                <a href="fine_tuned_models.html">
             
                     
-                    Custom Models
+                    Fine-Tuned Models
             
                 </a>
             
@@ -355,7 +356,38 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.4" data-path="inpainting.html">
+        <li class="chapter " data-level="2.2.1.3" data-path="advanced_control_models.html">
+            
+                <a href="advanced_control_models.html">
+            
+                    
+                    Models for Advanced Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="image_to_image.html">
+            
+                <a href="image_to_image.html">
+            
+                    
+                    Image to Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="inpainting.html">
             
                 <a href="inpainting.html">
             
@@ -368,7 +400,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2.5" data-path="outpainting.html">
+        <li class="chapter active" data-level="2.2.4" data-path="outpainting.html">
             
                 <a href="outpainting.html">
             
@@ -381,9 +413,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.6" data-path="upscaling.md">
+        <li class="chapter " data-level="2.2.5" data-path="upscaling.html">
             
-                <span>
+                <a href="upscaling.html">
             
                     
                     Upscaling
@@ -413,33 +445,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.3.1" data-path="../3–image_compositing/image_to_image.html">
-            
-                <a href="../3–image_compositing/image_to_image.html">
-            
-                    
-                    Image to Image
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3.2" data-path="../3–image_compositing/inpainting.html">
-            
-                <a href="../3–image_compositing/inpainting.html">
-            
-                    
-                    Inpainting
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3.3" data-path="../3–image_compositing/depth_to_image.html">
+        <li class="chapter " data-level="2.3.1" data-path="../3–image_compositing/depth_to_image.html">
             
                 <a href="../3–image_compositing/depth_to_image.html">
             
@@ -658,9 +664,32 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="outpainting">Outpainting</h3>
+                                <h1 id="outpainting">Outpainting</h1>
+<p>Outpainting is a process where we try to extend the content of an image beyond its original boundaries. It&apos;s like an artist taking a small painting and extending the scene onto a larger canvas.</p>
+<p>Imagine you have a picture of a beautiful beach but the picture only shows a small part of it. With outpainting you could expand the image to see more of the beach, the ocean, the horizon.</p>
+<h2 id="outpainting-in-invokeai">Outpainting in InvokeAI</h2>
+<p>On Invokes unified canvas, you can outpaint by expanding the bounding box and extending the box to capture an area that you would like to have generated. If you invoke with the bounding box covering an area that has no image data, the missing will be outpainted on Invoking.</p>
+<p><strong>Step 1.</strong> Import image in the unified canvas and expand the bounding box.</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/beach_in_canvas.png" width="500px">
+</figure>
+<br><p></p>
+<p><strong>Step 2.</strong> Use a prompt to extend the image</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/beach_outpainted_in_canvas.png" width="500px">
+</figure>
+<br><p></p>
+<h2 id="workflow">Workflow</h2>
+<p>Generally, it’s advisable to only outpaint with about ~25% of the image missing in the area currently selected by the bounding box, and to keep the bounding box to no more than ~768x768 in size - This is because the models are typically trained on smaller images, and need sufficient examples of what are already in the image to generate something useful outside of it.</p>
+<p>It is also recommended to use the same model for outpainting that you used to generate the base image, as it would help keep the style consistent.</p>
+<p>Repeat the process to mask any resulting seams between the new and base image to ensure that the generation fits in well.</p>
+<h2 id="tutorials--resources">Tutorials &amp; resources</h2>
+<p><a href="../resources/articles.html">Useful links &amp; tutorials for Inpainting and Outpainting</a></p>
+<h2 id="references">References</h2>
 <ul>
-<li>use the same model that generates the image</li>
+<li><a href="https://support.invoke.ai/support/solutions/articles/151000096702-what-are-inpainting-and-outpainting-" target="_blank">InvokeAI, 2023, &quot;What are Inpainting and Outpainting? &quot;, <em>Invoke Support Portal</em></a></li>
 </ul>
 
                                 
@@ -694,7 +723,7 @@
                 </a>
                 
                 
-                <a href="upscaling.md" class="navigation navigation-next " aria-label="Next page: Upscaling">
+                <a href="upscaling.html" class="navigation navigation-next " aria-label="Next page: Upscaling">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -705,7 +734,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Outpainting","level":"2.2.5","depth":2,"next":{"title":"Upscaling","level":"2.2.6","depth":2,"path":"2–refine_images/upscaling.md","ref":"2–refine_images/upscaling.md","articles":[]},"previous":{"title":"Inpainting","level":"2.2.4","depth":2,"path":"2–refine_images/inpainting.md","ref":"2–refine_images/inpainting.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2–refine_images/outpainting.md","mtime":"2023-10-18T20:19:44.506Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-19T19:23:22.094Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Outpainting","level":"2.2.4","depth":2,"next":{"title":"Upscaling","level":"2.2.5","depth":2,"path":"2–refine_images/upscaling.md","ref":"2–refine_images/upscaling.md","articles":[]},"previous":{"title":"Inpainting","level":"2.2.3","depth":2,"path":"2–refine_images/inpainting.md","ref":"2–refine_images/inpainting.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2–refine_images/outpainting.md","mtime":"2023-10-20T16:14:24.408Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-20T16:18:07.960Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

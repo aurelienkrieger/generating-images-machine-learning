@@ -56,7 +56,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="custom_models.html" />
+    <link rel="next" href="fine_tuned_models.html" />
     
     
     <link rel="prev" href="models.html" />
@@ -327,9 +327,10 @@
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter active" data-level="2.2.2" data-path="checkpoint_models.html">
+        <li class="chapter active" data-level="2.2.1.1" data-path="checkpoint_models.html">
             
                 <a href="checkpoint_models.html">
             
@@ -342,12 +343,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.3" data-path="custom_models.html">
+        <li class="chapter " data-level="2.2.1.2" data-path="fine_tuned_models.html">
             
-                <a href="custom_models.html">
+                <a href="fine_tuned_models.html">
             
                     
-                    Custom Models
+                    Fine-Tuned Models
             
                 </a>
             
@@ -355,7 +356,38 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.4" data-path="inpainting.html">
+        <li class="chapter " data-level="2.2.1.3" data-path="advanced_control_models.html">
+            
+                <a href="advanced_control_models.html">
+            
+                    
+                    Models for Advanced Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="image_to_image.html">
+            
+                <a href="image_to_image.html">
+            
+                    
+                    Image to Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="inpainting.html">
             
                 <a href="inpainting.html">
             
@@ -368,7 +400,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.5" data-path="outpainting.html">
+        <li class="chapter " data-level="2.2.4" data-path="outpainting.html">
             
                 <a href="outpainting.html">
             
@@ -381,9 +413,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.6" data-path="upscaling.md">
+        <li class="chapter " data-level="2.2.5" data-path="upscaling.html">
             
-                <span>
+                <a href="upscaling.html">
             
                     
                     Upscaling
@@ -413,33 +445,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.3.1" data-path="../3–image_compositing/image_to_image.html">
-            
-                <a href="../3–image_compositing/image_to_image.html">
-            
-                    
-                    Image to Image
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3.2" data-path="../3–image_compositing/inpainting.html">
-            
-                <a href="../3–image_compositing/inpainting.html">
-            
-                    
-                    Inpainting
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3.3" data-path="../3–image_compositing/depth_to_image.html">
+        <li class="chapter " data-level="2.3.1" data-path="../3–image_compositing/depth_to_image.html">
             
                 <a href="../3–image_compositing/depth_to_image.html">
             
@@ -659,52 +665,41 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="checkpoint-models">Checkpoint models</h1>
-<h2 id="stable-diffusion-v1-vs-v2">Stable Diffusion v1 vs v2</h2>
-<h3 id="model-difference">Model difference</h3>
-<p>Stable Diffusion v2 uses OpenClip for text embedding. Stable Diffusion v1 uses Open AI’s CLIP ViT-L/14 for text embedding. The reasons for this change are</p>
+<h2 id="introduction">Introduction</h2>
+<p>Stable Diffusion Models, sometimes called checkpoint models, are pre-trained models for generating a particular style of images. They are the real Stable Diffusion models. They contain all you need to generate an image. No additional files are required. They are large, typically 2 – 7 GB.</p>
+<p>What kind of images a model generates depends on the training images. A model won’t be able to generate a cat’s image if there’s never a cat in the training data. Likewise, if you only train a model with cat images, it will only generate cats.</p>
+<h2 id="stable-diffusion-base-models">Stable Diffusion Base Models</h2>
+<h3 id="v1-vs-v2-models">v1 vs v2 models</h3>
+<p>Currently the most popular SD model is v1.5. StabilityAI later released a v2 and v2.1 models but these models are not popular. People use the fine-tuned v1 model exclusively.</p>
+<h3 id="sdxl-model">SDXL model</h3>
+<p>On July 2023, StabilityAI release the SDXL model, its latest iteration of text-to-image generation models. They state it is an improvement in many ways:</p>
 <ul>
-<li>OpenClip is up five times larger. A larger text encoder model improves image quality.</li>
-<li>Although Open AI’s CLIP models are open-source, the models were trained with proprietary data. Switching to the OpenClip model gives researchers more transparency in studying and optimizing the model. It is better for long-term development.</li>
-</ul>
-<h3 id="training-data-difference">Training data difference</h3>
-<p>Stable Diffusion v1.4 is trained with</p>
-<ul>
-<li>237k steps at resolution 256×256 on laion2B-en dataset.</li>
-<li>194k steps at resolution 512×512 on laion-high-resolution.</li>
-<li>225k steps at 512×512 on “laion-aesthetics v2 5+“, with 10% dropping of text conditioning.</li>
-</ul>
-<p>Stable Diffusion v2 is trained with</p>
-<ul>
-<li>550k steps at the resolution 256x256 on a subset of LAION-5B filtered for explicit pornographic material, using the LAION-NSFW classifier with punsafe=0.1 and an aesthetic score &gt;= 4.5.</li>
-<li>850k steps at the resolution 512x512 on the same dataset on images with resolution &gt;= 512x512.</li>
-<li>150k steps using a v-objective on the same dataset.</li>
-<li>Resumed for another 140k steps on 768x768 images.</li>
-</ul>
-<p>Stable Diffusion v2.1 is fine-tuned on v2.0</p>
-<ul>
-<li>additional 55k steps on the same dataset (with punsafe=0.1)</li>
-<li>another 155k extra steps with punsafe=0.98</li>
-</ul>
-<p>So basically, they turned off the NSFW filter in the last training steps.</p>
-<h3 id="outcome-difference">Outcome difference</h3>
-<p>Users generally find it harder to use Stable Diffusion v2 to control styles and generate celebrities. Although Stability AI did not explicitly filter out artist and celebrity names, their effects are much weaker in v2. This is likely due to the difference in training data. Open AI’s proprietary data may have more artwork and celebrity photos. Their data is probably highly filtered so that everything and everyone looks fine and pretty.</p>
-<p>The v2 and v2.1 models are not popular. People use the fine-tuned v1 model exclusively. But this is going to change with the release of the SDXL model.</p>
-<h2 id="sdxl-model">SDXL model</h2>
-<p>The SDXL model is the official upgrade to the v1 and v2 models. The model is released as open-source software.</p>
-<p>It is a much larger model. In the AI world, we can expect it to be better. The total number of parameters of the SDXL model is 6.6 billion, compared with 0.98 billion for the v1.5 model.</p>
-<p><img src="https://stable-diffusion-art.com/wp-content/uploads/2023/07/image-26.png" width="400px"></p>
-<p>The SDXL model is, in practice, two models. You run the base model, followed by the refiner model. The base model sets the global composition. The refiner model adds finer details.</p>
-<p>You can run the base model alone without the refiner.</p>
-<p>The changes in the SDXL base model are:</p>
-<ul>
-<li>The text encoder combines the largest OpenClip model (ViT-G/14) and OpenAI’s proprietary CLIP ViT-L. It is a smart choice because it makes SDXL easy to prompt while remaining the powerful and trainable OpenClip.</li>
-<li>New image size conditioning that aims to use training images smaller than 256×256. This significantly increases the training data by not discarding 39% of the images.</li>
-<li>The U-Net is three times larger than v1.5.</li>
 <li>The default image size is 1024×1024. This is 4 times larger than the v1.5 model’s 512×512. (See image sizes to use with the SDXL model)</li>
+<li>High quality in virtually any art style, including photorealism</li>
+<li>More intelligent with simpler language (soon the end of prompt engineering)</li>
+<li>Much larger model. The total number of parameters of the SDXL model is 6.6 billion, compared with 0.98 billion for the v1.5 model</li>
+<li>Fine-tuning and advanced control</li>
 </ul>
+<p><img src="https://stable-diffusion-art.com/wp-content/uploads/2023/07/image-26.png" width="400px"></p>
+<p>The SDXL model is, in practice, two models. You run the base model, followed by the refiner model. The base model sets the global composition. The refiner model adds finer details. You can run the base model alone without the refiner.</p>
+<p>In facts though, people tend to be a bit disappointed by this new release, the main reasons being:</p>
+<ul>
+<li>it is much slower and consumes more VRAM, which makes it less accessible for people with slower machines and less energy efficient</li>
+<li>the quality leap is not that high, compared to fine-tuned v1.5 models which already give great results</li>
+<li>some of the advanced control that was anounced is not quite there yet. SD1.5 has still better support for outpainting and other advanced control models</li>
+</ul>
+<p>But this may change, it takes times for the community to find out how to best fine-tune a new model and develop all the &quot;utility&quot; models for advanced control.</p>
+<h2 id="other-models">Other models</h2>
+<h3 id="dall-e-3-model">DALL-E 3 model</h3>
+<p>On October 2023, OpenAI has released the latest iteration of its text-to-image generate model, Dall-E. They also announced that it understands significantly more nuance and detail than their previous systems. Something to keep an eye on.</p>
+<h2 id="tutorials--resources">Tutorials &amp; resources</h2>
+<p><a href="../resources/models.html">Useful links &amp; tutorials for Models</a>. Includes download links.</p>
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://stable-diffusion-art.com/how-stable-diffusion-work/" target="_blank">Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;, <em>Stable Diffusion Art</em></a></li>
+<li><a href="https://stable-diffusion-art.com/models/" target="_blank">Andrew Wong, 2023, &quot;Models&quot;, <em>Stable Diffusion Art</em></a></li>
+<li><a href="https://stability.ai/blog/stable-diffusion-sdxl-1-announcement" target="_blank">StabilityAI, 2023, &quot;Announcing SDXL 1.0&quot;</a></li>
+<li><a href="https://openai.com/dall-e-3" target="_blank">OpenAI, 2023, &quot;DALL-E 3&quot;</a></li>
 </ul>
 
                                 
@@ -738,7 +733,7 @@
                 </a>
                 
                 
-                <a href="custom_models.html" class="navigation navigation-next " aria-label="Next page: Custom Models">
+                <a href="fine_tuned_models.html" class="navigation navigation-next " aria-label="Next page: Fine-Tuned Models">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -749,7 +744,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Checkpoint Models","level":"2.2.2","depth":2,"next":{"title":"Custom Models","level":"2.2.3","depth":2,"path":"2–refine_images/custom_models.md","ref":"2–refine_images/custom_models.md","articles":[]},"previous":{"title":"Models","level":"2.2.1","depth":2,"path":"2–refine_images/models.md","ref":"2–refine_images/models.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2–refine_images/checkpoint_models.md","mtime":"2023-10-18T19:48:29.705Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-19T19:23:22.094Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Checkpoint Models","level":"2.2.1.1","depth":3,"next":{"title":"Fine-Tuned Models","level":"2.2.1.2","depth":3,"path":"2–refine_images/fine_tuned_models.md","ref":"2–refine_images/fine_tuned_models.md","articles":[]},"previous":{"title":"Models","level":"2.2.1","depth":2,"path":"2–refine_images/models.md","ref":"2–refine_images/models.md","articles":[{"title":"Checkpoint Models","level":"2.2.1.1","depth":3,"path":"2–refine_images/checkpoint_models.md","ref":"2–refine_images/checkpoint_models.md","articles":[]},{"title":"Fine-Tuned Models","level":"2.2.1.2","depth":3,"path":"2–refine_images/fine_tuned_models.md","ref":"2–refine_images/fine_tuned_models.md","articles":[]},{"title":"Models for Advanced Control","level":"2.2.1.3","depth":3,"path":"2–refine_images/advanced_control_models.md","ref":"2–refine_images/advanced_control_models.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2–refine_images/checkpoint_models.md","mtime":"2023-10-20T16:17:30.308Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-20T16:18:07.960Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

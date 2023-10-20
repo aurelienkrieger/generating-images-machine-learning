@@ -42,7 +42,6 @@ _tutorials_
 
 **platforms**
 
-- [Hugging Face](https://huggingface.co/)
 - [Google Colab](https://colab.google/)
 - [Paperspace](https://www.paperspace.com/)
 - [Runpod](https://www.runpod.io/)
@@ -77,6 +76,7 @@ _tutorials_
 
 ## Related apps & tools
 
+- [Hugging Face, a community-driven database of models, datasets, applications](https://huggingface.co/)
 - [Sketchfab - free 3D models](https://sketchfab.com/features/free-3d-models)
 - [Magic Poser - create poses](https://webapp.magicposer.com/)
 - [D-ID - talking avatars](https://studio.d-id.com/)
