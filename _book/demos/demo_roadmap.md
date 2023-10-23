@@ -704,4 +704,5 @@
 - inclusive portraits (sliders: weight, age, muscles, gender, skin tone)
 - consistent face
 - limb restoration
-- Instruct Pix2Pix
+- Instruct Pix2Pix´
+- Use IP adapter to inspire the impaiting or outpainting
