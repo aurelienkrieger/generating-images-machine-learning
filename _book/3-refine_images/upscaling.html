@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>Prompt Engineering · HonKit</title>
+        <title>Upscaling · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.1">
@@ -56,10 +56,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="models.html" />
+    <link rel="next" href="../4-image_compositing/" />
     
     
-    <link rel="prev" href="apps.html" />
+    <link rel="prev" href="outpainting.html" />
     
 
     </head>
@@ -379,9 +379,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="../3-refine_images/">
+        <li class="chapter " data-level="2.3" data-path="./">
             
-                <a href="../3-refine_images/">
+                <a href="./">
             
                     
                     3 – Refine Images 🎨
@@ -393,9 +393,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.3.1" data-path="../3-refine_images/image_to_image.html">
+        <li class="chapter " data-level="2.3.1" data-path="image_to_image.html">
             
-                <a href="../3-refine_images/image_to_image.html">
+                <a href="image_to_image.html">
             
                     
                     Image to Image
@@ -406,9 +406,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.2" data-path="../3-refine_images/inpainting.html">
+        <li class="chapter " data-level="2.3.2" data-path="inpainting.html">
             
-                <a href="../3-refine_images/inpainting.html">
+                <a href="inpainting.html">
             
                     
                     Inpainting
@@ -419,9 +419,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.3" data-path="../3-refine_images/outpainting.html">
+        <li class="chapter " data-level="2.3.3" data-path="outpainting.html">
             
-                <a href="../3-refine_images/outpainting.html">
+                <a href="outpainting.html">
             
                     
                     Outpainting
@@ -432,9 +432,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.4" data-path="../3-refine_images/upscaling.html">
+        <li class="chapter active" data-level="2.3.4" data-path="upscaling.html">
             
-                <a href="../3-refine_images/upscaling.html">
+                <a href="upscaling.html">
             
                     
                     Upscaling
@@ -547,9 +547,9 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="articles.html">
+        <li class="chapter " data-level="3.1" data-path="../resources/articles.html">
             
-                <a href="articles.html">
+                <a href="../resources/articles.html">
             
                     
                     Articles
@@ -560,9 +560,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="apps.html">
+        <li class="chapter " data-level="3.2" data-path="../resources/apps.html">
             
-                <a href="apps.html">
+                <a href="../resources/apps.html">
             
                     
                     End-User Applications
@@ -573,9 +573,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.3" data-path="prompt_engineering.html">
+        <li class="chapter " data-level="3.3" data-path="../resources/prompt_engineering.html">
             
-                <a href="prompt_engineering.html">
+                <a href="../resources/prompt_engineering.html">
             
                     
                     Prompt Engineering
@@ -586,9 +586,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" data-path="models.html">
+        <li class="chapter " data-level="3.4" data-path="../resources/models.html">
             
-                <a href="models.html">
+                <a href="../resources/models.html">
             
                     
                     Models
@@ -599,9 +599,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5" data-path="inpainting_outpainting.html">
+        <li class="chapter " data-level="3.5" data-path="../resources/inpainting_outpainting.html">
             
-                <a href="inpainting_outpainting.html">
+                <a href="../resources/inpainting_outpainting.html">
             
                     
                     Inpainting / Outpainting
@@ -612,9 +612,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.6" data-path="model_training.html">
+        <li class="chapter " data-level="3.6" data-path="../resources/model_training.html">
             
-                <a href="model_training.html">
+                <a href="../resources/model_training.html">
             
                     
                     Model Training
@@ -655,7 +655,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Prompt Engineering</a>
+        <a href=".." >Upscaling</a>
     </h1>
 </div>
 
@@ -670,31 +670,32 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="resources-for-prompt-engineering">Resources for Prompt engineering</h1>
-<h2 id="tutorials">Tutorials</h2>
-<h3 id="invoke-ai">Invoke AI</h3>
+                                <h1 id="upscaling">Upscaling</h1>
+<p>The default image size of Stable Diffusion v1 is 512×512 pixels. This is pretty low in today’s standard. Also, a complex scene generated by Stable Diffusion is often not as sharp as it should be. It often struggles with fine details. An AI Image upscaler is an indispensable tool to improve the quality of images generated by Stable Diffusion. In fact, it is so commonly used that many Stable Diffusion GUIs has built-in support for it.</p>
+<p>The Real-ESRGAN (R-ESRGAN) upscaler is a good choice for photographs or realistic paintings. Anime images require upscalers specifically trained for recovering animes.</p>
+<h2 id="workflow">Workflow</h2>
+<p>Usually the worksflow goes like this:</p>
 <ul>
-<li><a href="https://support.invoke.ai/support/solutions/articles/151000096606-tips-on-crafting-prompts" target="_blank">Tips on Crafting Prompts</a></li>
-<li><a href="https://support.invoke.ai/support/solutions/articles/151000096723-advanced-prompting-syntax" target="_blank">Advanced Prompting Syntax</a></li>
+<li>use text-to-image to generate an image in the model’s default resolution (for SDv1.5: 512×512)</li>
+<li>inpaint some areas to fix some details</li>
+<li>upscale to the desired resolution</li>
+<li>use inpaint again to recover details</li>
 </ul>
-<h3 id="automatic1111">AUTOMATIC1111</h3>
-<p><em>Stable Diffusion Art tutorials</em></p>
+<h2 id="upscaling-in-invokeai">Upscaling in InvokeAI</h2>
+<p>Open the upscaling dialog by clicking on the &quot;expand&quot; icon located above the image display area in the Web UI:</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/invokeai_upscale-dialog.png" width="500px">
+  <figcaption style="color:grey; font-style: italic;">Credit: InvokeAI, 2023, &quot;Postprocessing&quot;, Github</figcaption>
+</figure>
+<br><p></p>
+<p>The default upscaling option is Real-ESRGAN x2 Plus, which will scale your image by a factor of two. This means upscaling a 512x512 image will result in a new 1024x1024 image. Other options are the x4 upscalers, which will scale your image by a factor of 4.</p>
+<h2 id="tutorials--resources">Tutorials &amp; resources</h2>
+<p><a href="../resources/models.html">Useful links &amp; tutorials for Models</a>. Includes download links of Upscalers.</p>
+<h2 id="references">References</h2>
 <ul>
-<li><a href="https://stable-diffusion-art.com/how-to-come-up-with-good-prompts-for-ai-image-generation/" target="_blank">How to come up with good-prompts</a></li>
-<li><a href="https://stable-diffusion-art.com/fine-tune-your-ai-images-with-these-simple-prompting-techniques/" target="_blank">Fine tune your images with simple prompting techniques</a></li>
-<li><a href="https://stable-diffusion-art.com/know-these-important-parameters-for-stunning-ai-images/" target="_blank">Important parameters</a></li>
-<li><a href="https://stable-diffusion-art.com/how-negative-prompt-work/" target="_blank">How negative prompts work</a></li>
-<li><a href="https://stable-diffusion-art.com/how-to-use-negative-prompts/" target="_blank">How to use negative prompts</a></li>
-<li><a href="https://stable-diffusion-art.com/automatic1111/#Get_prompt_from_an_image" target="_blank">CLIP</a></li>
-<li><a href="https://stable-diffusion-art.com/automatic1111/#PNG_Info" target="_blank">PNG info</a></li>
-</ul>
-<h2 id="useful-links">Useful links</h2>
-<ul>
-<li><a href="https://civitai.com/images" target="_blank">Civitai - resource to do reverse prompting</a></li>
-<li><a href="https://arthub.ai/" target="_blank">Arthub - explore AI generated images</a></li>
-<li><a href="https://promptomania.com/stable-diffusion-prompt-builder/" target="_blank">Promptomania - prompt generator</a></li>
-<li><a href="https://stable-diffusion-art.com/sdxl-styles/" target="_blank">SDXL boilerplate styles on Stable Diffusion Art</a></li>
-<li><a href="https://freeflo.ai/" target="_blank">freeflo - Reusable generative AI style prompts for better images</a></li>
+<li><a href="https://stable-diffusion-art.com/ai-upscaler/" target="_blank">Andrew Wong, 2023, &quot;How to use AI image upscaler to improve details&quot;, <em>Stable Diffusion Art</em></a></li>
+<li><a href="https://github.com/invoke-ai/InvokeAI/blob/main/docs/features/POSTPROCESS.md" target="_blank">InvokeAI, 2023, &quot;Postprocessing&quot;, <em>Github</em></a></li>
 </ul>
 
                                 
@@ -723,12 +724,12 @@
 
             
                 
-                <a href="apps.html" class="navigation navigation-prev " aria-label="Previous page: End-User Applications">
+                <a href="outpainting.html" class="navigation navigation-prev " aria-label="Previous page: Outpainting">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="models.html" class="navigation navigation-next " aria-label="Next page: Models">
+                <a href="../4-image_compositing/" class="navigation navigation-next " aria-label="Next page: 4 - Image Compositing 📐">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -739,7 +740,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Prompt Engineering","level":"3.3","depth":1,"next":{"title":"Models","level":"3.4","depth":1,"path":"resources/models.md","ref":"resources/models.md","articles":[]},"previous":{"title":"End-User Applications","level":"3.2","depth":1,"path":"resources/apps.md","ref":"resources/apps.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"resources/prompt_engineering.md","mtime":"2023-10-18T20:08:45.844Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-25T18:17:16.924Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Upscaling","level":"2.3.4","depth":2,"next":{"title":"4 - Image Compositing 📐","level":"2.4","depth":1,"path":"4-image_compositing/README.md","ref":"4-image_compositing/README.md","articles":[{"title":"Depth to Image","level":"2.4.1","depth":2,"path":"4-image_compositing/depth_to_image.md","ref":"4-image_compositing/depth_to_image.md","articles":[]}]},"previous":{"title":"Outpainting","level":"2.3.3","depth":2,"path":"3-refine_images/outpainting.md","ref":"3-refine_images/outpainting.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3-refine_images/upscaling.md","mtime":"2023-10-20T15:11:06.651Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-25T18:17:16.924Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

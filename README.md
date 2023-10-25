@@ -2,7 +2,7 @@
 Course about how to use generative models for AI art
 
 ## 1 – Enter the Latent Space 🚀
-Learn about the underlying technical concepts of AI & Machine Learning. Discover the application fields to get inspired. Discover prompt engineering techniques and generate your first images.
+Understand the underlying concepts of Machine Learning, discover the application fields to get inspired and generate your first images.
 
 **Introductions**
 
@@ -14,103 +14,97 @@ Learn about the underlying technical concepts of AI & Machine Learning. Discover
 
 - Overview on Machine Learning & generative models
 - Technical explanation on how does Stable Diffusion work
-- Introduction to prompt engineering principles
+- Overview on End-User Applications
 
 **Demos**
 
-- Demo: Setup of software
-- Demo: First images with Text to Image
-- Demo: Positive prompts, negative prompt
-- Demo: Keywords weight, keywords blend
-- Demo: CLIP, prompt generators, boilerplates
+- End-User Applications
+- Setup of software
 
 **Activity**
 
-- Prompt craft challenge
+- First images with Text to Image
 
-## 2 – Refine images 🎨
-Learn how to fine-tune your images. Explore various models to experiment with a wide range of generated aesthetics.
+## 2 – Fundamentals to Image Generation ✍️
+Improve your prompt engineering technique for image generation. Explore various models to experiment with a wide range of generated aesthetics.
 
 **Lecture**
 
-- Introduction to trained models
-- Introduction to SDXL
-- Introduction to inpainting, outpainting and upscaling
+- Prompt Engineering
+- Checkpoint & fine-tuned generative models
 
 **Demos**
 
-- Demo: Import and experiment with various models
-- Demo: Inpainting
-- Demo: Upscaling
-- Demo: Outpainting
+- Positive prompts, negative prompt, negative embedding
+- Keywords weight, keywords blend
+- CLIP, prompt generators, boilerplates
+- Import and experiment with various models
+
 
 **Activity**
 
-- Going further: "Humans Are Biased. Generative AI Is Even Worse"
-- Group discussion: how can artists have an impact?
+- Prompt Craft Challenge
 
-## 3 – Image Compositing 📐
-Gain more control over your workflow and final composition. Explore the potential of image-to-image style transfer and other techniques for concept art & visual prototyping.
+## 3 – Refine Images 🎨
+Explore how to apply a certain style and use post-processing techniques to achieve richer details in your images.
 
 **Lecture**
 
-- Introduction to Image to Image
-- Introduction to ControlNet
+- Image to Image
+- Inpainting, outpainting and upscaling
+- IP Adapter
 
 **Demos**
 
-- Demo: Basic usage of Image to Image
-- Demo: Exploration of ControlNet processors
-- Demo: Sketch to Image
-- Demo: Photoshoping to Image
+- Inpainting
+- Upscaling
+- Outpainting
+- IP Adapter
 
 **Activity**
 
+- Generative Art Challenge
 - InvokeAI - Canvas Overdrive
+- Collect references
 
-## 4 - Model Training 💾
-Take a deeper diver into Machine Learning. Learn how to train your own model to gain more control over your generative process and avoid bias.
+## 4 - Image Compositing 📐
+Gain more control over your workflow and final composition. Learn advanced techniques for concept art & visual prototyping.
 
 **Lecture**
 
-- Introduction to Embedding
-- Introduction to IP Adapter
-- Introduction to LoRA
-- Introduction to VAE
+- ControlNet
+- Depth to Image
 
 **Demos**
 
-- Demo: Embedding
-- Demo: IP Adapter
-- Demo: Dreambooth
-- Demo: LoRA
-- Demo: LyCORIS
-- Demo: Hypernetworks
+- Basic usage of Image to Image
+- Exploration of ControlNet processors
+- Sketch to Image
+- Photoshopping to Image
+
 
 **Activity**
 
 - Decrypting the technical setup and workflow of artists
 
-## 5 – Extra tips & Animations 🎥
-Discover how the techniques learnt previously can be applied for animated content generation. Brainstorm for personal projects.
+## 5 – Machine Learning & Society  💾
+Learn how to train your own model. Investigate about the ethical dilemmas related to AI & generative models. Debate with your peers and expand your critical thinking on the field.
 
 **Lecture**
 
-- Introduction to Text to Video, Deforum and other animation techniques
+- Introduction to Fine-tuning techniques
 
 **Demos**
 
-- Demo: Advanced compositing with ControlNet processors
-- Demo: Frame interpolation
-- Demo: Using Deforum for Text to Video
-- Demo: Gif to Gif
-- Demo: Combine prompting and morphing for more control
+- Embedding
+- LoRA
+- Dreambooth
+
 
 **Activity**
 
-- Brainstorm for student projects
-- Students start working on their projects
-
+- Readings & Group discussions
+- Brainstorm for final projects
 
 ## 6 – Final Presentations ✨
 Share your projects with your peers and reflect on progress as we discover each other's imagery. Reflect on the 6 weeks and share your new way of seeing things.

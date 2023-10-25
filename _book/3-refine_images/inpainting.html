@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>Prompt Engineering · HonKit</title>
+        <title>Inpainting · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.1">
@@ -56,10 +56,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="models.html" />
+    <link rel="next" href="outpainting.html" />
     
     
-    <link rel="prev" href="apps.html" />
+    <link rel="prev" href="image_to_image.html" />
     
 
     </head>
@@ -379,9 +379,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="../3-refine_images/">
+        <li class="chapter " data-level="2.3" data-path="./">
             
-                <a href="../3-refine_images/">
+                <a href="./">
             
                     
                     3 – Refine Images 🎨
@@ -393,9 +393,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.3.1" data-path="../3-refine_images/image_to_image.html">
+        <li class="chapter " data-level="2.3.1" data-path="image_to_image.html">
             
-                <a href="../3-refine_images/image_to_image.html">
+                <a href="image_to_image.html">
             
                     
                     Image to Image
@@ -406,9 +406,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.2" data-path="../3-refine_images/inpainting.html">
+        <li class="chapter active" data-level="2.3.2" data-path="inpainting.html">
             
-                <a href="../3-refine_images/inpainting.html">
+                <a href="inpainting.html">
             
                     
                     Inpainting
@@ -419,9 +419,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.3" data-path="../3-refine_images/outpainting.html">
+        <li class="chapter " data-level="2.3.3" data-path="outpainting.html">
             
-                <a href="../3-refine_images/outpainting.html">
+                <a href="outpainting.html">
             
                     
                     Outpainting
@@ -432,9 +432,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.4" data-path="../3-refine_images/upscaling.html">
+        <li class="chapter " data-level="2.3.4" data-path="upscaling.html">
             
-                <a href="../3-refine_images/upscaling.html">
+                <a href="upscaling.html">
             
                     
                     Upscaling
@@ -547,9 +547,9 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="articles.html">
+        <li class="chapter " data-level="3.1" data-path="../resources/articles.html">
             
-                <a href="articles.html">
+                <a href="../resources/articles.html">
             
                     
                     Articles
@@ -560,9 +560,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="apps.html">
+        <li class="chapter " data-level="3.2" data-path="../resources/apps.html">
             
-                <a href="apps.html">
+                <a href="../resources/apps.html">
             
                     
                     End-User Applications
@@ -573,9 +573,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.3" data-path="prompt_engineering.html">
+        <li class="chapter " data-level="3.3" data-path="../resources/prompt_engineering.html">
             
-                <a href="prompt_engineering.html">
+                <a href="../resources/prompt_engineering.html">
             
                     
                     Prompt Engineering
@@ -586,9 +586,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" data-path="models.html">
+        <li class="chapter " data-level="3.4" data-path="../resources/models.html">
             
-                <a href="models.html">
+                <a href="../resources/models.html">
             
                     
                     Models
@@ -599,9 +599,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5" data-path="inpainting_outpainting.html">
+        <li class="chapter " data-level="3.5" data-path="../resources/inpainting_outpainting.html">
             
-                <a href="inpainting_outpainting.html">
+                <a href="../resources/inpainting_outpainting.html">
             
                     
                     Inpainting / Outpainting
@@ -612,9 +612,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.6" data-path="model_training.html">
+        <li class="chapter " data-level="3.6" data-path="../resources/model_training.html">
             
-                <a href="model_training.html">
+                <a href="../resources/model_training.html">
             
                     
                     Model Training
@@ -655,7 +655,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Prompt Engineering</a>
+        <a href=".." >Inpainting</a>
     </h1>
 </div>
 
@@ -670,31 +670,41 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="resources-for-prompt-engineering">Resources for Prompt engineering</h1>
-<h2 id="tutorials">Tutorials</h2>
-<h3 id="invoke-ai">Invoke AI</h3>
+                                <h1 id="inpainting">Inpainting</h1>
+<p>Inpainting is a process where we try to fill in parts of an image with new or tweaked content. In a technical sense, inpainting methods use the available information in an image (such as edges, textures, colors) to predict what the areas should look like, and then use the selected model to regenerate the image.</p>
+<p>Inpainting is really just a particular case of image-to-image. Noise is added to the parts of the image you wanted to inpaint. The amount of noise is similarly controlled by denoising strength.</p>
+<p>How Inpainting works is significantly impacted by the model you have selected. For best results, it is generally recommended to use an inpainting specific model; these are usually identified by the &quot;-inpainting&quot; term in the model name.</p>
+<h2 id="inpaiting-in-invokeai">Inpaiting in InvokeAI</h2>
+<p>On Invokes Unified Canvas, you can Inpaint by using the Brush (B) tool on the Mask layer to define an area that you would like to have regenerated. If you invoke with a masked area, the masked area will be inpainted on Invoking.</p>
+<h3 id="infill-method">Infill Method</h3>
+<p>Method to infill the selected area. Different methods function differently and will produce different result. The <code>patchmatch</code> seems to produce the best resultst in most cases.</p>
+<h3 id="scale-before-processing">Scale Before Processing</h3>
+<p>Scales the selected area to the size best suited for the model before the image generation process. This can be used to increase the resolution of the bounded area to achieve finer details.</p>
 <ul>
-<li><a href="https://support.invoke.ai/support/solutions/articles/151000096606-tips-on-crafting-prompts" target="_blank">Tips on Crafting Prompts</a></li>
-<li><a href="https://support.invoke.ai/support/solutions/articles/151000096723-advanced-prompting-syntax" target="_blank">Advanced Prompting Syntax</a></li>
+<li>Auto scales the bounded area’s width and height to the size best suited for the model used for inpainting</li>
+<li>None prevents any scaling from occurring before inpainting</li>
+<li>Manual allows the user to select the scaled width and height of the bounded area</li>
 </ul>
-<h3 id="automatic1111">AUTOMATIC1111</h3>
-<p><em>Stable Diffusion Art tutorials</em></p>
+<h3 id="workflow">Workflow</h3>
 <ul>
-<li><a href="https://stable-diffusion-art.com/how-to-come-up-with-good-prompts-for-ai-image-generation/" target="_blank">How to come up with good-prompts</a></li>
-<li><a href="https://stable-diffusion-art.com/fine-tune-your-ai-images-with-these-simple-prompting-techniques/" target="_blank">Fine tune your images with simple prompting techniques</a></li>
-<li><a href="https://stable-diffusion-art.com/know-these-important-parameters-for-stunning-ai-images/" target="_blank">Important parameters</a></li>
-<li><a href="https://stable-diffusion-art.com/how-negative-prompt-work/" target="_blank">How negative prompts work</a></li>
-<li><a href="https://stable-diffusion-art.com/how-to-use-negative-prompts/" target="_blank">How to use negative prompts</a></li>
-<li><a href="https://stable-diffusion-art.com/automatic1111/#Get_prompt_from_an_image" target="_blank">CLIP</a></li>
-<li><a href="https://stable-diffusion-art.com/automatic1111/#PNG_Info" target="_blank">PNG info</a></li>
+<li>(optional) upscale the image before inpainting</li>
+<li>(optional) adjust the bounding box to focus on the part of the image you want to inpaint.</li>
+<li>(if adjusted bounding box). Keep in mind that the bounding box is all the model is aware of, so the prompt needs to be adjusted to adapt to the bounding box and only re-generate parts of the image you want to inpaint.</li>
+<li>adjust denoising scale. The higher, the more creative the AI will be. The lower, the closer it will stay to the original image</li>
+<li>(optional) use the brush tool to paint the base image and roughly define the shapes and colors you want to add / change</li>
+<li>use the brush tool to mask the area you want to inpaint</li>
+<li>select the infill methods</li>
+<li>(optional) increase the scale before processing for finer details</li>
+<li>repeat the process to mask any resulting seams between the new and base image to ensure that the generation fits in well</li>
 </ul>
-<h2 id="useful-links">Useful links</h2>
+<h2 id="face-fixing-in-invokeai">Face Fixing in InvokeAI</h2>
+<p>As of InvokeAI, the easiest way to improve faces created during image generation is through the Inpainting functionality of the Unified Canvas. Simply add the image containing the faces that you would like to improve to the canvas, mask the face to be improved and run the invocation.</p>
+<h2 id="tutorials--resources">Tutorials &amp; resources</h2>
+<p><a href="../resources/articles.html">Useful links &amp; tutorials for Inpainting and Outpainting</a></p>
+<h2 id="references">References</h2>
 <ul>
-<li><a href="https://civitai.com/images" target="_blank">Civitai - resource to do reverse prompting</a></li>
-<li><a href="https://arthub.ai/" target="_blank">Arthub - explore AI generated images</a></li>
-<li><a href="https://promptomania.com/stable-diffusion-prompt-builder/" target="_blank">Promptomania - prompt generator</a></li>
-<li><a href="https://stable-diffusion-art.com/sdxl-styles/" target="_blank">SDXL boilerplate styles on Stable Diffusion Art</a></li>
-<li><a href="https://freeflo.ai/" target="_blank">freeflo - Reusable generative AI style prompts for better images</a></li>
+<li><a href="https://github.com/invoke-ai/InvokeAI/blob/main/docs/features/POSTPROCESS.md" target="_blank">InvokeAI, 2023, &quot;Postprocessing&quot;, <em>Github</em></a></li>
+<li><a href="https://stable-diffusion-art.com/how-stable-diffusion-work/" target="_blank">Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;, <em>Stable Diffusion Art</em></a></li>
 </ul>
 
                                 
@@ -723,12 +733,12 @@
 
             
                 
-                <a href="apps.html" class="navigation navigation-prev " aria-label="Previous page: End-User Applications">
+                <a href="image_to_image.html" class="navigation navigation-prev " aria-label="Previous page: Image to Image">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="models.html" class="navigation navigation-next " aria-label="Next page: Models">
+                <a href="outpainting.html" class="navigation navigation-next " aria-label="Next page: Outpainting">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -739,7 +749,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Prompt Engineering","level":"3.3","depth":1,"next":{"title":"Models","level":"3.4","depth":1,"path":"resources/models.md","ref":"resources/models.md","articles":[]},"previous":{"title":"End-User Applications","level":"3.2","depth":1,"path":"resources/apps.md","ref":"resources/apps.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"resources/prompt_engineering.md","mtime":"2023-10-18T20:08:45.844Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-25T18:17:16.924Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Inpainting","level":"2.3.2","depth":2,"next":{"title":"Outpainting","level":"2.3.3","depth":2,"path":"3-refine_images/outpainting.md","ref":"3-refine_images/outpainting.md","articles":[]},"previous":{"title":"Image to Image","level":"2.3.1","depth":2,"path":"3-refine_images/image_to_image.md","ref":"3-refine_images/image_to_image.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3-refine_images/inpainting.md","mtime":"2023-10-20T16:14:15.648Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-25T18:17:16.924Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
