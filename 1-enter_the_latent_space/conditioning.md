@@ -27,6 +27,12 @@ Why do we need embedding? It’s because some words are closely related to each 
 
 Embedding can also be used to trigger a style with a keyword. We will discuss this in the section [4 - Model Training 💾](../4-model_training/README.md)
 
+## Text transformer
+
+The embedding needs to be further processed by the text transformer before feeding into the noise predictor. The output of the text transformer is used multiple times by the noise predictor. That’s where the prompt meets the image (cross-attention).
+
+Let’s use the prompt “A man with blue eyes” as an example. Stable Diffusion pairs the two words “blue” and “eyes” together so that it generates a man with blue eyes but not a man with a blue shirt. It then uses this information to steer the reverse diffuse towards images containing blue eyes.
+
 ## Other conditionings
 
 The text prompt is not the only way a Stable Diffusion model can be conditioned. Both a text prompt and a depth image are used to condition the depth-to-image model. ControlNet conditions the noise predictor with detected outlines, human poses, etc, and achieves excellent controls over image generations. We will discuss this in the section [3 – Image Compositing 📐](../3–image_compositing/README.md)

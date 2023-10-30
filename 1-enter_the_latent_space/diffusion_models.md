@@ -4,7 +4,7 @@ During this course we will be focusing on Stable Diffusion (SD) to create genera
 
 <br>
 <figure>
-  <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*_0s2HTlVXS44w2kzNEF08w.png">
+  <img src="../assets/lecture/Himanshu_Wagh-generative_models.webp">
   <figcaption style="color:grey; font-style: italic;">Credit: Himanshu Wagh, 2022, Generative Models: The Next Machine Learning Boom?", Medium</figcaption>
 </figure>
 <br>

@@ -9,29 +9,16 @@ In the simplest form, Stable Diffusion is a text-to-image model. Give it a text 
 </figure>
 <br>
 
-## Forward diffusion
+## Diffusion model training
 
-A forward diffusion process adds noise to a training image, gradually turning it into an uncharacteristic noise image. The forward process will turn any cat or dog image into a noise image. Eventually, you won’t be able to tell whether they are initially a dog or a cat.
-
-<br>
-<figure>
-  <img src="../assets/lecture/andrew-wong-forward-diffusion.webp" width="500px">
-  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, "How does Stable Diffusion work?"</figcaption>
-</figure>
-<br>
-
-## Reverse diffusion
-
-What if we can reverse the diffusion? Like playing a video backward. Going backward in time. Starting from a noisy, meaningless image, reverse diffusion recovers a cat.
-
-## Stable Diffusion model training
-
-To reverse the diffusion, we need to know how much noise is added to an image. The answer is teaching a neural network model to predict the noise added. It is called the noise predictor in Stable Diffusion. The training goes as follows:
+During the training phase, the forward diffusion process adds noise to a training image, gradually turning it into an uncharacteristic noise image. The forward process will turn any cat or dog image into a noise image. Eventually, you won’t be able to tell whether they are initially a dog or a cat. At each step of the forward diffusion process, a noise predictor is trained to tell  how much noise was added - this will be useful to generate image later on.
 
 1. Pick a training image, like a photo of a cat.
 2. Generate a random noise image.
 3. Corrupt the training image by adding this noisy image up to a certain number of steps.
-4. Teach the noise predictor to tell us how much noise was added. This is done by tuning its weights and showing it the correct answer.
+4. Teach the noise predictor to tell us how much noise was added.
+
+After training, we have a noise predictor capable of estimating the noise added to an image.
 
 <br>
 <figure>
@@ -40,11 +27,9 @@ To reverse the diffusion, we need to know how much noise is added to an image. T
 </figure>
 <br>
 
-Noise is sequentially added  and the noise predictor estimates the total noise added up to each step. After training, we have a noise predictor capable of estimating the noise added to an image.
-
 ## Reverse diffusion
 
-Now we have the noise predictor. How to use it?
+What if we can reverse the diffusion? Like playing a video backward. Going backward in time. Starting from a noisy, meaningless image, reverse diffusion recovers a cat.
 
 We first generate a completely random image and ask the noise predictor to tell us the noise. We then subtract this estimated noise from the original image. Repeat this process a few times. You will get an image of a cat.
 

@@ -2,17 +2,17 @@
 
 In text-to-image, you give Stable Diffusion a text prompt, and it returns an image.
 
-**Step 1.** Stable Diffusion generates a random tensor in the latent space. You control this tensor by setting the seed of the random number generator. If you set the seed to a certain value, you will always get the same random tensor. This is your image in latent space. But it is all noise for now.
+**Step 1.** Stable Diffusion generates a random matrix in the latent space.  This is your image in latent space. But it is all noise for now.
 
 <br>
 <figure>
-  <img src="../assets/lecture/andrew-wong-text-to-image-1.jpeg" width="200px">
+  <img src="../assets/lecture/andrew-wong-text-to-image-1.jpeg" width="100px">
   <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, "How does Stable Diffusion work?"</figcaption>
 </figure>
 <br>
 
 
-**Step 2.** The noise predictor takes the latent noisy image and text prompt as input and predicts the noise, also in latent space  tensor.
+**Step 2.** The noise predictor takes the latent noise image and the text prompt as inputs and predicts the noise, also in latent space  matrix.
 
 <br>
 <figure>

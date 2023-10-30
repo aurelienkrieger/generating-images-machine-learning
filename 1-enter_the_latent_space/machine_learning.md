@@ -23,12 +23,13 @@ The process involves several key steps:
 
 ## Limitations
 
-If we confront this to a general definition of "model" from the Cambridge Dictionary of English:
+Let's have a look at a general definition of "model" from the Cambridge Dictionary of English:
 
 > A simple representation of a system or process that can be used in calculations or predictions of what might happen.
 
 We understand that a model isn't reality, but rather a simplified representation of a section of it, a conceptual and mathematical construct. Hence we can start to raise a few key points of attention on the topic:
 
+- can we project into the future what we have perceived in the past?
 - the data on which the model has been trained
 - the design of the training algorithm and of the model
 - the ability we have to investigate the calculations

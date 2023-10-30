@@ -14,11 +14,10 @@ Understand the underlying concepts of Machine Learning, discover the application
 
 - Overview on Machine Learning & generative models
 - Technical explanation on how does Stable Diffusion work
-- Overview on End-User Applications
 
 **Demos**
 
-- End-User Applications
+- Overview on End-User Applications
 - Setup of software
 
 **Activity**
