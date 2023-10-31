@@ -609,7 +609,7 @@
     - Juggernaut
 
 - workflow
-  - generate image from OpenJourney (or use MidJourney image)
+  - generate image from OpenJourney (or use MidJourney image) - [tutorial](https://www.youtube.com/watch?v=TrcwBSlczfQ)
   - use as input for image to image with prompt to generate photorealistic images
 
 - learnings
@@ -697,7 +697,6 @@
 
 
 # Ideas
-
 
 - colorize B&W image
 - regional prompting

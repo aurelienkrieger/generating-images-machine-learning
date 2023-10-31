@@ -43,3 +43,4 @@
 * [Models](resources/models.md)
 * [Inpainting / Outpainting](resources/inpainting_outpainting.md)
 * [Model Training](resources/model_training.md)
+* [Community](resources/community.md)
