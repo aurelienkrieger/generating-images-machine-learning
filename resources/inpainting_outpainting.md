@@ -5,6 +5,7 @@
 ### Tutorials
 
 - [InvokeAI tutorial](https://www.youtube.com/watch?v=kzRL88ffv1o)
+- [InvokeAI tips & tricks](https://www.youtube.com/watch?v=2pcBtNkTZ40)
 - [Installation guide for patchmatch](https://invoke-ai.github.io/InvokeAI/installation/060_INSTALL_PATCHMATCH/)
 - [Stable Diffusion Art tutorial for AUTOMATIC1111](https://stable-diffusion-art.com/inpainting-remove-extra-limbs/)
 - [Monzon Media tutorial](https://www.youtube.com/watch?v=aU0jGZpDIVc)

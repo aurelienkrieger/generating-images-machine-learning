@@ -2,7 +2,9 @@
 
 ## Tutorials
 
-### Invoke AI
+- [PromptHero guide](https://prompthero.com/stable-diffusion-prompt-guide)
+
+### InvokeAI
 
 - [Tips on Crafting Prompts](https://support.invoke.ai/support/solutions/articles/151000096606-tips-on-crafting-prompts)
 - [Advanced Prompting Syntax](https://support.invoke.ai/support/solutions/articles/151000096723-advanced-prompting-syntax)
@@ -19,11 +21,20 @@ _Stable Diffusion Art tutorials_
 - [CLIP](https://stable-diffusion-art.com/automatic1111/#Get_prompt_from_an_image)
 - [PNG info](https://stable-diffusion-art.com/automatic1111/#PNG_Info)
 
+### MidJourney
+
+- [Olivio Sarikas - Make BETTER Prompts - MidJourney AI](https://www.youtube.com/watch?v=q1taNR3V6Fc)
+
 
 ## Useful links
 
-- [Civitai - resource to do reverse prompting](https://civitai.com/images)
-- [Arthub - explore AI generated images](https://arthub.ai/)
+_explore AI generated images_
+- [Civitai](https://civitai.com/images)
+- [PromptHero](https://prompthero.com/)
+- [PromptHunt](https://www.prompthunt.com/)
+- [ArtHub](https://arthub.ai/)
+- [freeflo](https://freeflo.ai/)
+
+_tools_
 - [Promptomania - prompt generator](https://promptomania.com/stable-diffusion-prompt-builder/)
 - [SDXL boilerplate styles on Stable Diffusion Art](https://stable-diffusion-art.com/sdxl-styles/)
-- [freeflo - Reusable generative AI style prompts for better images](https://freeflo.ai/)

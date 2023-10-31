@@ -10,12 +10,14 @@
 
 _tutorials_
 - [AUTOMATIC1111 complete guide from Stable Diffusion Art](https://stable-diffusion-art.com/automatic1111/)
-- [Invoke AI tutorials](https://support.invoke.ai/support/solutions/151000159037)
-- [Invoke AI official documentation](https://invoke-ai.github.io/InvokeAI/)
+- [InvokeAI tutorials](https://support.invoke.ai/support/solutions/151000159037)
+- [InvokeAI official documentation](https://invoke-ai.github.io/InvokeAI/)
 
 ### Downloadable
 
-- [Invoke AI](https://invoke.ai/)
+- InvokeAI
+  - [official website](https://invoke.ai/)
+  - [installation guide](https://invoke-ai.github.io/InvokeAI/installation/010_INSTALL_AUTOMATED/)
 - [Enfugue](https://github.com/painebenjamin/app.enfugue.ai)
 - [Easy Diffusion](https://easydiffusion.github.io/)
 - [DiffusionBee - Mac only](https://diffusionbee.com/)
@@ -34,6 +36,11 @@ _tutorials_
 - [Stable Diffusion](https://stablediffusionweb.com/#demo)
 - [Easy Diffusion](https://stablediffusion.gigantic.work/)
 - [Graviti](https://library.graviti.com/sdxl-1-0/)
+- [Civitai](https://civitai.com/)
+- [DALL-E 3 on Bing](https://www.bing.com/images/create)
+- [PromptHero](https://prompthero.com/)
+- [PromptHunt](https://www.prompthunt.com/)
+- [ArtHub](https://arthub.ai/)
 - [Hugging Face - Stable Diffusion v1.5](https://huggingface.co/spaces/runwayml/stable-diffusion-v1-5)
 - [Hugging Face - Stable Diffusion v2.1](https://huggingface.co/spaces/stabilityai/stable-diffusion)
 - [Hugging Face - Illusion Diffusion (Monster QR)](https://huggingface.co/spaces/AP123/IllusionDiffusion)
@@ -68,7 +75,7 @@ _tutorials_
 - [Replicate](https://replicate.com/)
 - [Dream Studio](https://beta.dreamstudio.ai/generate)
 - [Clipdrop](https://clipdrop.co/)
-- [Invoke AI](https://invoke.ai/)
+- [InvokeAI App](https://app.invoke.ai/)
 - [Mage space](https://www.mage.space/)
 - [Playground AI](https://playgroundai.com/)
 - [KREA](https://www.krea.ai/)

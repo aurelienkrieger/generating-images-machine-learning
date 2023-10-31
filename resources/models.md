@@ -77,6 +77,8 @@
 - Roop (Face swap)
   - [original project page](https://github.com/s0md3v/roop)
   - [AUTOMATIC1111 extension](https://github.com/s0md3v/sd-webui-roop)
+- ReActor (Face swap)
+  - [Stable Diffusion extension](https://github.com/Gourieff/sd-webui-reactor)
 
 #### Upscaling
 
