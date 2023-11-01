@@ -93,7 +93,7 @@
                 <a href="../">
             
                     
-                    Introduction
+                    Homepage
             
                 </a>
             
@@ -148,7 +148,20 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.3" data-path="stable_diffusion.html">
+        <li class="chapter " data-level="2.1.3" data-path="workflow.html">
+            
+                <a href="workflow.html">
+            
+                    
+                    Workflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="stable_diffusion.html">
             
                 <a href="stable_diffusion.html">
             
@@ -161,7 +174,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.4" data-path="conditioning.html">
+        <li class="chapter active" data-level="2.1.5" data-path="conditioning.html">
             
                 <a href="conditioning.html">
             
@@ -174,7 +187,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.5" data-path="text_to_image.html">
+        <li class="chapter " data-level="2.1.6" data-path="text_to_image.html">
             
                 <a href="text_to_image.html">
             
@@ -187,7 +200,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.6" data-path="apps.html">
+        <li class="chapter " data-level="2.1.7" data-path="apps.html">
             
                 <a href="apps.html">
             
@@ -547,12 +560,12 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../resources/articles.html">
+        <li class="chapter " data-level="3.1" data-path="../resources/readings.html">
             
-                <a href="../resources/articles.html">
+                <a href="../resources/readings.html">
             
                     
-                    Articles
+                    Readings
             
                 </a>
             
@@ -704,7 +717,7 @@
 <p>The embedding needs to be further processed by the text transformer before feeding into the noise predictor. The output of the text transformer is used multiple times by the noise predictor. That’s where the prompt meets the image (cross-attention).</p>
 <p>Let’s use the prompt “A man with blue eyes” as an example. Stable Diffusion pairs the two words “blue” and “eyes” together so that it generates a man with blue eyes but not a man with a blue shirt. It then uses this information to steer the reverse diffuse towards images containing blue eyes.</p>
 <h2 id="other-conditionings">Other conditionings</h2>
-<p>The text prompt is not the only way a Stable Diffusion model can be conditioned. Both a text prompt and a depth image are used to condition the depth-to-image model. ControlNet conditions the noise predictor with detected outlines, human poses, etc, and achieves excellent controls over image generations. We will discuss this in the section <a href="../3–image_compositing/README.md">3 – Image Compositing 📐</a></p>
+<p>The text prompt is not the only way a Stable Diffusion model can be conditioned. ControlNet for instance conditions the noise predictor with detected outlines, human poses, etc, and achieves excellent controls over image generations. We will discuss this in the section <a href="../3–image_compositing/README.md">3 – Image Compositing 📐</a></p>
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://stable-diffusion-art.com/how-stable-diffusion-work/" target="_blank">Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;, <em>Stable Diffusion Art</em></a></li>
@@ -752,7 +765,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Conditioning","level":"2.1.4","depth":2,"next":{"title":"Text to Image","level":"2.1.5","depth":2,"path":"1-enter_the_latent_space/text_to_image.md","ref":"1-enter_the_latent_space/text_to_image.md","articles":[]},"previous":{"title":"Stable Diffusion","level":"2.1.3","depth":2,"path":"1-enter_the_latent_space/stable_diffusion.md","ref":"1-enter_the_latent_space/stable_diffusion.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1-enter_the_latent_space/conditioning.md","mtime":"2023-10-30T15:45:31.886Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-31T16:39:10.507Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Conditioning","level":"2.1.5","depth":2,"next":{"title":"Text to Image","level":"2.1.6","depth":2,"path":"1-enter_the_latent_space/text_to_image.md","ref":"1-enter_the_latent_space/text_to_image.md","articles":[]},"previous":{"title":"Stable Diffusion","level":"2.1.4","depth":2,"path":"1-enter_the_latent_space/stable_diffusion.md","ref":"1-enter_the_latent_space/stable_diffusion.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1-enter_the_latent_space/conditioning.md","mtime":"2023-11-01T14:28:53.226Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-11-01T17:19:56.531Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -804,10 +817,6 @@
     </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

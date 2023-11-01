@@ -11,14 +11,12 @@ In the simplest form, Stable Diffusion is a text-to-image model. Give it a text 
 
 ## Diffusion model training
 
-During the training phase, the forward diffusion process adds noise to a training image, gradually turning it into an uncharacteristic noise image. The forward process will turn any cat or dog image into a noise image. Eventually, you won’t be able to tell whether they are initially a dog or a cat. At each step of the forward diffusion process, a noise predictor is trained to tell  how much noise was added - this will be useful to generate image later on.
+To understand how it works, we need to understand how it is trained. During the training phase, what we call the "forward diffusion" process adds noise to a training image, gradually turning it into an uncharacteristic noise image. The forward process will turn any cat or dog image into a noise image. Eventually, you won’t be able to tell whether they are initially a dog or a cat. At each step of the forward diffusion process, a noise predictor is trained to tell  how much noise was added - this will be useful to generate new images later on.
 
 1. Pick a training image, like a photo of a cat.
 2. Generate a random noise image.
 3. Corrupt the training image by adding this noisy image up to a certain number of steps.
 4. Teach the noise predictor to tell us how much noise was added.
-
-After training, we have a noise predictor capable of estimating the noise added to an image.
 
 <br>
 <figure>
@@ -26,6 +24,8 @@ After training, we have a noise predictor capable of estimating the noise added 
   <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, "How does Stable Diffusion work?"</figcaption>
 </figure>
 <br>
+
+After training, we have a noise predictor capable of estimating the noise added to an image.
 
 ## Reverse diffusion
 

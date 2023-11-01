@@ -1,12 +1,13 @@
 # Summary
 
-* [Introduction](README.md)
+* [Homepage](README.md)
 
 ## Lectures
 
 * [1 – Enter the Latent Space 🚀](1-enter_the_latent_space/README.md)
   * [Machine Learning](1-enter_the_latent_space/machine_learning.md)
   * [Diffusion Models](1-enter_the_latent_space/diffusion_models.md)
+  * [Workflow](1-enter_the_latent_space/workflow.md)
   * [Stable Diffusion](1-enter_the_latent_space/stable_diffusion.md)
   * [Conditioning](1-enter_the_latent_space/conditioning.md)
   * [Text to Image](1-enter_the_latent_space/text_to_image.md)
@@ -37,7 +38,7 @@
 
 ## Resources
 
-* [Articles](resources/articles.md)
+* [Readings](resources/readings.md)
 * [End-User Applications](resources/apps.md)
 * [Prompt Engineering](resources/prompt_engineering.md)
 * [Models](resources/models.md)

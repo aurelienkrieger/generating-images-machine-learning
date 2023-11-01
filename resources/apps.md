@@ -41,6 +41,7 @@ _tutorials_
 - [PromptHero](https://prompthero.com/)
 - [PromptHunt](https://www.prompthunt.com/)
 - [ArtHub](https://arthub.ai/)
+- [Mage space](https://www.mage.space/)
 - [Hugging Face - Stable Diffusion v1.5](https://huggingface.co/spaces/runwayml/stable-diffusion-v1-5)
 - [Hugging Face - Stable Diffusion v2.1](https://huggingface.co/spaces/stabilityai/stable-diffusion)
 - [Hugging Face - Illusion Diffusion (Monster QR)](https://huggingface.co/spaces/AP123/IllusionDiffusion)
@@ -69,15 +70,18 @@ _tutorials_
 
 ### Integrated Online Platforms
 
+_using Stable Diffusion_
+- [Dream Studio](https://beta.dreamstudio.ai/generate)
+- [InvokeAI App](https://app.invoke.ai/)
 - [RunDiffusion](https://rundiffusion.com/)
 - [Tensor.art](https://tensor.art/)
-- [Runway](https://runwayml.com/)
-- [Replicate](https://replicate.com/)
-- [Dream Studio](https://beta.dreamstudio.ai/generate)
 - [Clipdrop](https://clipdrop.co/)
-- [InvokeAI App](https://app.invoke.ai/)
 - [Mage space](https://www.mage.space/)
 - [Playground AI](https://playgroundai.com/)
+
+_using proprietary models_
+- [Runway](https://runwayml.com/)
+- [Replicate](https://replicate.com/)
 - [KREA](https://www.krea.ai/)
 - [Adobe Firefly](https://www.adobe.com/sensei/generative-ai/firefly.html)
 
@@ -88,3 +92,6 @@ _tutorials_
 - [Magic Poser - create poses](https://webapp.magicposer.com/)
 - [D-ID - talking avatars](https://studio.d-id.com/)
 - [Scenario - AI generated game assets](https://www.scenario.com/)
+- [Pika Labs - for videos](https://www.pika.art/)
+- [Kaiber - for videos](https://kaiber.ai/)
+- [Twisty - for videos](https://twisty.ai/)

@@ -35,7 +35,7 @@ Let’s use the prompt “A man with blue eyes” as an example. Stable Diffusio
 
 ## Other conditionings
 
-The text prompt is not the only way a Stable Diffusion model can be conditioned. Both a text prompt and a depth image are used to condition the depth-to-image model. ControlNet conditions the noise predictor with detected outlines, human poses, etc, and achieves excellent controls over image generations. We will discuss this in the section [3 – Image Compositing 📐](../3–image_compositing/README.md)
+The text prompt is not the only way a Stable Diffusion model can be conditioned. ControlNet for instance conditions the noise predictor with detected outlines, human poses, etc, and achieves excellent controls over image generations. We will discuss this in the section [3 – Image Compositing 📐](../3–image_compositing/README.md)
 
 ## References
 

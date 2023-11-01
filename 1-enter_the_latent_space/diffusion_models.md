@@ -15,19 +15,22 @@ Below is an illustration of the state of art of Machine Learning models, in 4 ca
 
 <img src="../assets/lecture/The_Original_Benny C_State_of_AI_Art_Machine_Learning_Models.svg" width="900px">
 
-## Workflow
+## LAION-5B
 
-This diagram provides with an overview of the topics we will be discussing during the course that reflects the workflow for generative AI art.
+LAION is a German non-profit which makes open-sourced artificial intelligence models and datasets. It is best known for releasing LAION-5B, a large datasets of image-caption pairs which have been used to train a number of text-to-image models.
 
-<img src="../assets/lecture/generative models workflow.png" width="900px">
+The data is scraped from the web. Developers searched for `img` tags within webpages and treated their alt attributes as captions. They used CLIP from OpenAI to identify and discard images whose content did not appear to match their captions
 
-- Prompt engineering: Learn how to write prompts that can be interpreted by the SD model to generate an image with the desired subject and style.
-- Generative models: We can use a variety of base models to achive specific styles or represent specific concepts with more accuracy.
-- Additional models: We can use other models to complement the base model and achieve a higher level of control over the general composition and style.
-- GUI: Graphical User Interface, the end-user application we will use to manage models and prompts and run the scripts to generate the images. The central piece of our creative workflow.
+<br>
+<figure>
+  <img src="../assets/lecture/laion.jpeg">
+  <figcaption style="color:grey; font-style: italic;">Credit: Romain Beaumont, 2022, "LAION-5B: A New Era Of Open Large-Sclae Multi-Modal Datasets", LAION</figcaption>
+</figure>
+<br>
 
 ## References
 
 - [Andrew Wong, 2023, "How does Stable Diffusion work?", _Stable Diffusion Art_](https://stable-diffusion-art.com/how-stable-diffusion-work/)
 - [Himanshu Wagh, 2022, Generative Models: The Next Machine Learning Boom?", _Medium_](https://medium.com/codex/generative-models-the-next-machine-learning-boom-865b80c54fb1)
 - The Original Benny C, "State of AI Art Machine Learning Models" CC BY-SA 4.0, via [Wikimedia Commons](https://creativecommons.org/licenses/by-sa/4.0)
+- [Romain Beaumont, 2022, "LAION-5B: A New Era Of Open Large-Sclae Multi-Modal Datasets", _LAION_](https://laion.ai/blog/laion-5b/)

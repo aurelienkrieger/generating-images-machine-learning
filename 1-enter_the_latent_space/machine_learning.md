@@ -21,23 +21,31 @@ The process involves several key steps:
 6. Prediction or Decision Making: Once the model is trained and evaluated, it can predict or decide on new, unseen data. The model takes input features and applies the learned patterns to generate the desired output or prediction.
 7. Model Refinement and Iteration: If the model's performance is unsatisfactory we can make adjustments by retraining the model with additional data, changing the algorithm, or tuning the model's parameters.
 
-## Limitations
-
-Let's have a look at a general definition of "model" from the Cambridge Dictionary of English:
+Now let's have a look at a general definition of "model" from the Cambridge Dictionary of English:
 
 > A simple representation of a system or process that can be used in calculations or predictions of what might happen.
 
-We understand that a model isn't reality, but rather a simplified representation of a section of it, a conceptual and mathematical construct. Hence we can start to raise a few key points of attention on the topic:
+## Intelligence ?
 
-- can we project into the future what we have perceived in the past?
-- the data on which the model has been trained
-- the design of the training algorithm and of the model
-- the ability we have to investigate the calculations
-- the trust we put in the delivered predictions
-- the scale to which we apply the suggested solutions
-- the carbon footprint of this technology, especially with cloud services
+> "The human mind is not, like ChatGPT and its ilk, a lumbering statistical engine for pattern matching, gorging on hundreds of terabytes of data and extrapolating the most likely conversational response or most probable answer to a scientific question. On the contrary, the human mind is a surprisingly efficient and even elegant system that operates with small amounts of information; it seeks not to infer brute correlations among data points but to create explanations. "
+
+Noam Chomsky, 2023, "The False Promise of ChatGPT", _New York Times_
+
+## Discussion
+
+We understand that a model isn't reality, but rather a simplified representation of a section of it, a conceptual and mathematical construct. Hence we can start to raise a few questions:
+
+- can we project into the future what we have perceived from the past?
+- is the data on which the model has been trained trustworthy?
+- is the design of the training algorithm and of the model biased?
+- how far can we investigate the calculations?
+- to which extent do we trust the delivered predictions?
+- to which scale do we apply the suggested solutions?
+- what us the carbon footprint of this technology?
+- how is that affecting our critical thinking and perception of reality?
 
 ## References
 
 - [Javatpoint, "How does Machine Learning Work?"](https://www.javatpoint.com/how-does-machine-learning-work)
 - [Cambridge Dictionary of English, definition of "model"](https://dictionary.cambridge.org/dictionary/english/model)
+- [Noam Chomsky, 2023, "The False Promise of ChatGPT", _New York Times_](https://www.nytimes.com/2023/03/08/opinion/noam-chomsky-chatgpt-ai.html)

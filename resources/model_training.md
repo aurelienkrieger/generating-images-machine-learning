@@ -1,5 +1,9 @@
 # Resources for Model Training
 
+## LAION-5B
+
+- [LAION-5B](https://laion.ai/blog/laion-5b/)
+
 ## Tutorials
 
 **Stable Diffusion Art**

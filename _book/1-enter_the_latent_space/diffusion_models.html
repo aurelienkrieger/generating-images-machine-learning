@@ -56,7 +56,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="stable_diffusion.html" />
+    <link rel="next" href="workflow.html" />
     
     
     <link rel="prev" href="machine_learning.html" />
@@ -93,7 +93,7 @@
                 <a href="../">
             
                     
-                    Introduction
+                    Homepage
             
                 </a>
             
@@ -148,7 +148,20 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.3" data-path="stable_diffusion.html">
+        <li class="chapter " data-level="2.1.3" data-path="workflow.html">
+            
+                <a href="workflow.html">
+            
+                    
+                    Workflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="stable_diffusion.html">
             
                 <a href="stable_diffusion.html">
             
@@ -161,7 +174,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.4" data-path="conditioning.html">
+        <li class="chapter " data-level="2.1.5" data-path="conditioning.html">
             
                 <a href="conditioning.html">
             
@@ -174,7 +187,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.5" data-path="text_to_image.html">
+        <li class="chapter " data-level="2.1.6" data-path="text_to_image.html">
             
                 <a href="text_to_image.html">
             
@@ -187,7 +200,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.6" data-path="apps.html">
+        <li class="chapter " data-level="2.1.7" data-path="apps.html">
             
                 <a href="apps.html">
             
@@ -547,12 +560,12 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../resources/articles.html">
+        <li class="chapter " data-level="3.1" data-path="../resources/readings.html">
             
-                <a href="../resources/articles.html">
+                <a href="../resources/readings.html">
             
                     
-                    Articles
+                    Readings
             
                 </a>
             
@@ -694,20 +707,21 @@
 <h2 id="state-of-the-art">State of the Art</h2>
 <p>Below is an illustration of the state of art of Machine Learning models, in 4 catogories: Datasets, Classifiers, Generative Models and End-User Applications.</p>
 <p><img src="../assets/lecture/The_Original_Benny C_State_of_AI_Art_Machine_Learning_Models.svg" width="900px"></p>
-<h2 id="workflow">Workflow</h2>
-<p>This diagram provides with an overview of the topics we will be discussing during the course that reflects the workflow for generative AI art.</p>
-<p><img src="../assets/lecture/generative models workflow.png" width="900px"></p>
-<ul>
-<li>Prompt engineering: Learn how to write prompts that can be interpreted by the SD model to generate an image with the desired subject and style.</li>
-<li>Generative models: We can use a variety of base models to achive specific styles or represent specific concepts with more accuracy.</li>
-<li>Additional models: We can use other models to complement the base model and achieve a higher level of control over the general composition and style.</li>
-<li>GUI: Graphical User Interface, the end-user application we will use to manage models and prompts and run the scripts to generate the images. The central piece of our creative workflow.</li>
-</ul>
+<h2 id="laion-5b">LAION-5B</h2>
+<p>LAION is a German non-profit which makes open-sourced artificial intelligence models and datasets. It is best known for releasing LAION-5B, a large datasets of image-caption pairs which have been used to train a number of text-to-image models.</p>
+<p>The data is scraped from the web. Developers searched for <code>img</code> tags within webpages and treated their alt attributes as captions. They used CLIP from OpenAI to identify and discard images whose content did not appear to match their captions</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../assets/lecture/laion.jpeg">
+  <figcaption style="color:grey; font-style: italic;">Credit: Romain Beaumont, 2022, &quot;LAION-5B: A New Era Of Open Large-Sclae Multi-Modal Datasets&quot;, LAION</figcaption>
+</figure>
+<br><p></p>
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://stable-diffusion-art.com/how-stable-diffusion-work/" target="_blank">Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;, <em>Stable Diffusion Art</em></a></li>
 <li><a href="https://medium.com/codex/generative-models-the-next-machine-learning-boom-865b80c54fb1" target="_blank">Himanshu Wagh, 2022, Generative Models: The Next Machine Learning Boom?&quot;, <em>Medium</em></a></li>
 <li>The Original Benny C, &quot;State of AI Art Machine Learning Models&quot; CC BY-SA 4.0, via <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">Wikimedia Commons</a></li>
+<li><a href="https://laion.ai/blog/laion-5b/" target="_blank">Romain Beaumont, 2022, &quot;LAION-5B: A New Era Of Open Large-Sclae Multi-Modal Datasets&quot;, <em>LAION</em></a></li>
 </ul>
 
                                 
@@ -741,7 +755,7 @@
                 </a>
                 
                 
-                <a href="stable_diffusion.html" class="navigation navigation-next " aria-label="Next page: Stable Diffusion">
+                <a href="workflow.html" class="navigation navigation-next " aria-label="Next page: Workflow">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -752,7 +766,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Diffusion Models","level":"2.1.2","depth":2,"next":{"title":"Stable Diffusion","level":"2.1.3","depth":2,"path":"1-enter_the_latent_space/stable_diffusion.md","ref":"1-enter_the_latent_space/stable_diffusion.md","articles":[]},"previous":{"title":"Machine Learning","level":"2.1.1","depth":2,"path":"1-enter_the_latent_space/machine_learning.md","ref":"1-enter_the_latent_space/machine_learning.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1-enter_the_latent_space/diffusion_models.md","mtime":"2023-10-30T13:18:53.781Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-31T16:39:10.507Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Diffusion Models","level":"2.1.2","depth":2,"next":{"title":"Workflow","level":"2.1.3","depth":2,"path":"1-enter_the_latent_space/workflow.md","ref":"1-enter_the_latent_space/workflow.md","articles":[]},"previous":{"title":"Machine Learning","level":"2.1.1","depth":2,"path":"1-enter_the_latent_space/machine_learning.md","ref":"1-enter_the_latent_space/machine_learning.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1-enter_the_latent_space/diffusion_models.md","mtime":"2023-11-01T15:06:04.987Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-11-01T17:19:56.531Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -804,10 +818,6 @@
     </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

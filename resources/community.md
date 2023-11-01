@@ -9,10 +9,10 @@
 
 ## Facebook groups
 
-- [AI ANIMATION & VIDEO](https://www.facebook.com/groups/aianimationonly)
 - [Stable Diffusion](https://www.facebook.com/groups/stablediffusion/)
 - [AI Revolution - MidJourney AI, DALL-E 2, Stable Diffusion](https://www.facebook.com/groups/theairevolution/)
 - [Stable Diffusion Universe](https://www.facebook.com/groups/stablediffusionuniverse/)
+- [AI ANIMATION & VIDEO](https://www.facebook.com/groups/aianimationonly)
 
 ## YouTube channels
 

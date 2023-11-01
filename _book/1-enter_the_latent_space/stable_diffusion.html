@@ -59,7 +59,7 @@
     <link rel="next" href="conditioning.html" />
     
     
-    <link rel="prev" href="diffusion_models.html" />
+    <link rel="prev" href="workflow.html" />
     
 
     </head>
@@ -93,7 +93,7 @@
                 <a href="../">
             
                     
-                    Introduction
+                    Homepage
             
                 </a>
             
@@ -148,7 +148,20 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.3" data-path="stable_diffusion.html">
+        <li class="chapter " data-level="2.1.3" data-path="workflow.html">
+            
+                <a href="workflow.html">
+            
+                    
+                    Workflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.4" data-path="stable_diffusion.html">
             
                 <a href="stable_diffusion.html">
             
@@ -161,7 +174,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.4" data-path="conditioning.html">
+        <li class="chapter " data-level="2.1.5" data-path="conditioning.html">
             
                 <a href="conditioning.html">
             
@@ -174,7 +187,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.5" data-path="text_to_image.html">
+        <li class="chapter " data-level="2.1.6" data-path="text_to_image.html">
             
                 <a href="text_to_image.html">
             
@@ -187,7 +200,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.6" data-path="apps.html">
+        <li class="chapter " data-level="2.1.7" data-path="apps.html">
             
                 <a href="apps.html">
             
@@ -547,12 +560,12 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../resources/articles.html">
+        <li class="chapter " data-level="3.1" data-path="../resources/readings.html">
             
-                <a href="../resources/articles.html">
+                <a href="../resources/readings.html">
             
                     
-                    Articles
+                    Readings
             
                 </a>
             
@@ -692,20 +705,20 @@
 </figure>
 <br><p></p>
 <h2 id="diffusion-model-training">Diffusion model training</h2>
-<p>During the training phase, the forward diffusion process adds noise to a training image, gradually turning it into an uncharacteristic noise image. The forward process will turn any cat or dog image into a noise image. Eventually, you won’t be able to tell whether they are initially a dog or a cat. At each step of the forward diffusion process, a noise predictor is trained to tell  how much noise was added - this will be useful to generate image later on.</p>
+<p>To understand how it works, we need to understand how it is trained. During the training phase, what we call the &quot;forward diffusion&quot; process adds noise to a training image, gradually turning it into an uncharacteristic noise image. The forward process will turn any cat or dog image into a noise image. Eventually, you won’t be able to tell whether they are initially a dog or a cat. At each step of the forward diffusion process, a noise predictor is trained to tell  how much noise was added - this will be useful to generate new images later on.</p>
 <ol>
 <li>Pick a training image, like a photo of a cat.</li>
 <li>Generate a random noise image.</li>
 <li>Corrupt the training image by adding this noisy image up to a certain number of steps.</li>
 <li>Teach the noise predictor to tell us how much noise was added.</li>
 </ol>
-<p>After training, we have a noise predictor capable of estimating the noise added to an image.</p>
 <p><br></p>
 <p></p><figure>
   <img src="../assets/lecture/andrew-wong-diffusion-training.webp" width="500px">
   <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
 </figure>
 <br><p></p>
+<p>After training, we have a noise predictor capable of estimating the noise added to an image.</p>
 <h2 id="reverse-diffusion">Reverse diffusion</h2>
 <p>What if we can reverse the diffusion? Like playing a video backward. Going backward in time. Starting from a noisy, meaningless image, reverse diffusion recovers a cat.</p>
 <p>We first generate a completely random image and ask the noise predictor to tell us the noise. We then subtract this estimated noise from the original image. Repeat this process a few times. You will get an image of a cat.</p>
@@ -771,7 +784,7 @@
 
             
                 
-                <a href="diffusion_models.html" class="navigation navigation-prev " aria-label="Previous page: Diffusion Models">
+                <a href="workflow.html" class="navigation navigation-prev " aria-label="Previous page: Workflow">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -787,7 +800,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Stable Diffusion","level":"2.1.3","depth":2,"next":{"title":"Conditioning","level":"2.1.4","depth":2,"path":"1-enter_the_latent_space/conditioning.md","ref":"1-enter_the_latent_space/conditioning.md","articles":[]},"previous":{"title":"Diffusion Models","level":"2.1.2","depth":2,"path":"1-enter_the_latent_space/diffusion_models.md","ref":"1-enter_the_latent_space/diffusion_models.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1-enter_the_latent_space/stable_diffusion.md","mtime":"2023-10-30T15:07:31.319Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-31T16:39:10.507Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Stable Diffusion","level":"2.1.4","depth":2,"next":{"title":"Conditioning","level":"2.1.5","depth":2,"path":"1-enter_the_latent_space/conditioning.md","ref":"1-enter_the_latent_space/conditioning.md","articles":[]},"previous":{"title":"Workflow","level":"2.1.3","depth":2,"path":"1-enter_the_latent_space/workflow.md","ref":"1-enter_the_latent_space/workflow.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1-enter_the_latent_space/stable_diffusion.md","mtime":"2023-11-01T14:25:52.479Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-11-01T17:19:56.531Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -839,10 +852,6 @@
     </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

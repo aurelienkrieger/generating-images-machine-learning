@@ -4,25 +4,28 @@ Course about how to use generative models for AI art
 ## 1 – Enter the Latent Space 🚀
 Understand the underlying concepts of Machine Learning, discover the application fields to get inspired and generate your first images.
 
-**Introductions**
+**Objectives**
 
-- Introductions, Projects & Learning objectives
-- Group introduction, participant's objectives & ideas
-- References from artists & designers using generative models
+- Introductions, set up collaborative tools
+- Learn about how generative models work
+- Set up application for creative AI
 
-**Lecture**
+**Agenda**
 
-- Overview on Machine Learning & generative models
-- Technical explanation on how does Stable Diffusion work
-
-**Demos**
-
-- Overview on End-User Applications
-- Setup of software
-
-**Activity**
-
-- First images with Text to Image
+1. Course introduction
+2. Get to know each other & setup collab tools
+  - Miro
+    - introduce each other
+    - explore artists' references
+  - Discord
+  - Contact list
+3. Lecture
+  - Learn about how machine learning & generative models work
+  - Group discussing around ML
+  - Explore database
+4. Explore end-user applications
+5. Set up tool for creative AI
+6. Generate first images with Text to Image
 
 ## 2 – Fundamentals to Image Generation ✍️
 Improve your prompt engineering technique for image generation. Explore various models to experiment with a wide range of generated aesthetics.
