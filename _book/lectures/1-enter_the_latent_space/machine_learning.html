@@ -1,0 +1,969 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Machine Learning · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="diffusion_models.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Syllabus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Agenda</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../agenda/1-enter_the_latent_space.html">
+            
+                <a href="../../agenda/1-enter_the_latent_space.html">
+            
+                    
+                    1 – Enter the Latent Space 🚀
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../agenda/2-image_generation.html">
+            
+                <a href="../../agenda/2-image_generation.html">
+            
+                    
+                    2 – Fundamentals to Image Generation ✍️
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../agenda/3-refine_images.html">
+            
+                <a href="../../agenda/3-refine_images.html">
+            
+                    
+                    3 – Refine Images 🎨
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../agenda/4-image_compositing.html">
+            
+                <a href="../../agenda/4-image_compositing.html">
+            
+                    
+                    4 - Image Compositing 📐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../agenda/5-ml_society.html">
+            
+                <a href="../../agenda/5-ml_society.html">
+            
+                    
+                    5 – Machine Learning & Society 💾
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../../agenda/6-final_presentations.html">
+            
+                <a href="../../agenda/6-final_presentations.html">
+            
+                    
+                    6 – Final Presentations ✨
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Lectures</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    1 – Enter the Latent Space 🚀
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.1.1" data-path="machine_learning.html">
+            
+                <a href="machine_learning.html">
+            
+                    
+                    Machine Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="diffusion_models.html">
+            
+                <a href="diffusion_models.html">
+            
+                    
+                    Diffusion Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="workflow.html">
+            
+                <a href="workflow.html">
+            
+                    
+                    Workflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="stable_diffusion.html">
+            
+                <a href="stable_diffusion.html">
+            
+                    
+                    Stable Diffusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="conditioning.html">
+            
+                <a href="conditioning.html">
+            
+                    
+                    Conditioning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="text_to_image.html">
+            
+                <a href="text_to_image.html">
+            
+                    
+                    Text to Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="apps.html">
+            
+                <a href="apps.html">
+            
+                    
+                    End-User Applications
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../2-image_generation/">
+            
+                <a href="../2-image_generation/">
+            
+                    
+                    2 – Fundamentals to Image Generation ✍️
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../2-image_generation/prompt_engineering.html">
+            
+                <a href="../2-image_generation/prompt_engineering.html">
+            
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../2-image_generation/parameters.html">
+            
+                <a href="../2-image_generation/parameters.html">
+            
+                    
+                    Parameters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.2.1" data-path="../2-image_generation/resolution.html">
+            
+                <a href="../2-image_generation/resolution.html">
+            
+                    
+                    Resolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.2" data-path="../2-image_generation/seed.html">
+            
+                <a href="../2-image_generation/seed.html">
+            
+                    
+                    Seed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.3" data-path="../2-image_generation/batch.html">
+            
+                <a href="../2-image_generation/batch.html">
+            
+                    
+                    Batch size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.4" data-path="../2-image_generation/samplers.html">
+            
+                <a href="../2-image_generation/samplers.html">
+            
+                    
+                    Samplers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.5" data-path="../2-image_generation/cfg.html">
+            
+                <a href="../2-image_generation/cfg.html">
+            
+                    
+                    CFG scale
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../2-image_generation/models.html">
+            
+                <a href="../2-image_generation/models.html">
+            
+                    
+                    Models
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.3.1" data-path="../2-image_generation/checkpoint_models.html">
+            
+                <a href="../2-image_generation/checkpoint_models.html">
+            
+                    
+                    Checkpoint Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.2" data-path="../2-image_generation/fine_tuned_models.html">
+            
+                <a href="../2-image_generation/fine_tuned_models.html">
+            
+                    
+                    Fine-Tuned Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.3" data-path="../2-image_generation/advanced_control_models.html">
+            
+                <a href="../2-image_generation/advanced_control_models.html">
+            
+                    
+                    Models for Advanced Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../3-refine_images/">
+            
+                <a href="../3-refine_images/">
+            
+                    
+                    3 – Refine Images 🎨
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../3-refine_images/image_to_image.html">
+            
+                <a href="../3-refine_images/image_to_image.html">
+            
+                    
+                    Image to Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="../3-refine_images/inpainting.html">
+            
+                <a href="../3-refine_images/inpainting.html">
+            
+                    
+                    Inpainting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../3-refine_images/outpainting.html">
+            
+                <a href="../3-refine_images/outpainting.html">
+            
+                    
+                    Outpainting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.4" data-path="../3-refine_images/upscaling.html">
+            
+                <a href="../3-refine_images/upscaling.html">
+            
+                    
+                    Upscaling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../4-image_compositing/">
+            
+                <a href="../4-image_compositing/">
+            
+                    
+                    4 - Image Compositing 📐
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../4-image_compositing/depth_to_image.html">
+            
+                <a href="../4-image_compositing/depth_to_image.html">
+            
+                    
+                    Depth to Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../5-ml_society/">
+            
+                <a href="../5-ml_society/">
+            
+                    
+                    5 – Machine Learning & Society 💾
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="../5-ml_society/model_training.html">
+            
+                <a href="../5-ml_society/model_training.html">
+            
+                    
+                    Model Training
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="../5-ml_society/embedding.html">
+            
+                <a href="../5-ml_society/embedding.html">
+            
+                    
+                    Embedding
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../6-final_presentations/">
+            
+                <a href="../6-final_presentations/">
+            
+                    
+                    6 – Final Presentations ✨
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Projects</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../projects/1-promptcraft.html">
+            
+                <a href="../../projects/1-promptcraft.html">
+            
+                    
+                    1 - Promptcraft challenge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Resources</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../resources/readings.html">
+            
+                <a href="../../resources/readings.html">
+            
+                    
+                    Readings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../resources/apps.html">
+            
+                <a href="../../resources/apps.html">
+            
+                    
+                    End-User Applications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../../resources/prompt_engineering.html">
+            
+                <a href="../../resources/prompt_engineering.html">
+            
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../../resources/models.html">
+            
+                <a href="../../resources/models.html">
+            
+                    
+                    Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../../resources/inpainting_outpainting.html">
+            
+                <a href="../../resources/inpainting_outpainting.html">
+            
+                    
+                    Inpainting / Outpainting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../../resources/model_training.html">
+            
+                <a href="../../resources/model_training.html">
+            
+                    
+                    Model Training
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../../resources/community.html">
+            
+                <a href="../../resources/community.html">
+            
+                    
+                    Community
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Machine Learning</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="what-is-machine-learning">What is Machine Learning?</h1>
+<p>Machine learning is a subfield of artificial intelligence that involves developing algorithms and statistical models to enable computers to learn and make decisions without being explicitly programmed. It is based on the idea that systems can learn from data, identify patterns, and make decisions based on those patterns without being explicitly told how to do so.</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../../assets/lecture/javatpoint-how-does-machine-learning-work.png">
+  <figcaption style="color:grey; font-style: italic;">Credit: Javatpoint, &quot;How does Machine Learning Work?&quot;</figcaption>
+</figure>
+<br><p></p>
+<h2 id="how-machine-learning-works">How Machine Learning works</h2>
+<p>The process involves several key steps:</p>
+<ol>
+<li>Data Collection: Gather relevant data representing the problem at hand from various sources such as databases, sensors, or web scraping.</li>
+<li>Data Preprocessing: Clean the data, remove / flag offensive data, handle missing values, normalize the data to a consistent format.</li>
+<li>Feature Extraction and Selection: Identify the most informative and relevant features contributing to the learning task.</li>
+<li>Model Training: The model learns from the pre-processed data by adjusting its internal parameters based on the patterns and relationships it discovers.</li>
+<li>Model Evaluation: The model is evaluated to assess its performance and generalization ability after training it.</li>
+<li>Prediction or Decision Making: Once the model is trained and evaluated, it can predict or decide on new, unseen data. The model takes input features and applies the learned patterns to generate the desired output or prediction.</li>
+<li>Model Refinement and Iteration: If the model&apos;s performance is unsatisfactory we can make adjustments by retraining the model with additional data, changing the algorithm, or tuning the model&apos;s parameters.</li>
+</ol>
+<p>Now let&apos;s have a look at a general definition of &quot;model&quot; from the Cambridge Dictionary of English:</p>
+<blockquote>
+<p>A simple representation of a system or process that can be used in calculations or predictions of what might happen.</p>
+</blockquote>
+<h2 id="intelligence-">Intelligence ?</h2>
+<blockquote>
+<p>&quot;The human mind is not, like ChatGPT and its ilk, a lumbering statistical engine for pattern matching, gorging on hundreds of terabytes of data and extrapolating the most likely conversational response or most probable answer to a scientific question. On the contrary, the human mind is a surprisingly efficient and even elegant system that operates with small amounts of information; it seeks not to infer brute correlations among data points but to create explanations. &quot;</p>
+</blockquote>
+<p>Noam Chomsky, 2023, &quot;The False Promise of ChatGPT&quot;, <em>New York Times</em></p>
+<h2 id="discussion">Discussion</h2>
+<p>We understand that a model isn&apos;t reality, but rather a simplified representation of a section of it, a conceptual and mathematical construct. Hence we can start to raise a few questions:</p>
+<ul>
+<li>can we project into the future what we have perceived from the past?</li>
+<li>is the data on which the model has been trained trustworthy?</li>
+<li>is the design of the training algorithm and of the model biased?</li>
+<li>how far can we investigate the calculations?</li>
+<li>to which extent do we trust the delivered predictions?</li>
+<li>to which scale do we apply the suggested solutions?</li>
+<li>what us the carbon footprint of this technology?</li>
+<li>how is that affecting our critical thinking and perception of reality?</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.javatpoint.com/how-does-machine-learning-work" target="_blank">Javatpoint, &quot;How does Machine Learning Work?&quot;</a></li>
+<li><a href="https://dictionary.cambridge.org/dictionary/english/model" target="_blank">Cambridge Dictionary of English, definition of &quot;model&quot;</a></li>
+<li><a href="https://www.nytimes.com/2023/03/08/opinion/noam-chomsky-chatgpt-ai.html" target="_blank">Noam Chomsky, 2023, &quot;The False Promise of ChatGPT&quot;, <em>New York Times</em></a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 1 – Enter the Latent Space 🚀">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="diffusion_models.html" class="navigation navigation-next " aria-label="Next page: Diffusion Models">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Machine Learning","level":"3.1.1","depth":2,"next":{"title":"Diffusion Models","level":"3.1.2","depth":2,"path":"lectures/1-enter_the_latent_space/diffusion_models.md","ref":"lectures/1-enter_the_latent_space/diffusion_models.md","articles":[]},"previous":{"title":"1 – Enter the Latent Space 🚀","level":"3.1","depth":1,"path":"lectures/1-enter_the_latent_space/README.md","ref":"lectures/1-enter_the_latent_space/README.md","articles":[{"title":"Machine Learning","level":"3.1.1","depth":2,"path":"lectures/1-enter_the_latent_space/machine_learning.md","ref":"lectures/1-enter_the_latent_space/machine_learning.md","articles":[]},{"title":"Diffusion Models","level":"3.1.2","depth":2,"path":"lectures/1-enter_the_latent_space/diffusion_models.md","ref":"lectures/1-enter_the_latent_space/diffusion_models.md","articles":[]},{"title":"Workflow","level":"3.1.3","depth":2,"path":"lectures/1-enter_the_latent_space/workflow.md","ref":"lectures/1-enter_the_latent_space/workflow.md","articles":[]},{"title":"Stable Diffusion","level":"3.1.4","depth":2,"path":"lectures/1-enter_the_latent_space/stable_diffusion.md","ref":"lectures/1-enter_the_latent_space/stable_diffusion.md","articles":[]},{"title":"Conditioning","level":"3.1.5","depth":2,"path":"lectures/1-enter_the_latent_space/conditioning.md","ref":"lectures/1-enter_the_latent_space/conditioning.md","articles":[]},{"title":"Text to Image","level":"3.1.6","depth":2,"path":"lectures/1-enter_the_latent_space/text_to_image.md","ref":"lectures/1-enter_the_latent_space/text_to_image.md","articles":[]},{"title":"End-User Applications","level":"3.1.7","depth":2,"path":"lectures/1-enter_the_latent_space/apps.md","ref":"lectures/1-enter_the_latent_space/apps.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lectures/1-enter_the_latent_space/machine_learning.md","mtime":"2023-11-02T19:48:28.800Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-11-02T20:18:50.417Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

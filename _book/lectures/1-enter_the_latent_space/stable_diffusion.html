@@ -1,0 +1,984 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Stable Diffusion · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="conditioning.html" />
+    
+    
+    <link rel="prev" href="workflow.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Syllabus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Agenda</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../agenda/1-enter_the_latent_space.html">
+            
+                <a href="../../agenda/1-enter_the_latent_space.html">
+            
+                    
+                    1 – Enter the Latent Space 🚀
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../agenda/2-image_generation.html">
+            
+                <a href="../../agenda/2-image_generation.html">
+            
+                    
+                    2 – Fundamentals to Image Generation ✍️
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../agenda/3-refine_images.html">
+            
+                <a href="../../agenda/3-refine_images.html">
+            
+                    
+                    3 – Refine Images 🎨
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../agenda/4-image_compositing.html">
+            
+                <a href="../../agenda/4-image_compositing.html">
+            
+                    
+                    4 - Image Compositing 📐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../agenda/5-ml_society.html">
+            
+                <a href="../../agenda/5-ml_society.html">
+            
+                    
+                    5 – Machine Learning & Society 💾
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../../agenda/6-final_presentations.html">
+            
+                <a href="../../agenda/6-final_presentations.html">
+            
+                    
+                    6 – Final Presentations ✨
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Lectures</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    1 – Enter the Latent Space 🚀
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="machine_learning.html">
+            
+                <a href="machine_learning.html">
+            
+                    
+                    Machine Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="diffusion_models.html">
+            
+                <a href="diffusion_models.html">
+            
+                    
+                    Diffusion Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="workflow.html">
+            
+                <a href="workflow.html">
+            
+                    
+                    Workflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.4" data-path="stable_diffusion.html">
+            
+                <a href="stable_diffusion.html">
+            
+                    
+                    Stable Diffusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="conditioning.html">
+            
+                <a href="conditioning.html">
+            
+                    
+                    Conditioning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="text_to_image.html">
+            
+                <a href="text_to_image.html">
+            
+                    
+                    Text to Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="apps.html">
+            
+                <a href="apps.html">
+            
+                    
+                    End-User Applications
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../2-image_generation/">
+            
+                <a href="../2-image_generation/">
+            
+                    
+                    2 – Fundamentals to Image Generation ✍️
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../2-image_generation/prompt_engineering.html">
+            
+                <a href="../2-image_generation/prompt_engineering.html">
+            
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../2-image_generation/parameters.html">
+            
+                <a href="../2-image_generation/parameters.html">
+            
+                    
+                    Parameters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.2.1" data-path="../2-image_generation/resolution.html">
+            
+                <a href="../2-image_generation/resolution.html">
+            
+                    
+                    Resolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.2" data-path="../2-image_generation/seed.html">
+            
+                <a href="../2-image_generation/seed.html">
+            
+                    
+                    Seed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.3" data-path="../2-image_generation/batch.html">
+            
+                <a href="../2-image_generation/batch.html">
+            
+                    
+                    Batch size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.4" data-path="../2-image_generation/samplers.html">
+            
+                <a href="../2-image_generation/samplers.html">
+            
+                    
+                    Samplers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.5" data-path="../2-image_generation/cfg.html">
+            
+                <a href="../2-image_generation/cfg.html">
+            
+                    
+                    CFG scale
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../2-image_generation/models.html">
+            
+                <a href="../2-image_generation/models.html">
+            
+                    
+                    Models
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.3.1" data-path="../2-image_generation/checkpoint_models.html">
+            
+                <a href="../2-image_generation/checkpoint_models.html">
+            
+                    
+                    Checkpoint Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.2" data-path="../2-image_generation/fine_tuned_models.html">
+            
+                <a href="../2-image_generation/fine_tuned_models.html">
+            
+                    
+                    Fine-Tuned Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.3" data-path="../2-image_generation/advanced_control_models.html">
+            
+                <a href="../2-image_generation/advanced_control_models.html">
+            
+                    
+                    Models for Advanced Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../3-refine_images/">
+            
+                <a href="../3-refine_images/">
+            
+                    
+                    3 – Refine Images 🎨
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../3-refine_images/image_to_image.html">
+            
+                <a href="../3-refine_images/image_to_image.html">
+            
+                    
+                    Image to Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="../3-refine_images/inpainting.html">
+            
+                <a href="../3-refine_images/inpainting.html">
+            
+                    
+                    Inpainting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../3-refine_images/outpainting.html">
+            
+                <a href="../3-refine_images/outpainting.html">
+            
+                    
+                    Outpainting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.4" data-path="../3-refine_images/upscaling.html">
+            
+                <a href="../3-refine_images/upscaling.html">
+            
+                    
+                    Upscaling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../4-image_compositing/">
+            
+                <a href="../4-image_compositing/">
+            
+                    
+                    4 - Image Compositing 📐
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../4-image_compositing/depth_to_image.html">
+            
+                <a href="../4-image_compositing/depth_to_image.html">
+            
+                    
+                    Depth to Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../5-ml_society/">
+            
+                <a href="../5-ml_society/">
+            
+                    
+                    5 – Machine Learning & Society 💾
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="../5-ml_society/model_training.html">
+            
+                <a href="../5-ml_society/model_training.html">
+            
+                    
+                    Model Training
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="../5-ml_society/embedding.html">
+            
+                <a href="../5-ml_society/embedding.html">
+            
+                    
+                    Embedding
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../6-final_presentations/">
+            
+                <a href="../6-final_presentations/">
+            
+                    
+                    6 – Final Presentations ✨
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Projects</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../projects/1-promptcraft.html">
+            
+                <a href="../../projects/1-promptcraft.html">
+            
+                    
+                    1 - Promptcraft challenge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Resources</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../resources/readings.html">
+            
+                <a href="../../resources/readings.html">
+            
+                    
+                    Readings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../resources/apps.html">
+            
+                <a href="../../resources/apps.html">
+            
+                    
+                    End-User Applications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../../resources/prompt_engineering.html">
+            
+                <a href="../../resources/prompt_engineering.html">
+            
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../../resources/models.html">
+            
+                <a href="../../resources/models.html">
+            
+                    
+                    Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../../resources/inpainting_outpainting.html">
+            
+                <a href="../../resources/inpainting_outpainting.html">
+            
+                    
+                    Inpainting / Outpainting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../../resources/model_training.html">
+            
+                <a href="../../resources/model_training.html">
+            
+                    
+                    Model Training
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../../resources/community.html">
+            
+                <a href="../../resources/community.html">
+            
+                    
+                    Community
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Stable Diffusion</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="what-is-stable-diffusion">What is Stable Diffusion?</h1>
+<p>In the simplest form, Stable Diffusion is a text-to-image model. Give it a text prompt. It will return an AI image matching the text.</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../../assets/lecture/andrew-wong-SD.png" width="500px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
+<h2 id="diffusion-model-training">Diffusion model training</h2>
+<p>To understand how it works, we need to understand how it is trained. During the training phase, what we call the &quot;forward diffusion&quot; process adds noise to a training image, gradually turning it into an uncharacteristic noise image. The forward process will turn any cat or dog image into a noise image. Eventually, you won’t be able to tell whether they are initially a dog or a cat. At each step of the forward diffusion process, a noise predictor is trained to tell  how much noise was added - this will be useful to generate new images later on.</p>
+<ol>
+<li>Pick a training image, like a photo of a cat.</li>
+<li>Generate a random noise image.</li>
+<li>Corrupt the training image by adding this noisy image up to a certain number of steps.</li>
+<li>Teach the noise predictor to tell us how much noise was added.</li>
+</ol>
+<p><br></p>
+<p></p><figure>
+  <img src="../../assets/lecture/andrew-wong-diffusion-training.webp" width="500px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
+<p>After training, we have a noise predictor capable of estimating the noise added to an image.</p>
+<h2 id="reverse-diffusion">Reverse diffusion</h2>
+<p>What if we can reverse the diffusion? Like playing a video backward. Going backward in time. Starting from a noisy, meaningless image, reverse diffusion recovers a cat.</p>
+<p>We first generate a completely random image and ask the noise predictor to tell us the noise. We then subtract this estimated noise from the original image. Repeat this process a few times. You will get an image of a cat.</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../../assets/lecture/andrew-wong-reverse-training.png" width="500px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
+<p>For now, image generation is unconditioned. We will see how to apply conditioning to have control over the image generated.</p>
+<h2 id="differences-between-diffusion-models-and-latent-diffusion-models">Differences between diffusion models and latent diffusion models</h2>
+<p>The above diffusion process is in image space. It is computationally very, very slow because the image space is enormous. For instance, a 512×512 image with three color channels (red, green, and blue) is a 786,432-dimensional space. Diffusion models like Google’s Imagen and Open AI’s DALL-E are in pixel space. They have used some tricks to make the model faster but still not enough.</p>
+<p>Stable Diffusion, on the other hand, is a latent diffusion model which is designed to solve the speed problem. Instead of operating in the high-dimensional image space, it first compresses the image into the latent space. The latent space is 48 times smaller so it reaps the benefit of crunching a lot fewer numbers. That’s why it’s a lot faster.</p>
+<h2 id="variational-autoencoder">Variational Autoencoder</h2>
+<p>It is done using a technique called the Variational Autoencoder (VAE). The VAE neural network has two parts: an encoder and a decoder. The encoder compresses an image to a lower dimensional representation in the latent space. The decoder restores the image from the latent space.</p>
+<p><br></p>
+<p></p><figure>
+  <img src="../../assets/lecture/andrew-wong-vae.png" width="500px">
+  <figcaption style="color:grey; font-style: italic;">Credit: Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;</figcaption>
+</figure>
+<br><p></p>
+<p>The latent space of Stable Diffusion model is 4x64x64, 48 times smaller than the image pixel space. All the forward and reverse diffusions we talked about are actually done in the latent space.</p>
+<p>The VAE decoder is also responsible for recovering fine details that may have been lost by the encoder. By further fine-tuning the VAE decoder, the model can paint finer details.</p>
+<h2 id="reverse-diffusion-in-latent-space">Reverse diffusion in latent space</h2>
+<p>Here’s how latent reverse diffusion in Stable Diffusion works.</p>
+<ol>
+<li>A random latent space matrix is generated.</li>
+<li>The noise predictor estimates the noise of the latent matrix.</li>
+<li>The estimated noise is then subtracted from the latent matrix.</li>
+<li>Steps 2 and 3 are repeated up to specific sampling steps.</li>
+<li>The decoder of VAE converts the latent matrix to the final image.</li>
+</ol>
+<p>Our understanding is incomplete: Where does the text prompt enter the picture? Without it, Stable Diffusion is not a text-to-image model. You will either get an image of a cat or a dog without any way to control it. This is where conditioning comes in.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://stable-diffusion-art.com/how-stable-diffusion-work/" target="_blank">Andrew Wong, 2023, &quot;How does Stable Diffusion work?&quot;, <em>Stable Diffusion Art</em></a></li>
+<li><a href="https://bootcamp.uxdesign.cc/how-stable-diffusion-works-explained-for-non-technical-people-be6aa674fa1d" target="_blank">Guodong (Troy) Zhao, 2023, &quot;How Stable Diffusion works, explained for non-technical people&quot;, <em>Medium</em></a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="workflow.html" class="navigation navigation-prev " aria-label="Previous page: Workflow">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="conditioning.html" class="navigation navigation-next " aria-label="Next page: Conditioning">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Stable Diffusion","level":"3.1.4","depth":2,"next":{"title":"Conditioning","level":"3.1.5","depth":2,"path":"lectures/1-enter_the_latent_space/conditioning.md","ref":"lectures/1-enter_the_latent_space/conditioning.md","articles":[]},"previous":{"title":"Workflow","level":"3.1.3","depth":2,"path":"lectures/1-enter_the_latent_space/workflow.md","ref":"lectures/1-enter_the_latent_space/workflow.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lectures/1-enter_the_latent_space/stable_diffusion.md","mtime":"2023-11-02T19:48:41.044Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-11-02T20:18:50.417Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,7 +1,20 @@
 # Generating Images with Machine Learning
-Course about how to use generative models for AI art
+Learn how to use generative AI models for concept art & design
 
-## 1 – Enter the Latent Space 🚀
+## Course description
+
+During this course we’ll explore how text-to-images generative models help define new visual languages but also how they alter our perception of reality as a society. As a group, we will explore how artists can use IA in a co-creation process by making its core concepts & techniques more explicit. We will also take a critical look at Machine Learning from the inside and discuss its ethical dilemmas with real-world examples. Participants can expect to be equipped with creative and critical tools that allow them to develop their own projects and create alternative, inclusive visual narratives.
+
+## Learning Outcomes
+
+- Learn about prompt engineering for generative imagery
+- Apply advanced techniques for visual compositing
+- Explore various models and learn how to train your own
+- Discuss ethical dilemmas and develop critical thinking on the field
+
+## Syllabus
+
+### [1 – Enter the Latent Space 🚀](agenda/1-enter_the_latent_space.md)
 Understand the underlying concepts of Machine Learning, discover the application fields to get inspired and generate your first images.
 
 **Objectives**
@@ -10,103 +23,42 @@ Understand the underlying concepts of Machine Learning, discover the application
 - Learn about how generative models work
 - Set up application for creative AI
 
-**Agenda**
-
-1. Course introduction
-2. Get to know each other & setup collab tools
-  - Miro
-    - introduce each other
-    - explore artists' references
-  - Discord
-  - Contact list
-3. Lecture
-  - Learn about how machine learning & generative models work
-  - Group discussing around ML
-  - Explore database
-4. Explore end-user applications
-5. Set up tool for creative AI
-6. Generate first images with Text to Image
-
-## 2 – Fundamentals to Image Generation ✍️
+### [2 – Fundamentals to Image Generation ✍️](agenda/2-image_generation.md)
 Improve your prompt engineering technique for image generation. Explore various models to experiment with a wide range of generated aesthetics.
 
-**Lecture**
+**Objectives**
 
-- Prompt Engineering
-- Checkpoint & fine-tuned generative models
+- Learn about prompt engineering
+- Explore the various types of models
+- Experiment with fine-tuned models
+- Start a project
 
-**Demos**
-
-- Positive prompts, negative prompt, negative embedding
-- Keywords weight, keywords blend
-- CLIP, prompt generators, boilerplates
-- Import and experiment with various models
-
-
-**Activity**
-
-- Prompt Craft Challenge
-
-## 3 – Refine Images 🎨
+### [3 – Refine Images 🎨](agenda/3-refine_images.md)
 Explore how to apply a certain style and use post-processing techniques to achieve richer details in your images.
 
-**Lecture**
+**Objectives**
 
-- Image to Image
-- Inpainting, outpainting and upscaling
-- IP Adapter
+- Learn about inpainting, outpainting and upscaling
+- Apply custom styles with IP Adapter
 
-**Demos**
 
-- Inpainting
-- Upscaling
-- Outpainting
-- IP Adapter
-
-**Activity**
-
-- Generative Art Challenge
-- InvokeAI - Canvas Overdrive
-- Collect references
-
-## 4 - Image Compositing 📐
+### [4 - Image Compositing 📐](agenda/4-image_compositing.md)
 Gain more control over your workflow and final composition. Learn advanced techniques for concept art & visual prototyping.
 
-**Lecture**
+**Objectives**
 
-- ControlNet
-- Depth to Image
-
-**Demos**
-
-- Basic usage of Image to Image
-- Exploration of ControlNet processors
-- Sketch to Image
-- Photoshopping to Image
+- Discover various ControlNet processors
+- Further skills in compositing with Image to Image techniques
 
 
-**Activity**
-
-- Decrypting the technical setup and workflow of artists
-
-## 5 – Machine Learning & Society  💾
+### [5 – Machine Learning & Society  💾](agenda/5-ml_society.md)
 Learn how to train your own model. Investigate about the ethical dilemmas related to AI & generative models. Debate with your peers and expand your critical thinking on the field.
 
-**Lecture**
+**Objectives**
 
 - Introduction to Fine-tuning techniques
-
-**Demos**
-
-- Embedding
-- LoRA
-- Dreambooth
+- Group discussions about ML ethical dilemmas
 
 
-**Activity**
-
-- Readings & Group discussions
-- Brainstorm for final projects
-
-## 6 – Final Presentations ✨
+### [6 – Final Presentations ✨](agenda/6-final_presentations.md)
 Share your projects with your peers and reflect on progress as we discover each other's imagery. Reflect on the 6 weeks and share your new way of seeing things.
