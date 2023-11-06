@@ -27,7 +27,7 @@ Understand the underlying concepts of Machine Learning, discover the application
 6. Look at some online [community](../resources/community.md) groups
 
 **For next session**
-1. [Promptcraft challenge](../projects/1-promptcraft.md)
+1. [Promptcraft challenge](../prompts/1-promptcraft.md)
 2. Readings
   - [OpenAI Used Kenyan Workers on Less Than $2 Per Hour to Make ChatGPT Less Toxic](https://time.com/6247678/openai-chatgpt-kenya-workers/), Billy Perrigo, 2023, _TIME_
   - [Humans Are Biased. Generative AI Is Even Worse](https://www.bloomberg.com/graphics/2023-generative-ai-bias/), Leonardo Nicoletti and Dina Bass, 2023, _Bloomberg_

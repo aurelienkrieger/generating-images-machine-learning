@@ -4,34 +4,50 @@ The prompts you input guide the AI to generate the images you desire. Think of i
 
 ## Understanding language associations with images
 
-The AI that you're interacting with is like an intelligent art student who has studied countless pieces of artwork. It has been trained on a vast amount of visual and linguistic data, learning to link words with related images. For instance, when the AI hears "sunset," it understands to use warm colors, soft transitions, and the silhouette of the sun descending.
+The AI that you're interacting with is like an art student who has studied countless pieces of artwork. It has been trained on a vast amount of visual and linguistic data, learning to link words with related images. For instance, when the AI hears "sunset," it understands to use warm colors, soft transitions, and the silhouette of the sun descending.
 
 The AI interprets prompts based on the associations it has learned. However, it's important to remember that AI, unlike humans, doesn't truly understand the meaning behind the words. Instead, it leverages patterns found in its training data to produce a relevant response.
 
 
 ## Simple steps to crafting prompts
 
-To create the most accurate images, you need to provide the AI with detailed prompts. Just like an artist, the AI benefits from clear instructions about your desired image. First, describe the subject in a natural language and in the most detailed way. It could be "a mountain landscape", "a bustling city scene", or "a simply dressed villager".
+To create the most accurate images, you need to provide the AI with detailed prompts. Just like an artist, the AI benefits from clear instructions about your desired image.
 
-Then, add keywords following this structure:
-- Medium (e.g., oil painting, pencil sketch, digital art)
-- Style (e.g., realism, abstract, impressionism)
-- Artist
-- Quality Modifier
-  - Website (eg. "featured in artstation", "award-winning")
-  - Resolution (eg. 4K)
-  - Details
-- Aesthetics & Composition
-  - Color ("bright and vibrant colors", "cool tones")
-  - Lighting ("dramatic lighting")
+### Be descriptive and specific
+
+This could be easily the most difficult part – we find ourselves sometimes struggling with the fact that we have this image in our heads and not enough or accurate words to describe it. Therefore, the AI will give us an image maybe close enough to our idea but not entirely. Use adjectives to be more accurate in your description. Also, keep in mind order matters – words near the front of your prompt are weighted more heavily than the things in the back of your prompt.
+
+### Prompt anatomy
+
+Follow this structure to craft your prompt:
+
+- Medium
+<br>Is it a photograph, drawing, oil painting, pencil sketch, 3D render...?
+
+- Subject
+<br>Define the subject, subject attributes (hair, clothing, jewellery, facial expression), scene (environment, camera angle, overall mood). The more descriptive you are with the use of adjectives, the better the output.
+
+- Artistic attributes
+
+  - Style
+  <br>What is the artistic movement or style? (e.g., realistic, comic book, impressionist, abstract)
+  - Artist or popular references ("in the style of" e.g. Van Gogh, Akira)
+
+  - Quality Modifier
+    - Website (e.g., featured in artstation, award-winning)
+    - Resolution (e.g., 4K)
+    - Render or film type (e.g. Octane, polaroid)
+    - Lighting (e.g., dramatic lighting, bokeh, dappled light)
+    - Colors
+    - Any additional details
+
 
 <br>
 An example of a detailed prompt might be:
 
-> A detailed oil painting of a tranquil forest at sunset with vibrant colors and soft, golden light filtering through the trees.
+> Impressionist oil painting of a tranquil forest in South of France on a coast line, soft sea waves foam smashing on the rocks at sunset with vibrant colors and soft, golden dappled light filtering through the trees.
 
-
-## Model-Dependent Prompts
+### Prompts are model-dependent
 
 Different models have been trained on different datasets and may interpret prompts in slightly varying ways. Therefore, what works well for one model might not work as well for another.
 
@@ -108,7 +124,7 @@ CLIP (Contrastive Language-Image Pretraining), is a model developed by OpenAI th
 
 ## Prompt generators & boilerplates
 
-Some websites can be used to guide you in crafting a prompt. Other websites offer users the ability to upload their images with prompts which can be used as boilerplates to generate your own images. See the list of resources for more details.
+Some websites offer users the possibility to share their AI-generated images along with the prompts and parameters. This can be a good resource for you to get inspired, use existing prompts as boilerplates to remix them and craft better prompts. See the list of resources for more details.
 
 ## Resources
 
@@ -116,7 +132,8 @@ Some websites can be used to guide you in crafting a prompt. Other websites offe
 
 ## References
 
-- [InvokeAI, 2023, "Tips on Crafting Prompts"](https://support.invoke.ai/support/solutions/articles/151000096606-tips-on-crafting-prompts)
-- [InvokeAI, 2023, "Advanced Prompting Syntax"](https://support.invoke.ai/support/solutions/articles/151000096723-advanced-prompting-syntax)
-- [Andrew Wong, 2023, "How to come up with good-prompts", _Stable Diffusion Art_"](https://stable-diffusion-art.com/how-to-come-up-with-good-prompts-for-ai-image-generation/)
-- [Andrew Wong, 2022, "Fine tune your images with simple prompting techniques", _Stable Diffusion Art_"](https://stable-diffusion-art.com/fine-tune-your-ai-images-with-these-simple-prompting-techniques/)
+- [Tips on Crafting Prompts](https://support.invoke.ai/support/solutions/articles/151000096606-tips-on-crafting-prompts), InvokeAI, 2023
+- [Advanced Prompting Syntax](https://support.invoke.ai/support/solutions/articles/151000096723-advanced-prompting-syntax), InvokeAI, 2023
+- [How to come up with good-prompts](https://stable-diffusion-art.com/how-to-come-up-with-good-prompts-for-ai-image-generation/), Andrew Wong, 2023, _Stable Diffusion Art_
+- [Fine tune your images with simple prompting techniques](https://stable-diffusion-art.com/fine-tune-your-ai-images-with-these-simple-prompting-techniques/), Andrew Wong, 2022, _Stable Diffusion Art_
+- [The Ultimate Prompting Guide](https://prompthero.com/stable-diffusion-prompt-guide), PromptHero and anntartica, _PromptHero_

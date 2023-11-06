@@ -29,12 +29,19 @@ _Stable Diffusion Art tutorials_
 ## Useful links
 
 _explore AI generated images_
-- [Civitai](https://civitai.com/images)
 - [PromptHero](https://prompthero.com/)
+- [freeflo](https://freeflo.ai/)
+- [Civitai](https://civitai.com/images)
 - [PromptHunt](https://www.prompthunt.com/)
 - [ArtHub](https://arthub.ai/)
-- [freeflo](https://freeflo.ai/)
 
 _tools_
+
+- [Lose the very](https://www.losethevery.com/)
+- [List of Adjectives to Describe Someone's Feelings, Emotions and Tone ](https://www.yourdictionary.com/articles/adjectives-feelings-emotions-tone), Mary Gormandy White, 2021, _Your Dictionary_
+- [Adjectives for Atmosphere](https://aboutadjectives.com/adjectives-for-atmosphere-words-to-describe-about-atmosphere/), James Jani, 2021, _About Adjectives_
+- [List Of Colors With Names, Hex, RGB, CMYK Codes](https://www.jootoor.com/list-of-colors-with-names-hex-rgb-cmyk-codes/)
 - [Promptomania - prompt generator](https://promptomania.com/stable-diffusion-prompt-builder/)
+- [Midjourney Prompt Helper](https://promptfolder.com/midjourney-prompt-helper/)
 - [SDXL boilerplate styles on Stable Diffusion Art](https://stable-diffusion-art.com/sdxl-styles/)
+- [Prompt keywords collection](https://docs.google.com/spreadsheets/d/1w953xYyb_6HoUXF_SiLdPkpA_IljhAjN31z6pnjKh1s/edit?usp=sharing)

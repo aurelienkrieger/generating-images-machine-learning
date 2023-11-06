@@ -45,9 +45,9 @@
   * [Embedding](lectures/5-ml_society/embedding.md)
 * [6 – Final Presentations ✨](lectures/6-final_presentations/README.md)
 
-## Projects
+## Prompts
 
-* [1 - Promptcraft challenge](projects/1-promptcraft.md)
+* [1 - Promptcraft challenge](prompts/1-promptcraft.md)
 
 ## Resources
 
