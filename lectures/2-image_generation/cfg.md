@@ -33,11 +33,11 @@ Classifier-free guidance scale (CFG scale) is a value that controls how much the
 ## Recommendations
 
 Different CFG scale values:
-- 1 – Mostly ignore your prompt.
-- 3 – Be more creative.
-- 7 – A good balance between following the prompt and freedom.
-- 15 – Adhere more to prompt.
-- 30 – Strictly follow the prompt.
+- 1 – Mostly ignore your prompt
+- 3 – Be more creative
+- 7 – A good balance between following the prompt and freedom
+- 15 – Adhere more to prompt
+- 30 – Strictly follow the prompt
 
 7.5 is usually a good starting point.
 

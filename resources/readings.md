@@ -10,6 +10,7 @@
 - [The swagged-out pope is an AI fake — and an early glimpse of a new reality](https://www.theverge.com/2023/3/27/23657927/ai-pope-image-fake-midjourney-computer-generated-aesthetic), James Vincent, 2023, _The Verge_
 - [Paedophiles using open source AI to create child sexual abuse content, says watchdog](https://www.theguardian.com/society/2023/sep/12/paedophiles-using-open-source-ai-to-create-child-sexual-abuse-content-says-watchdog), Dan Milmo, 2023, _The Guardian_
 - [Why won’t TikTok confirm the Bold Glamour filter is AI?](https://www.theverge.com/2023/3/2/23621751/bold-glamour-tiktok-face-filter-beauty-ai-ar-body-dismorphia), Jess Weatherbed and Mia Sato, 2023, _The Verge_
+- [AI = shiny humanoid robots](https://www.aimyths.org/ai-equals-shiny-humanoid-robots), _AI Myths_
 - [Judge dismisses most of artists’ copyright lawsuit against AI image generators](https://www.theartnewspaper.com/2023/10/31/california-judge-dismisses-most-of-artists-ai-copyright-lawsuit), Carlie Porterfield, 2023, _The Art Newspaper_
 - [Another A.I.-Generated Artwork Was Denied Copyright Protection, Adding a New Knot to the Complexities of Creative Ownership](https://news.artnet.com/art-world/ai-art-copyright-2367590), Adam Schrader, 2023, _artnet news_
 - [This new data poisoning tool lets artists fight back against generative AI](https://www.technologyreview.com/2023/10/23/1082189/data-poisoning-artists-fight-generative-ai/), Melissa Heikkilä, 2023, _MIT Technology Review_

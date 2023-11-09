@@ -55,7 +55,7 @@ Different models have been trained on different datasets and may interpret promp
 
 A negative prompt, also known as an unconditioning prompt, is used to express terms, elements, or conditions that are undesired or should be avoided in the final output. In the realm of visual arts, this could include characteristics that you don't want to see in the image such as certain colors, themes, styles, or subjects. These prompts provide explicit guidance on what not to include in the creation process. They can affect the subject displayed, composition and style.
 
-## Keyword Weigth
+## Keyword Weight
 
 InvokeAI and AUTOMATIC1111 both support this feature but not all applications may support it. Also, the syntax below is for InvokeAI but it may be different from one application to another.
 

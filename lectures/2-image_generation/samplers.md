@@ -30,7 +30,7 @@ Increasing the number of sampling steps makes a smaller noise reduction between 
 
 ## Which sampler to choose?
 
-### Ancestral samplers
+### Stochastic vs Convergent samplers
 
 Some sampler’s names are followrd by a single letter “a”
 
@@ -40,6 +40,14 @@ Some sampler’s names are followrd by a single letter “a”
 - DPM++ 2S a Karras
 
 They are ancestral samplers. An ancestral sampler adds noise to the image at each sampling step. They are stochastic samplers because the sampling outcome has some randomness to it. The drawback of using an ancestral sampler is that the image would not converge. For reproducibility, it is desirable to have the image converge.
+
+<br>
+<figure>
+  <img src="../../assets/lecture/invokeai_convergence.png" width="500px">
+  <figcaption style="color:grey; font-style: italic;">Credit: InvokeAI, "Sampler Convergence"</figcaption>
+  <figcaption>Noise schedule for 15 sampling steps.</figcaption>
+</figure>
+<br>
 
 Be aware that many others are also stochastic samplers, even though their names do not have an “a” in them.
 
@@ -56,6 +64,6 @@ Be aware that many others are also stochastic samplers, even though their names 
 
 ## References
 
-- [Andrew Wong, 2023, "Know these Important Parameters for stunning AI images", _Stable Diffusion Art_](https://stable-diffusion-art.com/know-these-important-parameters-for-stunning-ai-images/#Sampling_steps)
-- [Andrew Wong, 2023, "Know these Important Parameters for stunning AI images", _Stable Diffusion Art_](https://stable-diffusion-art.com/know-these-important-parameters-for-stunning-ai-images/#Sampling_methods)
-- [Andrew Wong, 2023, "Samplers", _Stable Diffusion Art_](https://stable-diffusion-art.com/samplers/)
+- [Know these Important Parameters for stunning AI images](https://stable-diffusion-art.com/know-these-important-parameters-for-stunning-ai-images/), Andrew Wong, 2023, _Stable Diffusion Art_
+- [Samplers](https://stable-diffusion-art.com/samplers/), Andrew Wong, 2023, _Stable Diffusion Art_
+- [Sampler Convergence](https://invoke-ai.github.io/InvokeAI/help/SAMPLER_CONVERGENCE/), InvokeAI

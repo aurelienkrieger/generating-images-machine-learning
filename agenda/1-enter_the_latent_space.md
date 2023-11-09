@@ -15,18 +15,17 @@ Understand the underlying concepts of Machine Learning, discover the application
   - Miro
     - introduce each other
     - contact list
-    - explore artists' references
   - Discord
   - Contact list
 3. [Lecture](https://docs.google.com/presentation/d/1txUAdr7TbkCtw-pH2beUCjyXML2eS785WF0ZYFISo9Q/edit?usp=sharing)
   - Learn about how machine learning & generative models work
-  - Group discussing around ML
+  - Group discussion around ML
   - Explore LAION database
 4. [Explore end-user applications](../resources/apps.md)
 5. Set up tool for creative AI
-6. Look at some online [community](../resources/community.md) groups
 
 **For next session**
+
 1. [Promptcraft challenge](../prompts/1-promptcraft.md)
 2. Readings
   - [OpenAI Used Kenyan Workers on Less Than $2 Per Hour to Make ChatGPT Less Toxic](https://time.com/6247678/openai-chatgpt-kenya-workers/), Billy Perrigo, 2023, _TIME_

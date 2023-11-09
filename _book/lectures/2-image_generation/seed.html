@@ -803,15 +803,14 @@
                                 
                                 <h1 id="seed">Seed</h1>
 <p>During the first step of a Text to Image process, Stable Diffusion generates a random tensor in the latent space. You control this tensor by setting the seed of the random number generator. If you set the seed to a certain value, you will always get the same random tensor.</p>
-<h2 id="reproducibility">Reproducibility</h2>
-<p>If you use the same seed with the same prompt, model and parameters, you will get the exact same image, so it can be used to ensaure the reproducibility.</p>
-<h2 id="exploration">Exploration</h2>
-<p>Setting a random seed will generate a new random image for each batch, so it can be used for exploration.</p>
+<h2 id="reproducibility-vs-exploration">Reproducibility vs Exploration</h2>
+<p>It is best to change one thing at a time so you know what is working and what isn&apos;t. Sometimes you just need to try a new image, and other times using a new prompt might be the ticket. Setting a random seed will generate a new random image for each batch, so it can be used for exploration. You can also consider turning off the “random” Seed - Using the same seed with the same settings will produce the same image, which makes it the perfect way to learn exactly what your changes are doing and ensure reproducibility.</p>
 <h2 id="interpolation">Interpolation</h2>
 <p>AUTOMATIC1111 offer the option to control the degree of interpolation to produce a transition between the images genearted by two seeds. See <a href="https://stable-diffusion-art.com/automatic1111/#Extra_seed_options" target="_blank">Andrew Wong, 2023, &quot;Stable Diffusion WebUI AUTOMATIC1111: A Beginner’s Guide&quot;</a> for more details.</p>
 <h1 id="resources">Resources</h1>
 <ul>
-<li><a href="https://stable-diffusion-art.com/know-these-important-parameters-for-stunning-ai-images/#Seed" target="_blank">Andrew Wong, 2023, &quot;Know these Important Parameters for stunning AI images&quot;, <em>Stable Diffusion Art</em></a></li>
+<li><a href="https://stable-diffusion-art.com/know-these-important-parameters-for-stunning-ai-images" target="_blank">Know these Important Parameters for stunning AI images</a>, Andrew Wong, 2023, <em>Stable Diffusion Art</em></li>
+<li><a href="https://invoke-ai.github.io/InvokeAI/help/gettingStartedWithAI/" target="_blank">Getting Started with AI Image Generation</a>, InvokeAI</li>
 </ul>
 
                                 
@@ -856,7 +855,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Seed","level":"3.2.2.2","depth":3,"next":{"title":"Batch size","level":"3.2.2.3","depth":3,"path":"lectures/2-image_generation/batch.md","ref":"lectures/2-image_generation/batch.md","articles":[]},"previous":{"title":"Resolution","level":"3.2.2.1","depth":3,"path":"lectures/2-image_generation/resolution.md","ref":"lectures/2-image_generation/resolution.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lectures/2-image_generation/seed.md","mtime":"2023-10-20T14:14:13.398Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-11-06T17:24:29.832Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Seed","level":"3.2.2.2","depth":3,"next":{"title":"Batch size","level":"3.2.2.3","depth":3,"path":"lectures/2-image_generation/batch.md","ref":"lectures/2-image_generation/batch.md","articles":[]},"previous":{"title":"Resolution","level":"3.2.2.1","depth":3,"path":"lectures/2-image_generation/resolution.md","ref":"lectures/2-image_generation/resolution.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lectures/2-image_generation/seed.md","mtime":"2023-11-09T16:14:44.613Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-11-09T17:32:41.488Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -908,10 +907,6 @@
     </script>
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
-    
-        
-        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>

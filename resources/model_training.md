@@ -1,8 +1,10 @@
 # Resources for Model Training
 
-## LAION-5B
+## Useful links
 
 - [LAION-5B](https://laion.ai/blog/laion-5b/)
+- [Kohya GUI](https://github.com/bmaltais/kohya_ss)
+- [Kohya scripts](https://github.com/kohya-ss/sd-scripts)
 
 ## Tutorials
 
