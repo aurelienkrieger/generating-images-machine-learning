@@ -44,4 +44,5 @@ _tools_
 - [Promptomania - prompt generator](https://promptomania.com/stable-diffusion-prompt-builder/)
 - [Midjourney Prompt Helper](https://promptfolder.com/midjourney-prompt-helper/)
 - [SDXL boilerplate styles on Stable Diffusion Art](https://stable-diffusion-art.com/sdxl-styles/)
+- [CLIP Interrogator](https://huggingface.co/spaces/fffiloni/CLIP-Interrogator-2)
 - [Prompt keywords collection](https://docs.google.com/spreadsheets/d/1w953xYyb_6HoUXF_SiLdPkpA_IljhAjN31z6pnjKh1s/edit?usp=sharing)

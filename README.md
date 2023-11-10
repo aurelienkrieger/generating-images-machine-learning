@@ -23,15 +23,14 @@ Understand the underlying concepts of Machine Learning, discover the application
 - Learn about how generative models work
 - Set up application for creative AI
 
-### [2 – Fundamentals to Image Generation ✍️](agenda/2-image_generation.md)
+### [2 – Fundamentals of Image Generation ✍️](agenda/2-image_generation.md)
 Improve your prompt engineering technique for image generation. Explore various models to experiment with a wide range of generated aesthetics.
 
 **Objectives**
 
-- Learn about prompt engineering
-- Explore the various types of models
-- Experiment with fine-tuned models
-- Start a project
+- Get better at writing prompts for text to image
+- Explore how different models react differently
+- Play with prompts & aesthetics
 
 ### [3 – Refine Images 🎨](agenda/3-refine_images.md)
 Explore how to apply a certain style and use post-processing techniques to achieve richer details in your images.

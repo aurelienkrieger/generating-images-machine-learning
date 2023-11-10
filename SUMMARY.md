@@ -5,7 +5,7 @@
 ## Agenda
 
 * [1 – Enter the Latent Space 🚀](agenda/1-enter_the_latent_space.md)
-* [2 – Fundamentals to Image Generation ✍️](agenda/2-image_generation.md)
+* [2 – Fundamentals of Image Generation ✍️](agenda/2-image_generation.md)
 * [3 – Refine Images 🎨](agenda/3-refine_images.md)
 * [4 - Image Compositing 📐](agenda/4-image_compositing.md)
 * [5 – Machine Learning & Society 💾](agenda/5-ml_society.md)
@@ -48,6 +48,7 @@
 ## Prompts
 
 * [1 - Promptcraft challenge](prompts/1-promptcraft.md)
+* [2 - Blurbs](prompts/2-blurbs.md)
 
 ## Resources
 

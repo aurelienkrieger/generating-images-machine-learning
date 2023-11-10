@@ -2,7 +2,7 @@
 
 During the first step of a Text to Image process, Stable Diffusion generates a random tensor in the latent space. You control this tensor by setting the seed of the random number generator. If you set the seed to a certain value, you will always get the same random tensor.
 
-## Reproducibility vs Exploration
+## Exploration vs Reproducibility
 
 It is best to change one thing at a time so you know what is working and what isn't. Sometimes you just need to try a new image, and other times using a new prompt might be the ticket. Setting a random seed will generate a new random image for each batch, so it can be used for exploration. You can also consider turning off the “random” Seed - Using the same seed with the same settings will produce the same image, which makes it the perfect way to learn exactly what your changes are doing and ensure reproducibility.
 
