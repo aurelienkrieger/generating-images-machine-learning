@@ -19,3 +19,4 @@
 - [How Hollywood writers triumphed over AI – and why it matters](https://www.theguardian.com/culture/2023/oct/01/hollywood-writers-strike-artificial-intelligence), Dani Anguiano and Lois Beckett, 2023, _The Guardian_
 - [President Biden Issues Executive Order on Safe, Secure, and Trustworthy Artificial Intelligence](https://www.whitehouse.gov/briefing-room/statements-releases/2023/10/30/fact-sheet-president-biden-issues-executive-order-on-safe-secure-and-trustworthy-artificial-intelligence/), The White House, 2023, _The White House_
 - [Better Images of AI: A Guide for Users and Creators](https://blog.betterimagesofai.org/better-images-of-ai-guide/), Kanta Dihal and Tania Duarte, 2023, _Better Images of AI_
+- [The workers AI hides](https://briarpatchmagazine.com/articles/view/the-workers-ai-hides), Véronique Sioufi, 2023, _briarpatch_
