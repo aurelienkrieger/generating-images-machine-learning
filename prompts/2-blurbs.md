@@ -1,9 +1,10 @@
 # Blurbs
 
-Below is a list of suggested blurbs from different books. Pick one of them and imagine the cover of the book it describes. As an alternative you may, if you prefer, choose a book or movie blurb that is not from the list. You may use any Stable Diffusion model you like and you are encouraged to freely develop your own strategies of prompt engineering. The cover image(s) may be of any visual style.
+Below is a list of suggested blurbs from different books. Pick one of them and imagine the cover of the book it describes. You may use any Stable Diffusion model you like and you are encouraged to freely develop your own strategies of prompt engineering. The cover image(s) may be of any visual style. No problem if you haven't read the book, the idea here is not to be acurrate but to express your imagine so feel free to extrapolate from the blurb.
 
 ## Requirements
 
+- you must use text to image functionality only
 - images must be of the ratio 2:3. You may choose the final resolution depending on the model used.
 - you can either use your local install of invoke or the <a href="https://app.invoke.ai/" target="_blank">online app</a>.
 
@@ -48,4 +49,5 @@ Share your images via the discord channel.
 ## Learning objectives
 
 - play with text to image models
-- create a large galery of inspiring images
+- express your imagination from short texts
+- create a gallery of inspiring images
