@@ -10,6 +10,12 @@ Below is a list of suggested blurbs from different books. Pick one of them and i
 
 ## Selection of books
 
+### _Neuromancer_ by William Gibson
+
+> Hotwired to the leading edges of art and technology, Neuromancer is a cyberpunk, science fiction masterpiece—a classic that ranks with 1984 and Brave New World as one of the twentieth century’s most potent visions of the future.
+
+> Henry Dorsett Case was the sharpest data-thief in the business, until vengeful former employees crippled his nervous system. But now a new and very mysterious employer recruits him for a last-chance run. The target: an unthinkably powerful artificial intelligence orbiting Earth in service of the sinister Tessier-Ashpool business clan. With a dead man riding shotgun and Molly, mirror-eyed street-samurai, to watch his back, Case embarks on an adventure that ups the ante on an entire genre of fiction.
+
 ### _Leo Africanus_ by Amin Maalouf
 
 > "I, Hasan the son of Muhammad the weigh-master, I, Jean-Leon de Medici, circumcised at the hand of a barber and baptized at the hand of a pope, I am now called the African, but I am not from Africa, nor from Europe, nor from Arabia. I am also called the Granadan, the Fassi, the Zayyati, but I come from no country, from no city, no tribe. I am the son of the road, my country is the caravan, my life the most unexpected of voyages."
