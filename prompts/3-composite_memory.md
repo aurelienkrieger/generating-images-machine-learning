@@ -19,6 +19,12 @@ It is up to you in terms of how you want to approach this project conceptually. 
 - you must use a combinaison of AI tools (text to image, image to image, inpainting, ...) with traditional tools (drawing, photography, photo-collage, poetry ...)
 - you need to reflect on and document the workflow you used to create your memory visualisation: which models, prompts, tools you used step by step, so that you can share it at the end of the course and allow the rest of the group to benefit from your findings
 
+## Readings
+
+[Extract from <STORY&CODE> Report from AIxDESIGN and Sublab](https://drive.google.com/file/d/15IEUnpPzFovpjQwbFeKWYpcQ5bnZFD_p/view?usp=drive_link)
+
+If you are interested, [here](https://aixdesign.co/blog/ai-animation)'s the download to the full report (not mandatory but very interesting)
+
 ## Submission
 
 This is an ongoing project. You will all be invited to share your image & workflow during the last session of the course.
