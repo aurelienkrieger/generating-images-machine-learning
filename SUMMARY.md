@@ -49,6 +49,7 @@
 
 * [1 - Promptcraft challenge](prompts/1-promptcraft.md)
 * [2 - Blurbs](prompts/2-blurbs.md)
+* [3 - Composite Memory](prompts/3-composite_memory.md)
 
 ## Resources
 
@@ -56,6 +57,6 @@
 * [End-User Applications](resources/apps.md)
 * [Prompt Engineering](resources/prompt_engineering.md)
 * [Models](resources/models.md)
-* [Inpainting / Outpainting](resources/inpainting_outpainting.md)
+* [Image to Image](resources/image_to_image.md)
 * [Model Training](resources/model_training.md)
 * [Community](resources/community.md)

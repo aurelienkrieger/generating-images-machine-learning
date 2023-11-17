@@ -40,7 +40,7 @@ As of InvokeAI, the easiest way to improve faces created during image generation
 
 ## Tutorials & resources
 
-[Useful links & tutorials for Inpainting and Outpainting](../../resources/inpainting_outpainting.md)
+[Useful links & tutorials for Inpainting and Outpainting](../../resources/image_to_image.md)
 
 ## References
 

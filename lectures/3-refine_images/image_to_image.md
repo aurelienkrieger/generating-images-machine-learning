@@ -60,6 +60,10 @@ An input image and a text prompt are supplied as the input in image-to-image. Th
 
 So now you know what image-to-image is: All it does is to set the initial latent image with a bit of noise and a bit of input image. Setting denoising strength to 1 is equivalent to text-to-image because the initial latent image is entirely random noise.
 
+## Tutorials & resources
+
+[Useful links & tutorials for Inpainting and Outpainting](../../resources/image_to_image.md)
+
 ## References
 
 - [Andrew Wong, 2023, "How does Stable Diffusion work?", _Stable Diffusion Art_](https://stable-diffusion-art.com/how-stable-diffusion-work/)

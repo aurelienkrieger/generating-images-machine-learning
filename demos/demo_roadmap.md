@@ -101,9 +101,6 @@
 - learnings
   - practice and improve prompting techniques
 
-
-# 2 – Refine images 🎨
-
 ## Fine-tuned models
 
 - models
@@ -126,18 +123,53 @@
   - models depend on their training set
   - each model have optimal resolutions
 
-## Photo editing: "please remove the person behind"
+# 2 – Refine images 🎨
+
+_Image to Image_
+
+## Darth Vader in the bus
 
 - models
-  - SD1.5 inpaint model for image to image
+  - SD1.5 trained model for text to image
 
 - workflow
-  - use input picture of a wedding couple with "a person behind"
-  - use inpainting to remove the person behind
+  - use basic image to image for style transfer
+  - start from image of person in the bus
+  - adapt to being Darth Vader
 
 - learnings
-  - how to use inpainting for photo editing (remove elements)
+  - how to use image to image for style transfer
 
+## Beautiful photoshoping
+
+- models
+  - SD1.5 trained model for text to image
+  - (ControlNet)
+
+- workflow
+  - make basic photoshoping
+  - use text to image to generate professional image
+  - use small generation steps for better results
+
+- learnings
+  - how to make profesional images from basic photoshoping
+
+## Beautiful drawing
+
+- models
+  - SD1.5 trained model for text to image
+  - (ControlNet)
+
+- workflow
+  - make basic drawing
+  - (use ControlNet to detect edges)
+  - use text to image to generate professional drawing
+  - use small generation steps for better results
+
+- learnings
+  - how to make profesional drawings from basic sketches
+
+_Inpainting_
 
 ## Add elements to a landscape
 
@@ -155,6 +187,19 @@
   - how to use bounding box and resolution parameters
   - use smaller generation steps for better results
 
+## Photo editing: "please remove the person behind"
+
+- models
+  - SD1.5 inpaint model for image to image
+
+- workflow
+  - use input picture of a wedding couple with "a person behind"
+  - use inpainting to remove the person behind
+
+- learnings
+  - how to use inpainting for photo editing (remove elements)
+
+
 ## Grandma with a biker's jacket
 
 - models
@@ -170,7 +215,7 @@
   - how to use inpainting for image correction
   - use smaller generation steps for better results
 
-## Greek scolar with a laptop
+## Greek scholar with a laptop
 
 - models
   - SD1.5 base checkpoint model for text to image
@@ -231,6 +276,7 @@
   - how to use inpainting for image correction (coloration)
   - use smaller generation steps for better results
 
+_Outpainting_
 
 ## Extended landscape
 
@@ -251,46 +297,6 @@
 
 
 # 3 – Image Compositing 📐
-
-
-## Darth Vader in the bus
-
-- models
-  - SD1.5 trained model for text to image
-
-- workflow
-  - use basic image to image for style transfer
-  - start from image of person in the bus
-  - adapt to being Darth Vader
-
-- learnings
-  - how to use image to image for style transfer
-
-## _In the style of_
-
-- models
-  - SD1.5 trained model for text to image
-
-- workflow
-  - use basic image to image for style transfer
-  - start from image of person in the bus
-  - adapt to being Darth Vader
-
-- learnings
-  - how to use image to image for style transfer
-
-## "Breaking Bad but in Japan" (credit: [Demon Flying Fox](https://www.instagram.com/p/CyEUX9dtUBT/?hl=en))
-
-- models
-  - SD1.5 trained model for text to image
-
-- workflow
-  - use basic image to image for style transfer
-  - start from image of person in the bus
-  - adapt to being Darth Vader
-
-- learnings
-  - how to use image to image for style transfer
 
 
 ## Darth Vader dancing
@@ -338,37 +344,6 @@
 
 - learnings
   - how to use a combinaison of various ControlNet models
-
-
-## Beautiful drawing
-
-- models
-  - SD1.5 trained model for text to image
-  - ControlNet
-
-- workflow
-  - make basic drawing
-  - use ControlNet to detect edges
-  - use text to image to generate professional drawing
-  - use small generation steps for better results
-
-- learnings
-  - how to make profesional drawings from basic sketches
-
-
-## Beautiful photoshoping
-
-- models
-  - SD1.5 trained model for text to image
-  - ControlNet
-
-- workflow
-  - make basic photoshoping
-  - use text to image to generate professional image
-  - use small generation steps for better results
-
-- learnings
-  - how to make profesional images from basic photoshoping
 
 
 # 4 - Model Training 💾

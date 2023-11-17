@@ -82,7 +82,9 @@
 
 #### Upscaling
 
-- [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)
+- Real-ESRGAN
+  - [Model page](https://github.com/xinntao/Real-ESRGAN)
+  - [Demo](https://huggingface.co/spaces/akhaliq/Real-ESRGAN)
 - Latent upscalers
 - [Swin2SR](https://huggingface.co/docs/transformers/model_doc/swin2sr)
 - [OpenModelDB, a community-driven database of AI Upscaling models](https://openmodeldb.info/)

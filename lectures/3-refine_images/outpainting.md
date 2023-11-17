@@ -34,7 +34,7 @@ Repeat the process to mask any resulting seams between the new and base image to
 
 ## Tutorials & resources
 
-[Useful links & tutorials for Inpainting and Outpainting](../../resources/inpainting_outpainting.md)
+[Useful links & tutorials for Inpainting and Outpainting](../../resources/image_to_image.md)
 
 ## References
 

@@ -5,6 +5,7 @@ Gain more control over your workflow and final composition. Learn advanced techn
 
 - ControlNet
 - Depth to Image
+- IP Adapter
 
 **Demos**
 

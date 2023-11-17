@@ -10,7 +10,7 @@ Our memories are much more malleable than we think. Each time we recall a memory
 
 This project explores the ambiguity in human language as well as the friction between human memory and AI (re-)interpretation. This is the opportunity to explore how you can implement the AI tools into your creative workflow and how this influences your work.
 
-The depiction of your memory does not need to be an exact representation. In fact, this will likely be impossible. The end result will be a combination of how you can recall your memory, your interpretation of that memory and how you are able to render it with AI. Try to use the inpredictable nature of AI as an opportunity to reinterpret your memory through happy accidents, glitches to emphasis the co-creative process.
+The depiction of your memory does not need to be an exact representation. In fact, this will likely be impossible. The end result will be a combination of how you can recall your memory, your interpretation of that memory and how you are able to render it with AI. Try to use the inpredictable nature of AI as an opportunity to reinterpret your memory through happy accidents and glitches to emphasis the co-creative process.
 
 It is up to you in terms of how you want to approach this project conceptually. You may take it literally and visualize a specific event of your life, or recall the memory of a memory that a family member told you in the past, or even a myth, a traditional story that have been shared throughout generations and to which you relate to.
 
