@@ -25,7 +25,7 @@ Explore how to use post-processing techniques to achieve richer details in your 
 
 **For next session**
 
-1. Prompt: [Composite Memory](prompts/3-composite_memory.md)
+1. Prompt: [Composite Memory](../prompts/3-composite_memory.md)
 2. Reading: [Extract from <STORY&CODE> Report from AIxDESIGN and Sublab](https://drive.google.com/file/d/15IEUnpPzFovpjQwbFeKWYpcQ5bnZFD_p/view?usp=drive_link). If you are interested, [here](https://aixdesign.co/blog/ai-animation)'s the download to the full report (not mandatory but very interesting)
 3. Viewing:
   - [Patrick Galbraith - Unified Canvas tutorial](https://www.youtube.com/watch?v=-JR5vLc1T8c&t=371s)
