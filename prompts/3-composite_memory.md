@@ -34,3 +34,8 @@ This is an ongoing project. You will all be invited to share your image & workfl
 - experiment with ways to integrate AI tools into your creative workflow
 - refine your images as we continue learning about new techniques
 - reflect on this hybrid workflow and share insights with peers
+
+## References and Inspirations
+
+- [AI x ANIMATION Project](https://aixdesign.co/blog/ai-animation) by AIxDESIGN & Sublab
+- [Critical Cumputation 2022](https://github.com/parsonsdt/critical-computation-2022) by Parsons Design & Technology
