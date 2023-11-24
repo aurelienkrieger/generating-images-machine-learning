@@ -21,8 +21,12 @@
 ## Advanced Unified Canvas / Control Adapters
 
 - [InvokeAI - Canvas Fundamentals](https://www.youtube.com/watch?v=kzRL88ffv1o)
-- [Invoke AI tutorial](https://support.invoke.ai/support/solutions/articles/151000105880-using-controlnet)
-- [IP adapters with Invoke AI](https://www.youtube.com/watch?v=hFBJwYTCvHg)
+- InvokeAI - ControlNet Basics
+  - [video](https://vimeo.com/835853113)
+  - [tutorial](https://support.invoke.ai/support/solutions/articles/151000105880-using-controlnet)
+- [InvokeAI - IP adapters](https://www.youtube.com/watch?v=hFBJwYTCvHg)
+- [InvokeAI - Advanced Canvas Inpainting Techniques for Concept Art](https://www.youtube.com/watch?v=-xzvIpfGTXg)
+- [QR Code Monster in InvokeAI](https://www.youtube.com/watch?v=TmHIe4nVtds)
 
 ## Others
 

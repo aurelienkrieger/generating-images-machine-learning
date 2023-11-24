@@ -21,7 +21,6 @@ Explore how to use post-processing techniques to achieve richer details in your 
   - [Mostafa Lamey tutorial](https://www.youtube.com/watch?v=stGkvMFMZpE)
 5. Prompt
   - Revisit the blurb prompt by applying Image to Image techniques
-6. Look at some online [communities](../resources/community.md)
 
 **For next session**
 
