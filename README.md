@@ -41,7 +41,7 @@ Explore how to use post-processing techniques to achieve richer details in your 
 - Apply custom styles with IP Adapter
 
 
-### [4 - Control Adapters 📐](agenda/4-image_compositing.md)
+### [4 - Control Adapters 📐](agenda/4-control_adapters.md)
 Learn advanced techniques for concept art & visual prototyping to gain more control over your workflow and final composition.
 
 **Objectives**
