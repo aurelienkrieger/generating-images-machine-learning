@@ -160,12 +160,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.5" data-path="../../agenda/5-ml_society.html">
+        <li class="chapter " data-level="2.5" data-path="../../agenda/5-model_training.html">
             
-                <a href="../../agenda/5-ml_society.html">
+                <a href="../../agenda/5-model_training.html">
             
                     
-                    5 – Machine Learning & Society 💾
+                    5 – Model Training 💾
             
                 </a>
             
@@ -580,12 +580,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5" data-path="../5-ml_society/">
+        <li class="chapter " data-level="3.5" data-path="../5-model_training/">
             
-                <a href="../5-ml_society/">
+                <a href="../5-model_training/">
             
                     
-                    5 – Machine Learning & Society 💾
+                    5 – Model Training 💾
             
                 </a>
             
@@ -594,9 +594,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.5.1" data-path="../5-ml_society/model_training.html">
+        <li class="chapter " data-level="3.5.1" data-path="../5-model_training/model_training.html">
             
-                <a href="../5-ml_society/model_training.html">
+                <a href="../5-model_training/model_training.html">
             
                     
                     Model Training
@@ -607,12 +607,51 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.2" data-path="../5-ml_society/embedding.html">
+        <li class="chapter " data-level="3.5.2" data-path="../5-model_training/dreambooth.html">
             
-                <a href="../5-ml_society/embedding.html">
+                <a href="../5-model_training/dreambooth.html">
+            
+                    
+                    Dreambooth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="../5-model_training/embedding.html">
+            
+                <a href="../5-model_training/embedding.html">
             
                     
                     Embedding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.4" data-path="../5-model_training/vae.html">
+            
+                <a href="../5-model_training/vae.html">
+            
+                    
+                    VAE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.5" data-path="../5-model_training/lora.html">
+            
+                <a href="../5-model_training/lora.html">
+            
+                    
+                    LoRA
             
                 </a>
             
@@ -843,7 +882,7 @@
 <h2 id="embedding">Embedding</h2>
 <p>Embedding is a 768-value vector. Each token has its own unique embedding vector. Embedding is fixed by the CLIP model, which is learned during training.</p>
 <p>Why do we need embedding? It’s because some words are closely related to each other. We want to take advantage of this information. For example, the embeddings of man, gentleman, and guy are nearly identical because they can be used interchangeably. Monet, Manet, and Degas all painted in impressionist styles but in different ways. The names have close but not identical embeddings.</p>
-<p>Embedding can also be used to trigger a style with a keyword. We will discuss this in the section <a href="../5-ml_society/">4 - Model Training 💾</a></p>
+<p>Embedding can also be used to trigger a style with a keyword. We will discuss this in the section <a href="../5-ml_society/README.md">4 - Model Training 💾</a></p>
 <h2 id="text-transformer">Text transformer</h2>
 <p>The embedding needs to be further processed by the text transformer before feeding into the noise predictor. The output of the text transformer is used multiple times by the noise predictor. That’s where the prompt meets the image (cross-attention).</p>
 <p>Let’s use the prompt “A man with blue eyes” as an example. Stable Diffusion pairs the two words “blue” and “eyes” together so that it generates a man with blue eyes but not a man with a blue shirt. It then uses this information to steer the reverse diffuse towards images containing blue eyes.</p>
@@ -896,7 +935,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Conditioning","level":"3.1.5","depth":2,"next":{"title":"Text to Image","level":"3.1.6","depth":2,"path":"lectures/1-enter_the_latent_space/text_to_image.md","ref":"lectures/1-enter_the_latent_space/text_to_image.md","articles":[]},"previous":{"title":"Stable Diffusion","level":"3.1.4","depth":2,"path":"lectures/1-enter_the_latent_space/stable_diffusion.md","ref":"lectures/1-enter_the_latent_space/stable_diffusion.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lectures/1-enter_the_latent_space/conditioning.md","mtime":"2023-11-02T19:55:45.245Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-11-28T18:32:17.227Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Conditioning","level":"3.1.5","depth":2,"next":{"title":"Text to Image","level":"3.1.6","depth":2,"path":"lectures/1-enter_the_latent_space/text_to_image.md","ref":"lectures/1-enter_the_latent_space/text_to_image.md","articles":[]},"previous":{"title":"Stable Diffusion","level":"3.1.4","depth":2,"path":"lectures/1-enter_the_latent_space/stable_diffusion.md","ref":"lectures/1-enter_the_latent_space/stable_diffusion.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lectures/1-enter_the_latent_space/conditioning.md","mtime":"2023-11-02T19:55:45.245Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-11-30T17:44:53.047Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -948,6 +987,10 @@
     </script>
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>

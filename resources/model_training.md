@@ -10,6 +10,9 @@
 
 **Stable Diffusion Art**
 
+- LoRA training with Civitai
+  - [officiel tutorial](https://education.civitai.com/using-civitai-the-on-site-lora-trainer/)
+  - [RFKTR's in-depth guide to Training high quality models](https://civitai.com/articles/397/rfktrs-in-depth-guide-to-training-high-quality-models)
 - [Dreambooth](https://stable-diffusion-art.com/dreambooth/)
 - [Embedding](https://stable-diffusion-art.com/embedding/)
 - [LoRA](https://stable-diffusion-art.com/lora/)

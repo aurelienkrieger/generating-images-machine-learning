@@ -22,7 +22,6 @@ Learn advanced techniques for concept art & visual prototyping to gain more cont
   - [QR Code Monster in InvokeAI](https://www.youtube.com/watch?v=TmHIe4nVtds)
 5. Prompt
   - See how you can use ControlNet or IP Adapter for your Composite Memory project
-6. Look at some online [communities](../resources/community.md)
 
 **For next session**
 

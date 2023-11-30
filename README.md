@@ -50,14 +50,15 @@ Learn advanced techniques for concept art & visual prototyping to gain more cont
 - Further skills in compositing with Image to Image techniques
 
 
-### [5 – Machine Learning & Society  💾](agenda/5-ml_society.md)
-Learn how to train your own model. Investigate about the ethical dilemmas related to AI & generative models. Debate with your peers and expand your critical thinking on the field.
+### [5 – Model Training  💾](agenda/5-model_training.md)
+Discover the different training techniques. Explore how to use fine-tuned models. Learn how to train your own model.
 
 **Objectives**
 
-- Introduction to Fine-tuning techniques
-- Group discussions about ML ethical dilemmas
+- Discover the most popular model training techniques
+- Merge two models
+- Train a model with LoRA
 
 
 ### [6 – Final Presentations ✨](agenda/6-final_presentations.md)
-Share your projects with your peers and reflect on progress as we discover each other's imagery. Reflect on the 6 weeks and share your new way of seeing things.
+Share your projects with your peers. Reflect on the 6 weeks and share about how your perception and understanding of AI has changed.

@@ -8,7 +8,7 @@
 * [2 – Fundamentals of Image Generation ✍️](agenda/2-image_generation.md)
 * [3 – Refine Images 🎨](agenda/3-refine_images.md)
 * [4 - Control Adapters 📐](agenda/4-control_adapters.md)
-* [5 – Machine Learning & Society 💾](agenda/5-ml_society.md)
+* [5 – Model Training 💾](agenda/5-model_training.md)
 * [6 – Final Presentations ✨](agenda/6-final_presentations.md)
 
 ## Lectures
@@ -40,9 +40,12 @@
   * [Upscaling](lectures/3-refine_images/upscaling.md)
 * [4 - Control adapters 📐](lectures/4-control_adapters/README.md)
   * [Depth to Image](lectures/4-control_adapters/depth_to_image.md)
-* [5 – Machine Learning & Society 💾](lectures/5-ml_society/README.md)
-  * [Model Training](lectures/5-ml_society/model_training.md)
-  * [Embedding](lectures/5-ml_society/embedding.md)
+* [5 – Model Training 💾](lectures/5-model_training/README.md)
+  * [Model Training](lectures/5-model_training/model_training.md)
+  * [Dreambooth](lectures/5-model_training/dreambooth.md)
+  * [Embedding](lectures/5-model_training/embedding.md)
+  * [VAE](lectures/5-model_training/vae.md)
+  * [LoRA](lectures/5-model_training/lora.md)
 * [6 – Final Presentations ✨](lectures/6-final_presentations/README.md)
 
 ## Prompts
