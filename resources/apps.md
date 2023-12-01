@@ -95,3 +95,5 @@ _using proprietary models_
 - [Pika Labs - for videos](https://www.pika.art/)
 - [Kaiber - for videos](https://kaiber.ai/)
 - [Twisty - for videos](https://twisty.ai/)
+- [Birme - Bulk Image Resizing](https://www.birme.net/)
+- [BLIP Colab - Bulk Image Captioning](https://colab.research.google.com/drive/10X8dvQ0JvwkRwK_XhtPuumce6XE5RiGO#scrollTo=88kZmoxPBSF1)

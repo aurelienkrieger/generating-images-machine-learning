@@ -4,8 +4,8 @@ Discover the different training techniques. Explore how to use fine-tuned models
 **Objectives**
 
 - Discover the most popular model training techniques
-- Merge two models
 - Train a model with LoRA
+- Use the LoRA model for text to image
 
 **Agenda**
 
